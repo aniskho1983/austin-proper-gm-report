@@ -29,6 +29,8 @@
   .kpi { background: var(--bg2); border-radius: var(--radius); padding: 14px 10px; text-align: center; }
   .kpi-num { font-size: 20px; font-weight: 600; }
   .kpi-lbl { font-size: 11px; color: var(--text2); margin-top: 4px; }
+  .exec-summary { background: var(--bg2); border-left: 3px solid #2c5f9e; border-radius: var(--radius); padding: 16px 18px; margin-bottom: 28px; font-size: 13px; color: var(--text2); line-height: 1.75; }
+  .exec-summary strong { color: var(--text); }
   .sec { font-size: 14px; font-weight: 600; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
   .legend { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; font-size: 12px; color: var(--text2); }
   .li { display: flex; align-items: center; gap: 5px; }
@@ -79,6 +81,9 @@
   <div class="kpi"><div class="kpi-num">~72%</div><div class="kpi-lbl">of 40-hr week committed</div></div>
 </div>
 
+<!-- EXECUTIVE SUMMARY -->
+<div class="exec-summary" id="execSummary"></div>
+
 <!-- BAR CHART -->
 <div class="sec">Hours per week by category</div>
 <div class="legend" id="barLeg"></div>
@@ -114,6 +119,21 @@ const barData = [
   { label:"Payroll cycles",          wk:0.9,  color:"#7f8c8d", mo:"~4 hrs",   pct:"2.3%" },
 ];
 const total = barData.reduce((s,d) => s + d.wk, 0);
+const pctOfWeek = Math.round(total / 40 * 100);
+
+// Executive summary — auto-updates when barData changes
+document.getElementById("execSummary").innerHTML = `
+  <strong>Executive Summary</strong><br>
+  Over the past 30 days, the GM of Austin Proper carried an estimated
+  <strong>~${total.toFixed(0)}–${(+total.toFixed(0)+1)} hours</strong> of structured meeting time per week —
+  approximately <strong>${pctOfWeek}% of a 40-hour week</strong> — before on-floor presence, email, or unplanned escalations.
+  The schedule reflects a dual mandate: running a full-service lifestyle hotel at full operational depth while serving as
+  the primary property ambassador for a growing By Proper development pipeline across
+  <strong>five active projects</strong> (Dallas, Minneapolis, Tampa, Red Bluff, Austin).
+  Project development — including a full-day Red Bluff ownership offsite, an owner dinner, and a Wilks/Dallas developer
+  site visit — is substantially underrepresented in calendar data and is growing. The AI/innovation commitment is also
+  larger than the calendar shows, anchored by a confirmed 3-hour deep-work session in March.
+`;
 
 // Build legend
 const barLeg = document.getElementById("barLeg");
