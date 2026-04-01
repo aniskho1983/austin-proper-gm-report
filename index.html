@@ -76,7 +76,7 @@
   <div class="kpi"><div class="kpi-num">8</div><div class="kpi-lbl">weekly direct report 1:1s</div></div>
   <div class="kpi"><div class="kpi-num">5</div><div class="kpi-lbl">active dev projects</div></div>
   <div class="kpi"><div class="kpi-num">4</div><div class="kpi-lbl">daily recurring meetings</div></div>
-  <div class="kpi"><div class="kpi-num">~72%</div><div class="kpi-lbl">of 40-hr week committed</div></div>
+  <div class="kpi"><div class="kpi-num">~47%</div><div class="kpi-lbl">of 60-hr week committed</div></div>
 </div>
 
 <!-- BAR CHART -->
@@ -95,7 +95,7 @@
 <!-- SUMMARY TABLE -->
 <div class="sec">30-day summary</div>
 <table>
-  <thead><tr><th>Category</th><th>30-day total</th><th>Wkly avg</th><th>% of 40h week</th></tr></thead>
+  <thead><tr><th>Category</th><th>30-day total</th><th>Wkly avg</th><th>% of 60h week</th></tr></thead>
   <tbody id="sumTbl"></tbody>
 </table>
 
@@ -105,13 +105,13 @@
 
 <script>
 const barData = [
-  { label:"Daily ops rhythm",        wk:6.0,  color:"#2c5f9e", mo:"~26 hrs",  pct:"15%" },
-  { label:"Direct report 1:1s",      wk:7.25, color:"#27ae60", mo:"~29 hrs",  pct:"18.1%" },
-  { label:"Weekly ops meetings",     wk:5.75, color:"#3a7fc1", mo:"~23 hrs",  pct:"14.4%" },
-  { label:"Project dev (purple)",    wk:4.0,  color:"#8e44ad", mo:"~18+ hrs", pct:"10%+" },
-  { label:"AI / innovation (yellow)",wk:2.9,  color:"#d4a017", mo:"~6 hrs",   pct:"7.3%" },
-  { label:"Monthly meetings",        wk:1.6,  color:"#95a5a6", mo:"~6.5 hrs", pct:"4%" },
-  { label:"Payroll cycles",          wk:0.9,  color:"#7f8c8d", mo:"~4 hrs",   pct:"2.3%" },
+  { label:"Daily ops rhythm",        wk:6.0,  color:"#2c5f9e", mo:"~26 hrs",  pct:"10.0%" },
+  { label:"Direct report 1:1s",      wk:7.25, color:"#27ae60", mo:"~29 hrs",  pct:"12.1%" },
+  { label:"Weekly ops meetings",     wk:5.75, color:"#3a7fc1", mo:"~23 hrs",  pct:"9.6%" },
+  { label:"Project dev (purple)",    wk:4.0,  color:"#8e44ad", mo:"~18+ hrs", pct:"6.7%+" },
+  { label:"AI / innovation (yellow)",wk:2.9,  color:"#d4a017", mo:"~6 hrs",   pct:"4.8%" },
+  { label:"Monthly meetings",        wk:1.6,  color:"#95a5a6", mo:"~6.5 hrs", pct:"2.7%" },
+  { label:"Payroll cycles",          wk:0.9,  color:"#7f8c8d", mo:"~4 hrs",   pct:"1.5%" },
 ];
 const total = barData.reduce((s,d) => s + d.wk, 0);
 
@@ -154,7 +154,7 @@ const tbody = document.getElementById("sumTbl");
   }); tbody.appendChild(tr);
 });
 const tot = document.createElement("tr"); tot.className = "tfoot";
-["Total (estimated)", "~112+ hrs", total.toFixed(1)+" hrs", "~72%"].forEach((c,j) => {
+["Total (estimated)", "~112+ hrs", total.toFixed(1)+" hrs", "~47%"].forEach((c,j) => {
   const td = document.createElement("td"); td.textContent = c; if(j>0) td.style.textAlign="right"; tot.appendChild(td);
 }); tbody.appendChild(tot);
 
