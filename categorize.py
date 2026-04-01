@@ -48,6 +48,16 @@ MIN_GAP_MINUTES = 45  # gaps smaller than this are ignored
 # Scheduled days off — no gap detection on these days (0=Mon … 4=Fri, 5=Sat, 6=Sun)
 DAYS_OFF = {4, 5}  # Friday, Saturday
 
+# Standing floor-time windows (minutes since midnight, local time)
+# Any unblocked portion of these windows is automatically credited as Property & Floor Time.
+FLOOR_WINDOWS = [
+    (7 * 60 + 45, 9 * 60),   # 7:45–9:00 AM  — morning property walk & team touch-points
+    (9 * 60,      18 * 60),   # 9:00–18:00    — mid-day floor time (unblocked gaps only)
+    (18 * 60,     20 * 60),   # 18:00–20:00   — evening property walk
+]
+# Minimum unblocked gap (min) in the MID-DAY window to count as floor time
+FLOOR_MIDDAY_MIN_GAP = 30
+
 # Known direct reports (for keyword matching)
 DIRECT_REPORTS = [
     "natascha", "anna", "lalaine", "ryan", "ash", "jasmine",
@@ -359,6 +369,124 @@ def find_gaps(events_by_date):
     return gaps
 
 
+# ── Floor-time injection ───────────────────────────────────────────────────────
+
+def inject_floor_time(events, events_by_date):
+    """
+    For each working day (not in DAYS_OFF), inject synthetic Property & Floor Time
+    blocks for unblocked portions of the three standing windows defined in FLOOR_WINDOWS.
+
+    Morning / evening windows: all unblocked time is credited.
+    Mid-day window: only unblocked gaps >= FLOOR_MIDDAY_MIN_GAP minutes are credited.
+
+    Synthetic events are inserted into both `events` and `events_by_date` so that:
+      - They are counted in the summary totals.
+      - find_gaps() sees them as busy and will not report those windows as gaps.
+    """
+    synthetic = []
+
+    for day_str, day_events in sorted(events_by_date.items()):
+        day = date.fromisoformat(day_str)
+        if day.weekday() in DAYS_OFF:
+            continue
+
+        # Build busy intervals in minutes-since-midnight (local time)
+        busy = []
+        for e in day_events:
+            if e['block_type'] in ('meeting', 'solo_work', 'tentative') and not e.get('isAllDay'):
+                sl = e.get('start_local')
+                el = e.get('end_local')
+                if sl and el:
+                    s_dt = datetime.fromisoformat(sl)
+                    e_dt = datetime.fromisoformat(el)
+                    busy.append((s_dt.hour * 60 + s_dt.minute,
+                                 e_dt.hour * 60 + e_dt.minute))
+
+        busy.sort()
+
+        # Merge overlapping intervals
+        merged = []
+        for bs, be in busy:
+            if merged and bs < merged[-1][1]:
+                merged[-1][1] = max(merged[-1][1], be)
+            else:
+                merged.append([bs, be])
+
+        # UTC offset for constructing the 'start'/'end' fields (naive local → UTC)
+        utc_delta_h = 5 if day >= DST_START_2026 else 6  # CDT=+5, CST=+6 to get UTC
+
+        for win_idx, (win_start, win_end) in enumerate(FLOOR_WINDOWS):
+            is_midday = (win_idx == 1)
+
+            # Compute free sub-intervals within this window
+            free = []
+            cursor = win_start
+            for bs, be in merged:
+                if be <= cursor:
+                    continue
+                if bs >= win_end:
+                    break
+                gap_end = min(bs, win_end)
+                if gap_end > cursor:
+                    free.append((cursor, gap_end))
+                cursor = max(cursor, be)
+            if cursor < win_end:
+                free.append((cursor, win_end))
+
+            for (fs, fe) in free:
+                dur_min = fe - fs
+                if is_midday and dur_min < FLOOR_MIDDAY_MIN_GAP:
+                    continue
+                if dur_min <= 0:
+                    continue
+
+                dur_h = dur_min / 60
+
+                # Naive local datetimes (consistent with to_local() output style)
+                local_start = datetime(day.year, day.month, day.day, fs // 60, fs % 60)
+                local_end   = datetime(day.year, day.month, day.day, fe // 60, fe % 60)
+
+                # Naive UTC datetimes
+                utc_start = local_start + timedelta(hours=utc_delta_h)
+                utc_end   = local_end   + timedelta(hours=utc_delta_h)
+
+                label = ('Morning Property Walk'  if win_idx == 0 else
+                         'Midday Floor Time'       if win_idx == 1 else
+                         'Evening Property Walk')
+
+                synth = {
+                    'id':          'floor_%s_%d_%d' % (day_str, fs, fe),
+                    'subject':     'Property & Floor Time (%s)' % label,
+                    'start':       utc_start.strftime('%Y-%m-%dT%H:%M:%SZ'),
+                    'end':         utc_end.strftime('%Y-%m-%dT%H:%M:%SZ'),
+                    'isAllDay':    False,
+                    'isCancelled': False,
+                    'showAs':      'busy',
+                    'attendees':   [],
+                    'categories':  [],
+                    'block_type':  'solo_work',
+                    'category':    'property_floor',
+                    'dur_hours':   round(dur_h, 2),
+                    'start_local': local_start.isoformat(),
+                    'end_local':   local_end.isoformat(),
+                    'date_local':  day_str,
+                    'day_name':    day.strftime('%a %b %d'),
+                    '_synthetic':  True,
+                }
+                synthetic.append(synth)
+
+    # Inject into events list and events_by_date
+    for s in synthetic:
+        events.append(s)
+        events_by_date.setdefault(s['date_local'], []).append(s)
+
+    events.sort(key=lambda x: x.get('start') or '')
+    for d in events_by_date:
+        events_by_date[d].sort(key=lambda x: x.get('start') or '')
+
+    return len(synthetic)
+
+
 # ── Category display config ────────────────────────────────────────────────────
 
 CATEGORY_META = {
@@ -377,6 +505,7 @@ CATEGORY_META = {
     'solo_email':      {'label': 'Email & Comms (solo)',        'color': '#bdc3c7', 'counts_as': 'solo'},
     'solo_admin':      {'label': 'Admin / Prep (solo)',         'color': '#95a5a6', 'counts_as': 'solo'},
     'guest_floor':     {'label': 'Guest / Floor Time (solo)',   'color': '#e8a87c', 'counts_as': 'solo'},
+    'property_floor':  {'label': 'Property & Floor Time',       'color': '#f39c12', 'counts_as': 'solo'},
     'solo_work_other': {'label': 'Deep Work / Other (solo)',    'color': '#7f8c8d', 'counts_as': 'solo'},
     'uncategorized':   {'label': '⚠ Needs Review',             'color': '#e74c3c', 'counts_as': 'unknown'},
 }
@@ -434,6 +563,10 @@ def run(input_file='calendar_raw.json',
         d = e.get('date_local')
         if d:
             events_by_date.setdefault(d, []).append(e)
+
+    # ── Step 2b: Inject standing floor-time blocks ───────────────────────────
+    n_floor = inject_floor_time(events, events_by_date)
+    print(f"  → Injected {n_floor} floor-time blocks (Property & Floor Time)")
 
     # ── Step 3: Find gaps ─────────────────────────────────────────────────────
     gaps = find_gaps(events_by_date)

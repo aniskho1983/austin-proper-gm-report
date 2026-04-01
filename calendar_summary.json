@@ -5,13 +5,13 @@
     "end_date": "2026-04-01",
     "days": 7,
     "weeks": 1.0,
-    "total_events": 90,
+    "total_events": 116,
     "total_meeting_h": 57.8,
-    "total_solo_h": 11.2,
-    "total_h": 69.1,
+    "total_solo_h": 36.2,
+    "total_h": 94.0,
     "meeting_h_per_wk": 57.8,
-    "solo_h_per_wk": 11.2,
-    "pct_of_40h": 172.7,
+    "solo_h_per_wk": 36.2,
+    "pct_of_40h": 235.0,
     "by_category": {
       "daily_ops": {
         "hours": 8.5,
@@ -88,6 +88,11 @@
         "count": 2,
         "hrs_per_wk": 1.5
       },
+      "property_floor": {
+        "hours": 24.92,
+        "count": 26,
+        "hrs_per_wk": 24.92
+      },
       "solo_work_other": {
         "hours": 0.5,
         "count": 1,
@@ -106,13 +111,13 @@
     "end_date": "2026-04-01",
     "days": 30,
     "weeks": 4.3,
-    "total_events": 263,
+    "total_events": 391,
     "total_meeting_h": 171.8,
-    "total_solo_h": 22.2,
-    "total_h": 194.0,
+    "total_solo_h": 161.7,
+    "total_h": 333.4,
     "meeting_h_per_wk": 40.1,
-    "solo_h_per_wk": 5.2,
-    "pct_of_40h": 113.2,
+    "solo_h_per_wk": 37.7,
+    "pct_of_40h": 194.5,
     "by_category": {
       "daily_ops": {
         "hours": 31.75,
@@ -189,6 +194,11 @@
         "count": 4,
         "hrs_per_wk": 1.17
       },
+      "property_floor": {
+        "hours": 139.42,
+        "count": 128,
+        "hrs_per_wk": 32.53
+      },
       "solo_work_other": {
         "hours": 6.5,
         "count": 4,
@@ -207,13 +217,13 @@
     "end_date": "2026-04-01",
     "days": 90,
     "weeks": 12.9,
-    "total_events": 263,
+    "total_events": 397,
     "total_meeting_h": 171.8,
-    "total_solo_h": 22.2,
-    "total_h": 194.0,
+    "total_solo_h": 186.2,
+    "total_h": 357.9,
     "meeting_h_per_wk": 13.4,
-    "solo_h_per_wk": 1.7,
-    "pct_of_40h": 37.7,
+    "solo_h_per_wk": 14.5,
+    "pct_of_40h": 69.6,
     "by_category": {
       "daily_ops": {
         "hours": 31.75,
@@ -289,6 +299,11 @@
         "hours": 5.0,
         "count": 4,
         "hrs_per_wk": 0.39
+      },
+      "property_floor": {
+        "hours": 163.92,
+        "count": 134,
+        "hrs_per_wk": 12.75
       },
       "solo_work_other": {
         "hours": 6.5,
