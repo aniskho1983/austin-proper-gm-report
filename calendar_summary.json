@@ -29,9 +29,9 @@
         "hrs_per_wk": 5.25
       },
       "project_dev": {
-        "hours": 15.0,
-        "count": 11,
-        "hrs_per_wk": 15.0
+        "hours": 19.0,
+        "count": 13,
+        "hrs_per_wk": 19.0
       },
       "ai_innovation": {
         "hours": 5.25,
@@ -54,9 +54,9 @@
         "hrs_per_wk": 0.5
       },
       "guest_relations": {
-        "hours": 8.33,
-        "count": 9,
-        "hrs_per_wk": 8.33
+        "hours": 4.33,
+        "count": 7,
+        "hrs_per_wk": 4.33
       },
       "hr_talent": {
         "hours": 2.5,
@@ -130,9 +130,9 @@
         "hrs_per_wk": 6.3
       },
       "project_dev": {
-        "hours": 25.75,
-        "count": 17,
-        "hrs_per_wk": 6.01
+        "hours": 30.75,
+        "count": 20,
+        "hrs_per_wk": 7.17
       },
       "ai_innovation": {
         "hours": 8.0,
@@ -155,9 +155,9 @@
         "hrs_per_wk": 1.98
       },
       "guest_relations": {
-        "hours": 14.83,
-        "count": 17,
-        "hrs_per_wk": 3.46
+        "hours": 9.83,
+        "count": 14,
+        "hrs_per_wk": 2.29
       },
       "hr_talent": {
         "hours": 7.17,
@@ -231,9 +231,9 @@
         "hrs_per_wk": 2.1
       },
       "project_dev": {
-        "hours": 25.75,
-        "count": 17,
-        "hrs_per_wk": 2.0
+        "hours": 30.75,
+        "count": 20,
+        "hrs_per_wk": 2.39
       },
       "ai_innovation": {
         "hours": 8.0,
@@ -256,9 +256,9 @@
         "hrs_per_wk": 0.66
       },
       "guest_relations": {
-        "hours": 14.83,
-        "count": 17,
-        "hrs_per_wk": 1.15
+        "hours": 9.83,
+        "count": 14,
+        "hrs_per_wk": 0.76
       },
       "hr_talent": {
         "hours": 7.17,

@@ -69,6 +69,11 @@ MANUAL_OVERRIDES = {
     "anis jess and kinsey":                      {"block_type": "meeting",  "category": "hr_talent"},
     "wage conversation - atxp":                  {"block_type": "meeting",  "category": "hr_talent"},
 
+    # Project Development — not tagged purple in Outlook but confirmed as project work
+    "dinner at peacock at austin proper":        {"block_type": "meeting",  "category": "project_dev"},  # Chad Tepley / Minneapolis owner dinner
+    "tour/ lunch at austin proper":              {"block_type": "meeting",  "category": "project_dev"},  # Minneapolis site tour
+    "austin proper spa kickoff":                 {"block_type": "meeting",  "category": "project_dev"},  # Spa renovation project
+
     # Legal counsel
     "shannon and anis":                          {"block_type": "meeting",  "category": "legal_external"},
 

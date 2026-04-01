@@ -257,7 +257,7 @@ Period: March 2 – April 1, 2026  |  Generated: 2026-04-01
   10:15–10:30    0.2h    att:8   [MEETING  ] [Daily Ops Rhythm              ] ATXP Daily 90-Day Rate Review
   11:00–11:30    0.5h    att:5   [MEETING  ] [Guest & Owner Relations       ] La Pisina Flooring Meeting with Level UP Commercial. 
   11:00–11:30    0.5h    att:35  [MEETING  ] [HR & Talent                   ] Resume Meeting
-  11:30–12:30    1.0h    att:13  [TENTATIVE] [Guest & Owner Relations       ] Austin Proper Spa kickoff meeting
+  11:30–12:30    1.0h    att:13  [MEETING  ] [Project Development           ] Austin Proper Spa kickoff meeting
   11:30–12:00    0.5h    att:7   [MEETING  ] [Daily Ops Rhythm              ] ATXP Daily DBR Review
   13:00–13:45    0.8h    att:7   [TENTATIVE] [Vendor / External Partners    ] Kappo Kappo weekly catch up
   14:00–14:30    0.5h    att:7   [TENTATIVE] [Payroll Cycles                ] Payroll Meeting
@@ -440,7 +440,7 @@ Period: March 2 – April 1, 2026  |  Generated: 2026-04-01
   16:00–16:30    0.5h    att:0   [SOLO     ] [Admin / Prep (solo)           ] SEND EXCOM AGENDA
   16:30–18:00    1.5h    att:0   [SOLO     ] [AI / Innovation               ] CLAUDE CODE - WORKING ON DEVELOPMENT FOR PROPER APP - 
   17:30–20:00    2.5h    att:16  [MEETING  ] [Project Development           ] Site and Dinner with Chad Tepley - Owner of Minneapolis BY PROPER
-  18:00–20:00    2.0h    att:3   [MEETING  ] [Guest & Owner Relations       ] Dinner at Peacock at Austin Proper
+  18:00–20:00    2.0h    att:3   [MEETING  ] [Project Development           ] Dinner at Peacock at Austin Proper
   ALL-DAY        all-day att:7   [CONTEXT  ] [context_block                 ] FCS Scheduled for PCU's 
   ALL-DAY        all-day att:3   [CONTEXT  ] [context_block                 ] FOP - Anneke Anderson (Haggerty), James Nozar, Alec Shaklar, Damian Pr
 
@@ -450,7 +450,7 @@ Period: March 2 – April 1, 2026  |  Generated: 2026-04-01
   08:00–08:30    0.5h    att:0   [SOLO     ] [Email & Comms (solo)          ] Email
   08:30–09:00    0.5h    att:0   [SOLO     ] [AI / Innovation               ] Claude Code - DEV Dashboard for REcon on cities
   09:30–09:45    0.2h    att:48  [MEETING  ] [Daily Ops Rhythm              ] AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl
-  10:00–12:00    2.0h    att:5   [MEETING  ] [Guest & Owner Relations       ] Tour/ Lunch at Austin Proper
+  10:00–12:00    2.0h    att:5   [MEETING  ] [Project Development           ] Tour/ Lunch at Austin Proper
   10:00–13:00    3.0h    att:20  [MEETING  ] [Project Development           ] FFOP SITE, LUNCH AND OVERNIGHT STAY Development Site and Lunch - Annek
   10:15–10:30    0.2h    att:8   [MEETING  ] [Daily Ops Rhythm              ] ATXP Daily 90-Day Rate Review
   11:30–12:00    0.5h    att:7   [MEETING  ] [Daily Ops Rhythm              ] ATXP Daily DBR Review
@@ -566,12 +566,12 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
   Daily Ops Rhythm                       31.8h      89      7.4h
   Direct Report 1:1s                     25.2h      29      5.9h
   Weekly Ops Meetings                    27.0h      27      6.3h
-  Project Development                    25.8h      17      6.0h
+  Project Development                    30.8h      20      7.2h
   AI / Innovation                         8.0h      10      1.9h
   Monthly & Financial                    10.0h      11      2.3h
   Payroll Cycles                          6.0h       9      1.4h
   Sales & Marketing                       8.5h       8      2.0h
-  Guest & Owner Relations                14.8h      17      3.5h
+  Guest & Owner Relations                 9.8h      14      2.3h
   HR & Talent                             7.2h      12      1.7h
   Vendor / External Partners              7.2h      10      1.7h
   Legal Counsel                           0.2h       1      0.1h
