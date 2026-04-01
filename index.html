@@ -33,9 +33,24 @@ body {
 }
 
 /* ── Header ── */
-.hdr { margin-bottom: 24px; }
+.hdr { margin-bottom: 16px; }
 .hdr h1 { font-size: 18px; font-weight: 700; letter-spacing: -.01em; }
 .hdr-meta { font-size: 12px; color: var(--text2); margin-top: 3px; }
+
+/* ── Schedule bar ── */
+.schedule-bar {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: var(--bg2); border-radius: var(--radius);
+  padding: 9px 14px; margin-bottom: 18px;
+  font-size: 11.5px; color: var(--text2);
+}
+.sched-label { font-weight: 700; color: var(--text3); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.sched-days { display: flex; gap: 5px; }
+.sched-day {
+  padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 11px;
+}
+.sched-day.work { background: var(--info-bg); color: var(--info-text); }
+.sched-day.off  { background: var(--bg3); color: var(--text3); text-decoration: line-through; }
 
 /* ── Toggle ── */
 .toggle-row {
@@ -151,6 +166,22 @@ tr:hover td { background: var(--bg2); }
   <div class="hdr-meta">Austin Proper Hotel &nbsp;·&nbsp; Anis Khoury, General Manager &nbsp;·&nbsp; Live from Microsoft 365 Calendar</div>
 </div>
 
+<!-- Schedule -->
+<div class="schedule-bar">
+  <span class="sched-label">Work Schedule</span>
+  <div class="sched-days">
+    <span class="sched-day work">Sun</span>
+    <span class="sched-day work">Mon</span>
+    <span class="sched-day work">Tue</span>
+    <span class="sched-day work">Wed</span>
+    <span class="sched-day work">Thu</span>
+    <span class="sched-day off">Fri</span>
+    <span class="sched-day off">Sat</span>
+  </div>
+  <span style="color:var(--text3)">·</span>
+  <span>Fri &amp; Sat are scheduled days off — excluded from gap detection</span>
+</div>
+
 <!-- Toggle -->
 <div class="toggle-row">
   <span class="toggle-label">Window</span>
@@ -202,14 +233,14 @@ tr:hover td { background: var(--bg2); }
 <div id="cats"></div>
 
 <!-- Gaps -->
-<div class="sec">Unblocked working windows &nbsp;<span style="font-weight:400;text-transform:none;letter-spacing:0">— flagged for email cross-reference or manual fill-in</span></div>
+<div class="sec">Unblocked working windows &nbsp;<span style="font-weight:400;text-transform:none;letter-spacing:0">— Sun–Thu only · Fri &amp; Sat excluded · flagged for email cross-reference or manual fill-in</span></div>
 <div class="gaps-panel" id="gapsPanel"></div>
 
 <script>
 // ── Embedded data (regenerated each refresh) ───────────────────────────────────
 const SUMMARY = {"7d":{"window":"7d","start_date":"2026-03-25","end_date":"2026-04-01","days":7,"weeks":1.0,"total_events":90,"total_meeting_h":57.8,"total_solo_h":11.2,"total_h":69.1,"meeting_h_per_wk":57.8,"solo_h_per_wk":11.2,"pct_of_40h":172.7,"by_category":{"daily_ops":{"hours":8.5,"count":23,"hrs_per_wk":8.5},"direct_reports":{"hours":7.75,"count":8,"hrs_per_wk":7.75},"weekly_ops":{"hours":5.25,"count":5,"hrs_per_wk":5.25},"project_dev":{"hours":15.0,"count":11,"hrs_per_wk":15.0},"ai_innovation":{"hours":5.25,"count":7,"hrs_per_wk":5.25},"monthly_fin":{"hours":1.5,"count":2,"hrs_per_wk":1.5},"payroll":{"hours":2.0,"count":3,"hrs_per_wk":2.0},"sales_mktg":{"hours":0.5,"count":1,"hrs_per_wk":0.5},"guest_relations":{"hours":8.33,"count":9,"hrs_per_wk":8.33},"hr_talent":{"hours":2.5,"count":4,"hrs_per_wk":2.5},"vendor_ops":{"hours":1.25,"count":2,"hrs_per_wk":1.25},"legal_external":{"hours":0.0,"count":0,"hrs_per_wk":0.0},"solo_email":{"hours":3.0,"count":3,"hrs_per_wk":3.0},"solo_admin":{"hours":6.25,"count":9,"hrs_per_wk":6.25},"guest_floor":{"hours":1.5,"count":2,"hrs_per_wk":1.5},"solo_work_other":{"hours":0.5,"count":1,"hrs_per_wk":0.5},"uncategorized":{"hours":0.0,"count":0,"hrs_per_wk":0.0}}},"30d":{"window":"30d","start_date":"2026-03-02","end_date":"2026-04-01","days":30,"weeks":4.3,"total_events":264,"total_meeting_h":174.8,"total_solo_h":22.2,"total_h":197.0,"meeting_h_per_wk":40.8,"solo_h_per_wk":5.2,"pct_of_40h":114.9,"by_category":{"daily_ops":{"hours":31.75,"count":89,"hrs_per_wk":7.41},"direct_reports":{"hours":25.25,"count":29,"hrs_per_wk":5.89},"weekly_ops":{"hours":27.0,"count":27,"hrs_per_wk":6.3},"project_dev":{"hours":25.75,"count":17,"hrs_per_wk":6.01},"ai_innovation":{"hours":8.0,"count":10,"hrs_per_wk":1.87},"monthly_fin":{"hours":10.0,"count":11,"hrs_per_wk":2.33},"payroll":{"hours":6.0,"count":9,"hrs_per_wk":1.4},"sales_mktg":{"hours":8.5,"count":8,"hrs_per_wk":1.98},"guest_relations":{"hours":17.83,"count":18,"hrs_per_wk":4.16},"hr_talent":{"hours":7.17,"count":12,"hrs_per_wk":1.67},"vendor_ops":{"hours":7.25,"count":10,"hrs_per_wk":1.69},"legal_external":{"hours":0.25,"count":1,"hrs_per_wk":0.06},"solo_email":{"hours":3.0,"count":3,"hrs_per_wk":0.7},"solo_admin":{"hours":7.75,"count":12,"hrs_per_wk":1.81},"guest_floor":{"hours":5.0,"count":4,"hrs_per_wk":1.17},"solo_work_other":{"hours":6.5,"count":4,"hrs_per_wk":1.52},"uncategorized":{"hours":0.0,"count":0,"hrs_per_wk":0.0}}},"ytd":{"window":"ytd","start_date":"2026-01-01","end_date":"2026-04-01","days":90,"weeks":12.9,"total_events":264,"total_meeting_h":174.8,"total_solo_h":22.2,"total_h":197.0,"meeting_h_per_wk":13.6,"solo_h_per_wk":1.7,"pct_of_40h":38.3,"by_category":{"daily_ops":{"hours":31.75,"count":89,"hrs_per_wk":2.47},"direct_reports":{"hours":25.25,"count":29,"hrs_per_wk":1.96},"weekly_ops":{"hours":27.0,"count":27,"hrs_per_wk":2.1},"project_dev":{"hours":25.75,"count":17,"hrs_per_wk":2.0},"ai_innovation":{"hours":8.0,"count":10,"hrs_per_wk":0.62},"monthly_fin":{"hours":10.0,"count":11,"hrs_per_wk":0.78},"payroll":{"hours":6.0,"count":9,"hrs_per_wk":0.47},"sales_mktg":{"hours":8.5,"count":8,"hrs_per_wk":0.66},"guest_relations":{"hours":17.83,"count":18,"hrs_per_wk":1.39},"hr_talent":{"hours":7.17,"count":12,"hrs_per_wk":0.56},"vendor_ops":{"hours":7.25,"count":10,"hrs_per_wk":0.56},"legal_external":{"hours":0.25,"count":1,"hrs_per_wk":0.02},"solo_email":{"hours":3.0,"count":3,"hrs_per_wk":0.23},"solo_admin":{"hours":7.75,"count":12,"hrs_per_wk":0.6},"guest_floor":{"hours":5.0,"count":4,"hrs_per_wk":0.39},"solo_work_other":{"hours":6.5,"count":4,"hrs_per_wk":0.51},"uncategorized":{"hours":0.0,"count":0,"hrs_per_wk":0.0}}}};
 
-const GAPS = [{"date":"2026-03-07","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-08","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-12","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-13","start":"13:00","end":"16:30","duration_min":210,"type":"gap","context":"After: Review Increases | Before: Daily Proper PM Shift"},{"date":"2026-03-14","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-15","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-16","start":"11:30","end":"14:00","duration_min":150,"type":"gap","context":"After: Ash X Anis | Before: Meaningful Performance Reviews"},{"date":"2026-03-20","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-21","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-22","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-28","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-29","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"}];
+const GAPS = [{"date":"2026-03-02","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: AM Ops Meeting"},{"date":"2026-03-02","start":"18:00","end":"20:00","duration_min":120,"type":"gap","context":"After: Guest reviews workflow"},{"date":"2026-03-04","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: AM Ops Meeting"},{"date":"2026-03-04","start":"17:00","end":"19:30","duration_min":150,"type":"gap","context":"After: Daily Proper PM Shift | Before: Dinner at Eberly"},{"date":"2026-03-05","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: Red Bluff Full Team Meeting"},{"date":"2026-03-05","start":"18:00","end":"20:00","duration_min":120,"type":"gap","context":"After: Anna and Anis 1 on 1"},{"date":"2026-03-08","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: AM Ops Meeting"},{"date":"2026-03-08","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-09","start":"07:00","end":"09:00","duration_min":120,"type":"gap","context":"Before: Bank of America Pre-Con"},{"date":"2026-03-09","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-10","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: AM Ops Meeting"},{"date":"2026-03-11","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: AM Ops Meeting"},{"date":"2026-03-11","start":"18:00","end":"20:00","duration_min":120,"type":"gap","context":"After: OPEN CLAW AI SETUP"},{"date":"2026-03-12","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: AM Ops Meeting"},{"date":"2026-03-12","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-15","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-15","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-16","start":"11:30","end":"14:00","duration_min":150,"type":"gap","context":"After: Ash X Anis | Before: Meaningful Performance Reviews"},{"date":"2026-03-16","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-18","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: AM Ops Meeting"},{"date":"2026-03-19","start":"07:00","end":"09:30","duration_min":150,"type":"gap","context":"Before: AM Ops Meeting"},{"date":"2026-03-19","start":"18:00","end":"20:00","duration_min":120,"type":"gap","context":"After: Anna and Anis 1 on 1"},{"date":"2026-03-22","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-22","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-23","start":"17:30","end":"20:00","duration_min":150,"type":"gap","context":"After: Shannon and Anis touchbase"},{"date":"2026-03-24","start":"07:00","end":"09:00","duration_min":120,"type":"gap","context":"Before: Forecast 4 Deadline"},{"date":"2026-03-29","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-29","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-04-01","start":"17:45","end":"20:00","duration_min":135,"type":"gap","context":"After: Complete Jasmine Assessment"}];
 
 // ── Category config ────────────────────────────────────────────────────────────
 const CATS = [

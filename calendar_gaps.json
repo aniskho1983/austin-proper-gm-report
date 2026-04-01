@@ -88,54 +88,6 @@
     "context": "After: Anna and Anis 1 on 1"
   },
   {
-    "date": "2026-03-06",
-    "start": "07:00",
-    "end": "09:30",
-    "duration_min": 150,
-    "type": "gap",
-    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
-  },
-  {
-    "date": "2026-03-06",
-    "start": "10:30",
-    "end": "12:00",
-    "duration_min": 90,
-    "type": "gap",
-    "context": "After: ATXP Daily 90-Day Rate Review | Before: Natascha and Anis catch up"
-  },
-  {
-    "date": "2026-03-06",
-    "start": "18:30",
-    "end": "20:00",
-    "duration_min": 90,
-    "type": "gap",
-    "context": "After: lobby ambassador "
-  },
-  {
-    "date": "2026-03-07",
-    "start": "07:00",
-    "end": "09:30",
-    "duration_min": 150,
-    "type": "gap",
-    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
-  },
-  {
-    "date": "2026-03-07",
-    "start": "09:45",
-    "end": "16:30",
-    "duration_min": 405,
-    "type": "gap",
-    "context": "After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-03-07",
-    "start": "17:00",
-    "end": "20:00",
-    "duration_min": 180,
-    "type": "gap",
-    "context": "After: Daily Proper PM Shift"
-  },
-  {
     "date": "2026-03-08",
     "start": "07:00",
     "end": "09:30",
@@ -249,54 +201,6 @@
   },
   {
     "date": "2026-03-12",
-    "start": "17:00",
-    "end": "20:00",
-    "duration_min": 180,
-    "type": "gap",
-    "context": "After: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-03-13",
-    "start": "07:00",
-    "end": "09:30",
-    "duration_min": 150,
-    "type": "gap",
-    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
-  },
-  {
-    "date": "2026-03-13",
-    "start": "13:00",
-    "end": "16:30",
-    "duration_min": 210,
-    "type": "gap",
-    "context": "After: Review Increases | Before: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-03-13",
-    "start": "19:00",
-    "end": "20:00",
-    "duration_min": 60,
-    "type": "gap",
-    "context": "After: DALLAS WORK ON BACK OF HOUSE OFFICE"
-  },
-  {
-    "date": "2026-03-14",
-    "start": "07:00",
-    "end": "09:30",
-    "duration_min": 150,
-    "type": "gap",
-    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
-  },
-  {
-    "date": "2026-03-14",
-    "start": "09:45",
-    "end": "16:30",
-    "duration_min": 405,
-    "type": "gap",
-    "context": "After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-03-14",
     "start": "17:00",
     "end": "20:00",
     "duration_min": 180,
@@ -432,70 +336,6 @@
     "context": "After: Anna and Anis 1 on 1"
   },
   {
-    "date": "2026-03-20",
-    "start": "07:00",
-    "end": "09:30",
-    "duration_min": 150,
-    "type": "gap",
-    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
-  },
-  {
-    "date": "2026-03-20",
-    "start": "10:30",
-    "end": "11:30",
-    "duration_min": 60,
-    "type": "gap",
-    "context": "After: ATXP Daily 90-Day Rate Review | Before: ATXP Daily DBR Review"
-  },
-  {
-    "date": "2026-03-20",
-    "start": "13:00",
-    "end": "14:00",
-    "duration_min": 60,
-    "type": "gap",
-    "context": "After: Natascha and Anis catch up | Before: Edwin X Anis"
-  },
-  {
-    "date": "2026-03-20",
-    "start": "15:00",
-    "end": "16:30",
-    "duration_min": 90,
-    "type": "gap",
-    "context": "After: Edwin X Anis | Before: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-03-20",
-    "start": "17:00",
-    "end": "20:00",
-    "duration_min": 180,
-    "type": "gap",
-    "context": "After: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-03-21",
-    "start": "07:00",
-    "end": "09:30",
-    "duration_min": 150,
-    "type": "gap",
-    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
-  },
-  {
-    "date": "2026-03-21",
-    "start": "09:45",
-    "end": "16:30",
-    "duration_min": 405,
-    "type": "gap",
-    "context": "After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-03-21",
-    "start": "17:00",
-    "end": "20:00",
-    "duration_min": 180,
-    "type": "gap",
-    "context": "After: Daily Proper PM Shift"
-  },
-  {
     "date": "2026-03-22",
     "start": "07:00",
     "end": "09:30",
@@ -582,46 +422,6 @@
     "duration_min": 60,
     "type": "gap",
     "context": "After: ATXP Daily DBR Review | Before: Karen Site: Deloitte F1"
-  },
-  {
-    "date": "2026-03-27",
-    "start": "07:00",
-    "end": "08:30",
-    "duration_min": 90,
-    "type": "gap",
-    "context": "Before: Anis Jess and Kinsey meeting"
-  },
-  {
-    "date": "2026-03-28",
-    "start": "07:00",
-    "end": "09:30",
-    "duration_min": 150,
-    "type": "gap",
-    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
-  },
-  {
-    "date": "2026-03-28",
-    "start": "09:45",
-    "end": "16:30",
-    "duration_min": 405,
-    "type": "gap",
-    "context": "After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-03-28",
-    "start": "17:00",
-    "end": "18:00",
-    "duration_min": 60,
-    "type": "gap",
-    "context": "After: Daily Proper PM Shift | Before: Site Visit - SpaceX"
-  },
-  {
-    "date": "2026-03-28",
-    "start": "19:00",
-    "end": "20:00",
-    "duration_min": 60,
-    "type": "gap",
-    "context": "After: Site Visit - SpaceX"
   },
   {
     "date": "2026-03-29",

@@ -45,6 +45,9 @@ WORK_START_H = 7   # 7:00 AM
 WORK_END_H   = 20  # 8:00 PM (hotel GM, not 9-5)
 MIN_GAP_MINUTES = 45  # gaps smaller than this are ignored
 
+# Scheduled days off — no gap detection on these days (0=Mon … 4=Fri, 5=Sat, 6=Sun)
+DAYS_OFF = {4, 5}  # Friday, Saturday
+
 # Known direct reports (for keyword matching)
 DIRECT_REPORTS = [
     "natascha", "anna", "lalaine", "ryan", "ash", "jasmine",
@@ -277,8 +280,8 @@ def find_gaps(events_by_date):
     gaps = []
     for day_str, day_events in sorted(events_by_date.items()):
         day = date.fromisoformat(day_str)
-        if day.weekday() >= 6:  # Skip Sunday (weekday 6); Sat is 5, keep it
-            pass  # Hotel GMs work weekends, include
+        if day.weekday() in DAYS_OFF:
+            continue  # Scheduled day off — skip gap detection
 
         # Get all busy blocks for the day (local time)
         busy_blocks = []
