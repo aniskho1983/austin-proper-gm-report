@@ -296,23 +296,35 @@ function render(w) {
   document.getElementById('dataNote').textContent = windowLabel(w);
 
   // Executive summary
-  const topMeeting = MEETING_CATS.slice().sort((a,b) => bc[b.key].hours - bc[a.key].hours)[0];
-  document.getElementById('execSummary').innerHTML =
-    `<strong>Executive Summary · ${w === '7d' ? '7-Day' : w === '30d' ? '30-Day' : 'YTD'} View</strong><br>
-    Over this window, the GM committed <strong>${fmt(d.total_h)}h total</strong> —
-    <strong>${fmt(d.meeting_h_per_wk)}h/wk</strong> in structured meetings and
-    <strong>${fmt(d.solo_h_per_wk)}h/wk</strong> in solo work blocks (email, prep, deep work).
-    Largest category: <strong>${topMeeting.label}</strong> at ${fmt(bc[topMeeting.key].hrs_per_wk)}h/wk.
-    ${w === 'ytd' ? '<em>Note: calendar data available from Mar 2 only — YTD hrs/wk is diluted across 90 days.</em>' : ''}`;
+  const topMeetings = MEETING_CATS.slice().sort((a,b) => bc[b.key].hours - bc[a.key].hours).slice(0,3);
+  const floorHpw    = bc['property_floor'] ? bc['property_floor'].hrs_per_wk : 0;
+  const adminHpw    = d.solo_h_per_wk - floorHpw;
+  const totalHpw    = d.meeting_h_per_wk + d.solo_h_per_wk;
+  const wLabel      = w === '7d' ? '7-Day' : w === '30d' ? '30-Day' : 'YTD';
+  const winDesc     = w === '7d' ? 'this week' : w === '30d' ? 'the past 30 days' : 'year to date';
+
+  document.getElementById('execSummary').innerHTML = `
+    <strong>Executive Summary &mdash; ${wLabel} View</strong><br>
+    Over ${winDesc}, Anis averaged <strong>${fmt(totalHpw)}h/wk</strong> of tracked time:
+    <strong>${fmt(d.meeting_h_per_wk)}h/wk</strong> in structured meetings,
+    <strong>${fmt(floorHpw)}h/wk</strong> on property (walks, floor presence, team touch-points),
+    and <strong>${fmt(adminHpw)}h/wk</strong> in solo admin, email &amp; deep work.
+    Total represents <strong>${d.pct_of_40h}%</strong> of a standard 40-hour week — typical for a full-service hotel GM with extended operating hours.
+    <br><br>
+    <strong>Top meeting categories:</strong>
+    ${topMeetings.map(c => `<strong>${c.label}</strong> (${fmt(bc[c.key].hrs_per_wk)}h/wk)`).join(', ')}.
+    Direct reports received <strong>${fmt(bc['direct_reports'].hrs_per_wk)}h/wk</strong> of structured 1:1 time.
+    Project Development accounted for <strong>${fmt(bc['project_dev'].hrs_per_wk)}h/wk</strong>,
+    covering spa renovation, ownership tours, and multi-property strategy work.
+    ${w === 'ytd' ? '<br><em>Note: calendar data available from Mar 2 only — YTD hrs/wk is diluted across the full 90-day window.</em>' : ''}`;
 
   // KPIs
-  const topCat = MEETING_CATS.slice().sort((a,b) => bc[b.key].hours - bc[a.key].hours)[0];
   document.getElementById('kpiGrid').innerHTML = `
-    <div class="kpi"><div class="kpi-num">${fmt(d.meeting_h_per_wk)}h</div><div class="kpi-lbl">meeting hrs / week</div></div>
-    <div class="kpi"><div class="kpi-num">${fmt(d.solo_h_per_wk)}h</div><div class="kpi-lbl">solo work hrs / week</div></div>
+    <div class="kpi"><div class="kpi-num">${fmt(totalHpw)}h</div><div class="kpi-lbl">total hrs / week</div></div>
+    <div class="kpi"><div class="kpi-num">${fmt(d.meeting_h_per_wk)}h</div><div class="kpi-lbl">meetings / week</div></div>
+    <div class="kpi"><div class="kpi-num">${fmt(floorHpw)}h</div><div class="kpi-lbl">floor & property / week</div></div>
+    <div class="kpi"><div class="kpi-num">${fmt(adminHpw)}h</div><div class="kpi-lbl">solo admin & email / week</div></div>
     <div class="kpi"><div class="kpi-num">${d.total_events}</div><div class="kpi-lbl">calendar blocks tracked</div></div>
-    <div class="kpi"><div class="kpi-num">${fmt(d.total_h)}h</div><div class="kpi-lbl">total committed hrs</div></div>
-    <div class="kpi"><div class="kpi-num">${topCat.label.split(' ')[0]}</div><div class="kpi-lbl">top category</div></div>
   `;
 
   // Legend
