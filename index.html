@@ -144,14 +144,18 @@
 </table>
 
 <!-- Accordion -->
-<div class="sec">Category breakdown — click any row to expand (30-day detail)</div>
+<div class="sec" id="accSec">Category breakdown</div>
 <div id="cats"></div>
 
 <script>
-// ── Data ──────────────────────────────────────────────────────────────────────
+// ── Calendar events (all real blocks, no synthetic floor time) ────────────────
+// Format: [date, "HH:MM-HH:MM", "Xh", subject, category, block_type]
+const EVENTS = [["2026-03-02", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-02", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-02", "10:45-11:30", "0.75h", "Ash X Anis", "direct_reports", "meeting"], ["2026-03-02", "12:00-12:30", "0.5h", "AUP: Capex Biweekly", "monthly_fin", "meeting"], ["2026-03-02", "12:30-13:30", "1.0h", "AUP: Suites Budget Review", "monthly_fin", "meeting"], ["2026-03-02", "13:30-14:30", "1.0h", "Lalaine x Anis ", "direct_reports", "meeting"], ["2026-03-02", "14:30-15:00", "0.5h", "Anis x Gabe", "monthly_fin", "meeting"], ["2026-03-02", "15:00-15:30", "0.5h", "SEND EXCOM AGENDA", "solo_admin", "solo_work"], ["2026-03-02", "15:45-16:00", "0.25h", "Eng. Dept. Debrief [In-person]", "daily_ops", "meeting"], ["2026-03-02", "16:00-16:30", "0.5h", "Catch up - Chief Engineer position at ATXP", "hr_talent", "meeting"], ["2026-03-02", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-02", "17:00-18:00", "1.0h", "Guest reviews workflow ", "guest_relations", "meeting"], ["2026-03-03", "08:30-09:30", "1.0h", "Bi-Weekly Jani-King + ATXP Walk Through", "vendor_ops", "tentative"], ["2026-03-03", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-03", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-03", "11:00-11:30", "0.5h", "Karen Site: Ketchum", "vendor_ops", "meeting"], ["2026-03-03", "12:00-12:45", "0.75h", "ATXP Property walk", "weekly_ops", "meeting"], ["2026-03-03", "13:00-16:00", "3.0h", "AI - building a site request form ", "solo_work_other", "solo_work"], ["2026-03-03", "13:00-14:00", "1.0h", "AUP Weekly Notion Tracking", "weekly_ops", "meeting"], ["2026-03-03", "15:00-15:30", "0.5h", "Kinsey x Anis ", "direct_reports", "meeting"], ["2026-03-03", "15:45-16:00", "0.25h", "Eng. Dept. Debrief [In-person]", "daily_ops", "meeting"], ["2026-03-03", "16:00-16:30", "0.5h", "Pool Plan 2026", "weekly_ops", "meeting"], ["2026-03-03", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-03", "17:30-18:30", "1.0h", "Ryan and Anis 1 on 1", "direct_reports", "meeting"], ["2026-03-04", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-04", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-04", "11:00-11:45", "0.75h", "Site with Andrew Miele and WILKS investments out of FRISCO - Followed ", "guest_relations", "meeting"], ["2026-03-04", "12:00-12:30", "0.5h", "SXSW Planning ", "weekly_ops", "meeting"], ["2026-03-04", "12:15-13:00", "0.75h", "GM Meeting", "weekly_ops", "meeting"], ["2026-03-04", "13:00-15:00", "2.0h", "ExCom Meeting - resending series ", "weekly_ops", "meeting"], ["2026-03-04", "15:45-16:00", "0.25h", "Eng. Dept. Debrief [In-person]", "daily_ops", "meeting"], ["2026-03-04", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-04", "19:30-22:00", "2.5h", "Dinner at Eberly ", "guest_floor", "solo_work"], ["2026-03-05", "09:30-13:30", "4.0h", "Red Bluff by Proper Full Team Meeting", "project_dev", "meeting"], ["2026-03-05", "13:15-15:00", "1.75h", "Red Bluff", "project_dev", "solo_work"], ["2026-03-05", "14:00-14:30", "0.5h", "Payroll Meeting", "payroll", "tentative"], ["2026-03-05", "14:30-15:00", "0.5h", "Karen Site: AIPAC", "vendor_ops", "tentative"], ["2026-03-05", "14:30-15:15", "0.75h", "Payroll Meeting - F&B FOH", "payroll", "tentative"], ["2026-03-05", "15:15-16:00", "0.75h", "Payroll Meeting - F&B BOH", "payroll", "tentative"], ["2026-03-05", "16:00-17:00", "1.0h", "MEET - Proper x MML Monthly ", "vendor_ops", "meeting"], ["2026-03-05", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-05", "17:00-18:00", "1.0h", "Anna and Anis 1 on 1", "direct_reports", "meeting"], ["2026-03-06", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-06", "10:00-10:30", "0.5h", "catch up Anis and Jason", "direct_reports", "meeting"], ["2026-03-06", "10:15-11:00", "0.75h", "Proper Service Meeting", "weekly_ops", "meeting"], ["2026-03-06", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-06", "12:00-13:00", "1.0h", "Natascha and Anis catch up", "direct_reports", "meeting"], ["2026-03-06", "13:30-14:30", "1.0h", "2500 CS | HC B1M Worksession", "project_dev", "meeting"], ["2026-03-06", "15:00-16:00", "1.0h", "Bryan and Anis catch ups", "direct_reports", "meeting"], ["2026-03-06", "15:00-16:00", "1.0h", "F&B meeting -weekly ", "guest_relations", "meeting"], ["2026-03-06", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-06", "17:30-18:30", "1.0h", "lobby ambassador ", "guest_floor", "solo_work"], ["2026-03-07", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-07", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-08", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-08", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-09", "09:00-10:00", "1.0h", "Bank of America || Pre-Con ", "guest_relations", "tentative"], ["2026-03-09", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-09", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-09", "10:45-11:30", "0.75h", "Ash X Anis", "direct_reports", "meeting"], ["2026-03-09", "12:00-13:00", "1.0h", "Adidas x Proper x The Loop", "guest_relations", "meeting"], ["2026-03-09", "13:30-14:30", "1.0h", "Lalaine x Anis ", "direct_reports", "meeting"], ["2026-03-09", "14:00-15:00", "1.0h", "Proper AI Monthly - 10 Week Challenge Edition ", "monthly_fin", "tentative"], ["2026-03-09", "15:00-15:30", "0.5h", "SEND EXCOM AGENDA", "solo_admin", "solo_work"], ["2026-03-09", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-10", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-10", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-10", "10:30-13:00", "2.5h", "Prep for P&L Call", "solo_work_other", "solo_work"], ["2026-03-10", "11:00-11:30", "0.17h", "Max Houston - Peacock Runner", "hr_talent", "meeting"], ["2026-03-10", "13:00-13:30", "0.5h", "Casey and Anis touch base on SXSW", "direct_reports", "meeting"], ["2026-03-10", "14:00-14:30", "0.5h", "Amanda Guerrero - PK Hostess interview", "hr_talent", "tentative"], ["2026-03-10", "15:00-17:00", "2.0h", "Midmonth Financial Review:  Group 1", "monthly_fin", "meeting"], ["2026-03-10", "16:00-16:30", "0.5h", "Pool Plan 2026", "weekly_ops", "meeting"], ["2026-03-10", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-10", "17:30-18:30", "1.0h", "Ryan and Anis 1 on 1", "direct_reports", "meeting"], ["2026-03-11", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-11", "10:30-11:30", "1.0h", "Action Requested: Radio Implementation Champions", "weekly_ops", "meeting"], ["2026-03-11", "12:00-15:00", "3.0h", "GM Meeting", "weekly_ops", "tentative"], ["2026-03-11", "15:15-15:45", "0.5h", "Anis x Jacob Shaw - Event Service Manager Interview", "monthly_fin", "meeting"], ["2026-03-11", "15:45-16:00", "0.25h", "A quick toast to you!", "guest_relations", "meeting"], ["2026-03-11", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-11", "17:00-18:00", "1.0h", "OPEN CLAW AI SETUP", "ai_innovation", "solo_work"], ["2026-03-12", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-12", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-12", "11:00-11:30", "0.5h", "Resume Meeting", "hr_talent", "meeting"], ["2026-03-12", "13:00-13:45", "0.75h", "Kappo Kappo weekly catch up", "vendor_ops", "tentative"], ["2026-03-12", "14:00-15:00", "1.0h", "Meaningful Performance Reviews - Option 1", "hr_talent", "meeting"], ["2026-03-12", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-13", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-13", "10:30-11:00", "0.5h", "Erin G caTCH UP", "solo_work_other", "solo_work"], ["2026-03-13", "11:00-12:00", "1.0h", "FW: 2500 Cedar Springs | Hotel/Condo - Bi-Weekly Food Service Work Ses", "project_dev", "meeting"], ["2026-03-13", "11:15-11:45", "0.5h", "Anis / Mike - Openclaw! ", "vendor_ops", "meeting"], ["2026-03-13", "12:00-13:00", "1.0h", "Review Increases", "monthly_fin", "meeting"], ["2026-03-13", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-13", "17:00-19:00", "2.0h", "DALLAS WORK ON BACK OF HOUSE OFFICE", "project_dev", "solo_work"], ["2026-03-14", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-14", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-15", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-15", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-16", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-16", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-16", "10:45-11:30", "0.75h", "Ash X Anis", "direct_reports", "meeting"], ["2026-03-16", "14:00-15:00", "1.0h", "Meaningful Performance Reviews - Option 3", "hr_talent", "meeting"], ["2026-03-16", "15:00-15:30", "0.5h", "SEND EXCOM AGENDA", "solo_admin", "solo_work"], ["2026-03-16", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-17", "08:30-09:30", "1.0h", "Bi-Weekly Jani-King + ATXP Walk Through", "vendor_ops", "tentative"], ["2026-03-17", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-17", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-17", "12:00-12:45", "0.75h", "ATXP Property walk", "weekly_ops", "meeting"], ["2026-03-17", "13:00-14:00", "1.0h", "AUP Weekly Notion Tracking", "weekly_ops", "meeting"], ["2026-03-17", "15:15-15:45", "0.5h", "AUP Monthly Marketing Meeting", "sales_mktg", "meeting"], ["2026-03-17", "16:00-16:30", "0.5h", "Pool Plan 2026", "weekly_ops", "meeting"], ["2026-03-17", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-17", "17:30-18:30", "1.0h", "Ryan and Anis 1 on 1", "direct_reports", "meeting"], ["2026-03-18", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-18", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-18", "10:30-11:30", "1.0h", "Action Requested: Radio Implementation Champions", "weekly_ops", "meeting"], ["2026-03-18", "12:15-13:00", "0.75h", "GM Meeting", "weekly_ops", "meeting"], ["2026-03-18", "13:00-14:00", "1.0h", "Manager's Financial Review", "monthly_fin", "meeting"], ["2026-03-18", "13:00-15:00", "2.0h", "ExCom Meeting - resending series ", "weekly_ops", "meeting"], ["2026-03-18", "15:45-16:45", "1.0h", "Bryan and Anis catch ups", "direct_reports", "meeting"], ["2026-03-18", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-18", "17:30-19:00", "1.5h", "EC Outing", "weekly_ops", "meeting"], ["2026-03-19", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-19", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-19", "11:00-11:30", "0.5h", "La Pisina Flooring Meeting with Level UP Commercial. ", "guest_relations", "meeting"], ["2026-03-19", "11:00-11:30", "0.5h", "Resume Meeting", "hr_talent", "meeting"], ["2026-03-19", "11:30-12:30", "1.0h", "Austin Proper Spa kickoff meeting", "project_dev", "meeting"], ["2026-03-19", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-19", "13:00-13:45", "0.75h", "Kappo Kappo weekly catch up", "vendor_ops", "tentative"], ["2026-03-19", "14:00-14:30", "0.5h", "Payroll Meeting", "payroll", "tentative"], ["2026-03-19", "14:30-15:15", "0.75h", "Payroll Meeting - F&B FOH", "payroll", "tentative"], ["2026-03-19", "15:15-16:00", "0.75h", "Payroll Meeting - F&B BOH", "payroll", "tentative"], ["2026-03-19", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-19", "17:00-18:00", "1.0h", "Anna and Anis 1 on 1", "direct_reports", "meeting"], ["2026-03-20", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-20", "10:15-11:00", "0.75h", "Proper Service Meeting", "weekly_ops", "meeting"], ["2026-03-20", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-20", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-20", "12:00-13:00", "1.0h", "Natascha and Anis catch up", "direct_reports", "meeting"], ["2026-03-20", "14:00-15:00", "1.0h", "Edwin X Anis", "direct_reports", "meeting"], ["2026-03-20", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-21", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-21", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-22", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-22", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-23", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-23", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-23", "10:30-11:00", "0.5h", "Overnight Hotel Manager Interview with Joanna Rodriguez", "hr_talent", "meeting"], ["2026-03-23", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-23", "12:00-12:45", "0.75h", "Ash X Anis", "direct_reports", "meeting"], ["2026-03-23", "13:00-14:00", "1.0h", "2500 CS | B1M - Program Review", "project_dev", "meeting"], ["2026-03-23", "14:30-15:00", "0.5h", "Lalaine x Anis ", "direct_reports", "meeting"], ["2026-03-23", "15:00-15:45", "0.75h", "Perplexity!", "ai_innovation", "meeting"], ["2026-03-23", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-23", "17:15-17:30", "0.25h", "Shannon and Anis touchbase", "legal_external", "meeting"], ["2026-03-24", "09:00-09:05", "1.0h", "Forecast 4 Deadline", "monthly_fin", "meeting"], ["2026-03-24", "09:30-10:30", "1.0h", "Sales Blitz - Breakfast w/ Travel Agents  (Departure Lounge & Fora)", "sales_mktg", "meeting"], ["2026-03-24", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-24", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-24", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-24", "12:00-12:45", "0.75h", "ATXP Property walk", "weekly_ops", "meeting"], ["2026-03-24", "12:30-14:00", "1.5h", "Sales Blitz - Lunch @ La Piscina w/ Travel agents ", "sales_mktg", "meeting"], ["2026-03-24", "13:00-14:00", "1.0h", "Join Us: Women in Hosptiality Panel ", "sales_mktg", "meeting"], ["2026-03-24", "13:00-14:00", "1.0h", "AUP Weekly Notion Tracking", "weekly_ops", "meeting"], ["2026-03-24", "14:00-14:30", "0.5h", "BEO Meeting", "weekly_ops", "meeting"], ["2026-03-24", "14:00-15:00", "1.0h", "Maya and Anis - Claude Code Training", "ai_innovation", "meeting"], ["2026-03-24", "15:00-15:30", "0.5h", "Anis & Alyssa - connect AUP Leisure", "sales_mktg", "meeting"], ["2026-03-24", "15:30-16:00", "0.5h", "Kinsey x Anis ", "direct_reports", "meeting"], ["2026-03-24", "16:00-17:30", "1.5h", "Sales Blitz - Matilde & Alyssa Happy Hour w/ travel agents @ The Peaco", "sales_mktg", "meeting"], ["2026-03-24", "16:00-16:30", "0.5h", "Pool Plan 2026", "weekly_ops", "meeting"], ["2026-03-24", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-24", "18:00-20:00", "2.0h", "Sales Blitz - Sales Team w/ Travel Agents, Apple, BDT", "sales_mktg", "meeting"], ["2026-03-25", "08:30-09:00", "0.5h", "Proper Welcome - Breakfast (EC attendance optional)", "guest_relations", "meeting"], ["2026-03-25", "09:00-09:15", "0.25h", "EC Welcome & Introductions at Proper Welcome", "guest_relations", "meeting"], ["2026-03-25", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-25", "09:45-10:15", "0.5h", "Proper Story, Leadership, Brand & Purpose", "hr_talent", "meeting"], ["2026-03-25", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-25", "10:30-11:30", "1.0h", "Tea with Anis + Steward Team", "guest_relations", "meeting"], ["2026-03-25", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-25", "12:15-13:00", "0.75h", "GM Meeting", "weekly_ops", "meeting"], ["2026-03-25", "13:00-14:00", "1.0h", "February 2026 Financial Review", "monthly_fin", "meeting"], ["2026-03-25", "14:00-15:00", "1.0h", "Bryan and Anis catch ups", "direct_reports", "meeting"], ["2026-03-25", "15:40-16:00", "0.33h", "Farewell Message at Proper Welcome", "guest_relations", "meeting"], ["2026-03-25", "16:30-17:00", "0.5h", "Leah and Anis catch up", "direct_reports", "meeting"], ["2026-03-25", "17:00-17:45", "0.75h", "Verbena Spa / Proper x KWI Review", "guest_relations", "meeting"], ["2026-03-25", "18:00-18:30", "0.5h", "stewarding follow up notes", "solo_admin", "solo_work"], ["2026-03-25", "18:30-19:00", "0.5h", "CLAUDE AI CODING", "ai_innovation", "solo_work"], ["2026-03-25", "19:00-20:00", "1.0h", "RED BLUFF PREP", "project_dev", "solo_work"], ["2026-03-26", "07:30-08:30", "1.0h", "ZACK AND ANIS CATCH UP AND BREKKIE? ", "project_dev", "meeting"], ["2026-03-26", "09:00-13:00", "4.0h", "Red Bluff Hotel - Design Kick Off", "project_dev", "meeting"], ["2026-03-26", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-26", "11:00-11:30", "0.5h", "Resume Meeting", "hr_talent", "meeting"], ["2026-03-26", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-26", "13:00-13:30", "0.5h", "Karen Site: Deloitte F1", "vendor_ops", "meeting"], ["2026-03-26", "13:00-13:45", "0.75h", "Kappo Kappo weekly catch up", "vendor_ops", "tentative"], ["2026-03-26", "14:00-14:30", "0.5h", "Payroll Meeting", "payroll", "meeting"], ["2026-03-26", "14:30-15:15", "0.75h", "Payroll Meeting - F&B FOH", "payroll", "meeting"], ["2026-03-26", "15:15-16:00", "0.75h", "Payroll Meeting - F&B BOH", "payroll", "meeting"], ["2026-03-26", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-26", "17:00-18:00", "1.0h", "Anna and Anis 1 on 1", "direct_reports", "meeting"], ["2026-03-26", "18:00-20:00", "2.0h", "Email catch up", "solo_email", "solo_work"], ["2026-03-27", "08:30-09:30", "1.0h", "Anis Jess and Kinsey meeting", "hr_talent", "meeting"], ["2026-03-27", "09:30-10:00", "0.5h", "Farewell & Best Wishes to Kinsey!", "guest_relations", "meeting"], ["2026-03-27", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-27", "10:30-11:00", "0.5h", "PREP FOR DALLAS MEETING", "project_dev", "solo_work"], ["2026-03-27", "11:00-12:00", "1.0h", "FW: 2500 Cedar Springs | Hotel/Condo - Bi-Weekly Food Service Work Ses", "project_dev", "meeting"], ["2026-03-27", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-27", "12:00-13:00", "1.0h", "Natascha and Anis catch up", "direct_reports", "meeting"], ["2026-03-27", "13:00-13:30", "0.5h", "Tenfold x Austin Proper Meeting", "sales_mktg", "meeting"], ["2026-03-27", "13:45-14:45", "1.0h", "Edwin X Anis", "direct_reports", "meeting"], ["2026-03-27", "15:00-16:00", "1.0h", "Maya and Anis - Claude Code Training", "ai_innovation", "meeting"], ["2026-03-27", "16:00-16:30", "0.5h", "minneapolis ", "project_dev", "meeting"], ["2026-03-27", "16:30-17:00", "0.5h", "Minneapolis continued", "project_dev", "solo_work"], ["2026-03-27", "17:00-18:00", "1.0h", "drink with Mo abouchalbak FOP", "guest_floor", "solo_work"], ["2026-03-27", "18:00-18:30", "0.5h", "GM REPORT", "solo_admin", "solo_work"], ["2026-03-27", "18:30-19:00", "0.5h", "deal with public noise", "solo_work_other", "solo_work"], ["2026-03-27", "19:00-20:00", "1.0h", "FMLA next steps", "solo_admin", "solo_work"], ["2026-03-28", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-28", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-28", "18:00-19:00", "1.0h", "Site Visit - SpaceX", "guest_relations", "meeting"], ["2026-03-29", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-29", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-30", "07:30-09:00", "1.5h", "Complete Ash and Lalaine assessments", "solo_admin", "solo_work"], ["2026-03-30", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-30", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-30", "10:45-12:00", "1.25h", "Ash X Anis", "direct_reports", "meeting"], ["2026-03-30", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-30", "12:30-13:00", "0.5h", "Debrief Ash and LAlaine", "solo_admin", "solo_work"], ["2026-03-30", "14:00-15:00", "1.0h", "Lalaine x Anis ", "direct_reports", "meeting"], ["2026-03-30", "15:00-15:30", "0.5h", "Wage Conversation - ATXP", "hr_talent", "meeting"], ["2026-03-30", "15:30-16:00", "0.5h", "continuation of Wage conversation - Gabe", "solo_admin", "solo_work"], ["2026-03-30", "16:00-16:30", "0.5h", "SEND EXCOM AGENDA", "solo_admin", "solo_work"], ["2026-03-30", "16:30-18:00", "1.5h", "CLAUDE CODE - WORKING ON DEVELOPMENT FOR PROPER APP - ", "ai_innovation", "solo_work"], ["2026-03-30", "17:30-20:00", "2.5h", "Site and Dinner with Chad Tepley - Owner of Minneapolis BY PROPER", "project_dev", "meeting"], ["2026-03-30", "18:00-20:00", "2.0h", "Dinner at Peacock at Austin Proper", "project_dev", "meeting"], ["2026-03-31", "08:00-08:30", "0.5h", "Email", "solo_email", "solo_work"], ["2026-03-31", "08:30-09:00", "0.5h", "Claude Code - DEV Dashboard for REcon on cities", "ai_innovation", "solo_work"], ["2026-03-31", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-03-31", "10:00-12:00", "2.0h", "Tour/ Lunch at Austin Proper", "project_dev", "meeting"], ["2026-03-31", "10:00-13:00", "3.0h", "FFOP SITE, LUNCH AND OVERNIGHT STAY Development Site and Lunch - Annek", "project_dev", "meeting"], ["2026-03-31", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-03-31", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-03-31", "12:00-12:45", "0.75h", "ATXP Property walk", "weekly_ops", "meeting"], ["2026-03-31", "13:00-13:30", "0.5h", "fop site and lunch", "guest_floor", "solo_work"], ["2026-03-31", "14:00-14:30", "0.5h", "FOP Site Inspection Chad Tepley - By Proper Minneapolis", "project_dev", "meeting"], ["2026-03-31", "14:30-15:30", "1.0h", "Maya and Anis Claude code ", "ai_innovation", "solo_work"], ["2026-03-31", "15:30-16:00", "0.5h", "Complete Ryan Assessment", "solo_admin", "solo_work"], ["2026-03-31", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-03-31", "17:30-18:30", "1.0h", "Ryan and Anis 1 on 1", "direct_reports", "meeting"], ["2026-03-31", "18:30-19:00", "0.5h", "AUP: Capex Biweekly", "monthly_fin", "meeting"], ["2026-03-31", "19:00-19:30", "0.5h", "Email", "solo_email", "solo_work"], ["2026-03-31", "19:30-20:00", "0.5h", "Dallas read through and studdy MML email ", "project_dev", "solo_work"], ["2026-04-01", "08:00-08:30", "0.5h", "Perplexity computer tweaks ", "ai_innovation", "solo_work"], ["2026-04-01", "09:30-09:45", "0.25h", "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl", "daily_ops", "meeting"], ["2026-04-01", "10:15-10:30", "0.25h", "ATXP Daily 90-Day Rate Review", "daily_ops", "meeting"], ["2026-04-01", "11:30-12:00", "0.5h", "ATXP Daily DBR Review", "daily_ops", "meeting"], ["2026-04-01", "12:00-12:15", "0.25h", "Claude Code - BIZ DEV", "ai_innovation", "solo_work"], ["2026-04-01", "12:15-13:00", "0.75h", "GM Meeting", "weekly_ops", "meeting"], ["2026-04-01", "13:00-15:00", "2.0h", "ExCom Meeting - resending series ", "weekly_ops", "meeting"], ["2026-04-01", "16:00-17:00", "1.0h", "Austin Revenue Optimization Meeting", "weekly_ops", "meeting"], ["2026-04-01", "16:30-17:00", "0.5h", "Daily Proper PM Shift", "daily_ops", "meeting"], ["2026-04-01", "17:00-17:45", "0.75h", "Complete Jasmine Assessment", "solo_admin", "solo_work"]];
+
+// ── Summary data (7d / 30d / ytd) ────────────────────────────────────────────
 const SUMMARY = {"7d": {"window": "7d", "start_date": "2026-03-25", "end_date": "2026-04-01", "days": 7, "weeks": 1.0, "total_events": 116, "total_meeting_h": 57.8, "total_solo_h": 11.2, "total_h": 69.1, "meeting_h_per_wk": 57.8, "solo_h_per_wk": 11.2, "pct_of_60h": 115.1, "by_category": {"daily_ops": {"hours": 8.5, "count": 23, "hrs_per_wk": 8.5}, "direct_reports": {"hours": 7.75, "count": 8, "hrs_per_wk": 7.75}, "weekly_ops": {"hours": 5.25, "count": 5, "hrs_per_wk": 5.25}, "project_dev": {"hours": 19.0, "count": 13, "hrs_per_wk": 19.0}, "ai_innovation": {"hours": 5.25, "count": 7, "hrs_per_wk": 5.25}, "monthly_fin": {"hours": 1.5, "count": 2, "hrs_per_wk": 1.5}, "payroll": {"hours": 2.0, "count": 3, "hrs_per_wk": 2.0}, "sales_mktg": {"hours": 0.5, "count": 1, "hrs_per_wk": 0.5}, "guest_relations": {"hours": 4.33, "count": 7, "hrs_per_wk": 4.33}, "hr_talent": {"hours": 2.5, "count": 4, "hrs_per_wk": 2.5}, "vendor_ops": {"hours": 1.25, "count": 2, "hrs_per_wk": 1.25}, "legal_external": {"hours": 0.0, "count": 0, "hrs_per_wk": 0.0}, "solo_email": {"hours": 3.0, "count": 3, "hrs_per_wk": 3.0}, "solo_admin": {"hours": 6.25, "count": 9, "hrs_per_wk": 6.25}, "guest_floor": {"hours": 1.5, "count": 2, "hrs_per_wk": 1.5}, "property_floor": {"hours": 0.0, "count": 26, "hrs_per_wk": 0.0}, "solo_work_other": {"hours": 0.5, "count": 1, "hrs_per_wk": 0.5}, "uncategorized": {"hours": 0.0, "count": 0, "hrs_per_wk": 0.0}}}, "30d": {"window": "30d", "start_date": "2026-03-02", "end_date": "2026-04-01", "days": 30, "weeks": 4.3, "total_events": 391, "total_meeting_h": 171.8, "total_solo_h": 85.4, "total_h": 257.1, "meeting_h_per_wk": 40.1, "solo_h_per_wk": 19.9, "pct_of_60h": 100.0, "by_category": {"daily_ops": {"hours": 31.75, "count": 89, "hrs_per_wk": 7.41}, "direct_reports": {"hours": 25.25, "count": 29, "hrs_per_wk": 5.89}, "weekly_ops": {"hours": 27.0, "count": 27, "hrs_per_wk": 6.3}, "project_dev": {"hours": 30.75, "count": 20, "hrs_per_wk": 7.17}, "ai_innovation": {"hours": 8.0, "count": 10, "hrs_per_wk": 1.87}, "monthly_fin": {"hours": 10.0, "count": 11, "hrs_per_wk": 2.33}, "payroll": {"hours": 6.0, "count": 9, "hrs_per_wk": 1.4}, "sales_mktg": {"hours": 8.5, "count": 8, "hrs_per_wk": 1.98}, "guest_relations": {"hours": 9.83, "count": 14, "hrs_per_wk": 2.29}, "hr_talent": {"hours": 7.17, "count": 12, "hrs_per_wk": 1.67}, "vendor_ops": {"hours": 7.25, "count": 10, "hrs_per_wk": 1.69}, "legal_external": {"hours": 0.25, "count": 1, "hrs_per_wk": 0.06}, "solo_email": {"hours": 3.0, "count": 3, "hrs_per_wk": 0.7}, "solo_admin": {"hours": 7.75, "count": 12, "hrs_per_wk": 1.81}, "guest_floor": {"hours": 5.0, "count": 4, "hrs_per_wk": 1.17}, "property_floor": {"hours": 63.14, "count": 128, "hrs_per_wk": 14.73}, "solo_work_other": {"hours": 6.5, "count": 4, "hrs_per_wk": 1.52}, "uncategorized": {"hours": 0.0, "count": 0, "hrs_per_wk": 0.0}}}, "ytd": {"window": "ytd", "start_date": "2026-01-01", "end_date": "2026-04-01", "days": 90, "weeks": 12.9, "total_events": 397, "total_meeting_h": 171.8, "total_solo_h": 186.2, "total_h": 357.9, "meeting_h_per_wk": 13.4, "solo_h_per_wk": 14.5, "pct_of_60h": 46.4, "by_category": {"daily_ops": {"hours": 31.75, "count": 89, "hrs_per_wk": 2.47}, "direct_reports": {"hours": 25.25, "count": 29, "hrs_per_wk": 1.96}, "weekly_ops": {"hours": 27.0, "count": 27, "hrs_per_wk": 2.1}, "project_dev": {"hours": 30.75, "count": 20, "hrs_per_wk": 2.39}, "ai_innovation": {"hours": 8.0, "count": 10, "hrs_per_wk": 0.62}, "monthly_fin": {"hours": 10.0, "count": 11, "hrs_per_wk": 0.78}, "payroll": {"hours": 6.0, "count": 9, "hrs_per_wk": 0.47}, "sales_mktg": {"hours": 8.5, "count": 8, "hrs_per_wk": 0.66}, "guest_relations": {"hours": 9.83, "count": 14, "hrs_per_wk": 0.76}, "hr_talent": {"hours": 7.17, "count": 12, "hrs_per_wk": 0.56}, "vendor_ops": {"hours": 7.25, "count": 10, "hrs_per_wk": 0.56}, "legal_external": {"hours": 0.25, "count": 1, "hrs_per_wk": 0.02}, "solo_email": {"hours": 3.0, "count": 3, "hrs_per_wk": 0.23}, "solo_admin": {"hours": 7.75, "count": 12, "hrs_per_wk": 0.6}, "guest_floor": {"hours": 5.0, "count": 4, "hrs_per_wk": 0.39}, "property_floor": {"hours": 163.92, "count": 134, "hrs_per_wk": 12.75}, "solo_work_other": {"hours": 6.5, "count": 4, "hrs_per_wk": 0.51}, "uncategorized": {"hours": 0.0, "count": 0, "hrs_per_wk": 0.0}}}};
 
-// ── Category definitions ───────────────────────────────────────────────────────
+// ── Category definitions ──────────────────────────────────────────────────────
 const MEETING_CATS = [
   { key:'daily_ops',      label:'Daily Ops Rhythm',           color:'#2c5f9e' },
   { key:'direct_reports', label:'Direct Report 1:1s',          color:'#27ae60' },
@@ -173,37 +177,46 @@ const SOLO_CATS = [
   { key:'solo_email',     label:'Email & Comms (solo)',         color:'#a0a0a0' },
   { key:'solo_work_other',label:'Deep Work / Other (solo)',     color:'#7f8c8d' },
 ];
+
 const ALL_CATS = [...MEETING_CATS, ...SOLO_CATS];
+const CAT_MAP  = Object.fromEntries(ALL_CATS.map(c => [c.key, c]));
+
+// ── Window date ranges ────────────────────────────────────────────────────────
+const WIN_RANGES = {
+  '7d':  { start:'2026-03-25', end:'2026-04-01' },
+  '30d': { start:'2026-03-02', end:'2026-04-01' },
+  'ytd': { start:'2026-01-01', end:'2026-04-01' },
+};
 
 // ── State ─────────────────────────────────────────────────────────────────────
 let activeWindow = '30d';
 let barInst = null, donutInst = null;
-const WORK_HOURS = 60;
+const GM_HOURS_PER_WEEK = 60;
 
 function fmt(n) { return Number(n).toFixed(1); }
-function pct60(h) { return (h / WORK_HOURS * 100).toFixed(1) + '%'; }
+function pct60(h) { return (h / GM_HOURS_PER_WEEK * 100).toFixed(1) + '%'; }
 
 // ── Render ────────────────────────────────────────────────────────────────────
 function render(w) {
-  const d = SUMMARY[w];
+  const d  = SUMMARY[w];
   const bc = d.by_category;
-  const floorHpw  = bc.property_floor.hrs_per_wk;
-  const adminHpw  = d.solo_h_per_wk - floorHpw;
-  const totalHpw  = d.meeting_h_per_wk + d.solo_h_per_wk;
-  const wLabel    = w === '7d' ? '7-Day' : w === '30d' ? '30-Day' : 'YTD';
-  const winDesc   = w === '7d' ? 'this week' : w === '30d' ? 'the past 30 days' : 'year to date';
+  const floorHpw = bc.property_floor.hrs_per_wk;
+  const adminHpw = d.solo_h_per_wk - floorHpw;
+  const totalHpw = d.meeting_h_per_wk + d.solo_h_per_wk;
+  const wLabel   = w === '7d' ? '7-Day' : w === '30d' ? '30-Day' : 'YTD';
+  const winDesc  = w === '7d' ? 'this week' : w === '30d' ? 'the past 30 days' : 'year to date';
+  const range    = WIN_RANGES[w];
 
   // Window label
   document.getElementById('winLabel').textContent =
-    w === '7d' ? 'Mar 25 – Apr 1, 2026' :
-    w === '30d' ? 'Mar 2 – Apr 1, 2026' : 'Jan 1 – Apr 1, 2026 (data from Mar 2)';
+    w === '7d'  ? 'Mar 25 – Apr 1, 2026' :
+    w === '30d' ? 'Mar 2 – Apr 1, 2026'  : 'Jan 1 – Apr 1, 2026 (data from Mar 2)';
 
-  // Section header
   document.getElementById('tblSec').textContent =
-    w === '7d' ? '7-day summary by category' :
+    w === '7d'  ? '7-day summary by category' :
     w === '30d' ? '30-day summary by category' : 'YTD summary by category';
 
-  // Top 3 meeting categories
+  // Top 3 meeting cats
   const top3 = MEETING_CATS.slice().sort((a,b) => bc[b.key].hours - bc[a.key].hours).slice(0,3);
 
   // Exec summary
@@ -240,7 +253,7 @@ function render(w) {
     leg.appendChild(s);
   });
 
-  // Bar chart — meeting categories only, sorted ascending
+  // Bar chart
   const barCats = MEETING_CATS.filter(c => bc[c.key].hrs_per_wk > 0)
     .sort((a,b) => bc[a.key].hrs_per_wk - bc[b.key].hrs_per_wk);
   if (barInst) barInst.destroy();
@@ -265,7 +278,7 @@ function render(w) {
     }
   });
 
-  // Donut — all categories
+  // Donut
   const donutCats = ALL_CATS.filter(c => bc[c.key] && bc[c.key].hours > 0);
   if (donutInst) donutInst.destroy();
   donutInst = new Chart(document.getElementById('donutChart'), {
@@ -298,28 +311,110 @@ function render(w) {
   // Summary table
   const tbody = document.getElementById('sumTbl');
   tbody.innerHTML = '';
-  let totMeet = 0, totSolo = 0, totCount = 0;
-
+  let totMeet = 0, totSolo = 0;
   MEETING_CATS.filter(c => bc[c.key].hours > 0).forEach(c => {
-    const r = bc[c.key]; totMeet += r.hours; totCount += r.count;
+    const r = bc[c.key]; totMeet += r.hours;
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td><span class="dot" style="background:${c.color};display:inline-block;margin-right:6px;vertical-align:middle;width:11px;height:11px;border-radius:50%"></span>${c.label}</td>
+    tr.innerHTML = `<td><span style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${c.color};margin-right:6px;vertical-align:middle"></span>${c.label}</td>
       <td><span class="badge-meet">meeting</span></td>
       <td>${fmt(r.hours)}h</td><td>${fmt(r.hrs_per_wk)}h</td><td>${pct60(r.hrs_per_wk)}</td>`;
     tbody.appendChild(tr);
   });
   SOLO_CATS.filter(c => bc[c.key] && bc[c.key].hours > 0).forEach(c => {
-    const r = bc[c.key]; totSolo += r.hours; totCount += r.count;
+    const r = bc[c.key]; totSolo += r.hours;
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td><span class="dot" style="background:${c.color};display:inline-block;margin-right:6px;vertical-align:middle;width:11px;height:11px;border-radius:50%"></span>${c.label}</td>
+    tr.innerHTML = `<td><span style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${c.color};margin-right:6px;vertical-align:middle"></span>${c.label}</td>
       <td><span class="badge-solo">solo</span></td>
       <td>${fmt(r.hours)}h</td><td>${fmt(r.hrs_per_wk)}h</td><td>${pct60(r.hrs_per_wk)}</td>`;
     tbody.appendChild(tr);
   });
-
   const tf = document.createElement('tr'); tf.className = 'tfoot';
-  tf.innerHTML = `<td>Total</td><td></td><td>${fmt(totMeet + totSolo)}h</td><td>${fmt(totalHpw)}h</td><td>${pct60(totalHpw)}</td>`;
+  tf.innerHTML = `<td>Total</td><td></td><td>${fmt(totMeet+totSolo)}h</td><td>${fmt(totalHpw)}h</td><td>${pct60(totalHpw)}</td>`;
   tbody.appendChild(tf);
+
+  // ── Accordion (fully dynamic — filtered to selected window) ──────────────
+  const accStart = range.start, accEnd = range.end;
+  const windowEvents = EVENTS.filter(e => e[0] >= accStart && e[0] <= accEnd);
+
+  // Group by category, compute hours per cat in window
+  const catEvents = {};
+  const catHours  = {};
+  windowEvents.forEach(e => {
+    const cat = e[4];
+    if (!catEvents[cat]) { catEvents[cat] = []; catHours[cat] = 0; }
+    catEvents[cat].push(e);
+    const h = parseFloat(e[2]) || 0;
+    catHours[cat] += h;
+  });
+
+  // Add property_floor from SUMMARY (synthetic — no individual events)
+  const floorH = bc.property_floor ? bc.property_floor.hours : 0;
+  if (floorH > 0) {
+    catEvents['property_floor'] = null; // special: show static description
+    catHours['property_floor']  = floorH;
+  }
+
+  // Sort cats by hours descending, skip empty
+  const sortedCats = ALL_CATS
+    .filter(c => catHours[c.key] > 0)
+    .sort((a,b) => catHours[b.key] - catHours[a.key]);
+
+  const container = document.getElementById('cats');
+  container.innerHTML = '';
+  document.getElementById('accSec').textContent =
+    `Category breakdown — ${wLabel} (${range.start.slice(5)} – ${range.end.slice(5)}) — click to expand`;
+
+  sortedCats.forEach((cat, i) => {
+    const evts    = catEvents[cat.key];
+    const totalH  = catHours[cat.key];
+    const isSolo  = SOLO_CATS.some(s => s.key === cat.key);
+    const weeks   = d.weeks;
+    const hpw     = (totalH / weeks).toFixed(1);
+
+    const wrap = document.createElement('div'); wrap.className = 'cat';
+    const head = document.createElement('div'); head.className = 'cat-head';
+    head.innerHTML = `
+      <div class="cat-l">
+        <div class="dot" style="background:${cat.color}"></div>
+        <span class="cname">${cat.label}</span>
+        <span class="cmeta">— ${hpw}h/wk · ${fmt(totalH)}h total</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="cbadge">${evts ? evts.length + ' events' : 'standing time'}</span>
+        <span class="arr" id="arr${i}">&#9654;</span>
+      </div>`;
+
+    const body = document.createElement('div'); body.className = 'cbody'; body.id = 'b' + i;
+
+    if (cat.key === 'property_floor') {
+      // Static description for synthetic floor time
+      body.innerHTML = `<div class="cnote" style="margin-top:12px">
+        <strong>Assumed standing floor time</strong> — automatically counted for all unblocked working windows within:<br>
+        &nbsp;&nbsp;· <strong>7:45–9:00 AM</strong> — morning property walk &amp; team touch-points<br>
+        &nbsp;&nbsp;· <strong>9:00 AM–6:00 PM</strong> — mid-day floor presence (gaps ≥30 min)<br>
+        &nbsp;&nbsp;· <strong>6:00–8:00 PM</strong> — evening property walk<br>
+        As more calendar blocks are added, this bucket automatically shrinks. Total capped at 60h/week.
+      </div>`;
+    } else if (evts && evts.length > 0) {
+      let html = `<table class="mt"><thead><tr><th>Date</th><th>Time</th><th>Duration</th><th>Event</th><th>Type</th></tr></thead><tbody>`;
+      evts.forEach(e => {
+        const badge = e[5] === 'meeting' || e[5] === 'tentative'
+          ? '<span class="badge-meet">mtg</span>'
+          : '<span class="badge-solo">solo</span>';
+        html += `<tr><td>${e[0].slice(5)}</td><td>${e[1]}</td><td>${e[2]}</td><td>${e[3]}</td><td>${badge}</td></tr>`;
+      });
+      html += '</tbody></table>';
+      body.innerHTML = html;
+    } else {
+      body.innerHTML = '<div class="cnote" style="margin-top:12px">No calendar events in this window.</div>';
+    }
+
+    head.addEventListener('click', () => {
+      const open = body.classList.toggle('open');
+      document.getElementById('arr' + i).style.transform = open ? 'rotate(90deg)' : '';
+    });
+    wrap.appendChild(head); wrap.appendChild(body); container.appendChild(wrap);
+  });
 }
 
 // ── Toggle ────────────────────────────────────────────────────────────────────
@@ -332,65 +427,6 @@ document.querySelectorAll('.tog').forEach(btn => {
   });
 });
 
-// ── Accordion (30-day detail, static) ────────────────────────────────────────
-const cats = [
-  { color:"#2c5f9e", name:"Daily recurring ops", hrs:"~6 hrs/week", total:"~26 hrs / 30 days", upd:true,
-    heads:["Meeting","Duration","Frequency","Notes"],
-    rows:[["AM Ops Meeting","15 min","Daily (Mon–Sat)","All managers · PDR/Piscina"],["ATXP Daily 90-Day Rate Review","15 min","Daily (Mon–Fri)","Revenue, Sales, Front Office"],["ATXP Daily DBR Review","30 min","Daily (Mon–Fri)","Revenue, Front Office · Teams"],["Daily Proper PM Shift (coverage)","30 min","~2 days/week","When Hotel Manager (Natascha) is off — GM covers"]],
-    note:"Engineering Debrief removed — GM does not attend. PM Shift: Natascha leads daily; Anis covers ~2 days/week on her days off." },
-  { color:"#3a7fc1", name:"Weekly ops meetings", hrs:"~6.3 hrs/week", total:"~27 hrs / 30 days", upd:true,
-    heads:["Meeting","Duration","Day","Key attendees"],
-    rows:[["ExCom Meeting","2 hrs","Wednesday","Full Executive Committee (all dept. heads)"],["GM Meeting — Corporate","45 min","Wednesday","All portfolio GMs · Gabriel Ratner (EVP)"],["Austin Revenue Optimization","1 hr","Wednesday","Revenue team + owner reps (McWhinney/Kor Group)"],["Proper Service Meeting","45 min","Friday","Cross-dept FOH managers · PDR"],["ATXP Property Walk","45 min","Tuesday","Rooms / Engineering / Security · Physical walk"],["Pool Plan 2026","30 min","Tuesday","Rooms / F&B / Engineering"]],
-    note:"Wednesday = heaviest day at ~3 hrs 45 min back-to-back." },
-  { color:"#27ae60", name:"Direct report 1:1s", hrs:"~5.9 hrs/week", total:"~25 hrs / 30 days", upd:true,
-    heads:["Direct report","Title","Day","Duration","30-day total"],
-    rows:[["Natascha Seifritz","Hotel Manager","Friday","60 min","4 hrs"],["Anna Mayevska","Director of F&B","Thursday","60 min","4 hrs"],["Lalaine Green","Director of Finance","Monday","60 min","4 hrs"],["Ryan Galvin","Director of Sales","Tuesday","60 min","4 hrs"],["Ash Desai","Director of People & Culture","Monday","45 min","3 hrs"],["Jasmine Samano","Director of Spa","Thursday","60 min","4 hrs"],["Kinsey East","Director of Events","Tuesday","30 min","2 hrs"],["Bryan Pino","Director of Engineering","Varies","60 min","4 hrs"],["Executive Chef (former)","Culinary Leadership","—","60 min","On hold — position in transition"]],
-    note:"8 active direct report 1:1s. Titles: Natascha = Hotel Manager, Lalaine = Director of Finance, Ash = Director of People & Culture." },
-  { color:"#8e44ad", name:"Project development (purple)", hrs:"~7.2 hrs/week", total:"~31 hrs / 30 days", upd:true,
-    heads:["Event / block","Date","Project","Duration"],
-    rows:[["2500 Cedar Springs — Bi-Weekly Food Service Worksession","Mar 13","Dallas (2500 Cedar Springs)","1 hr"],["Dallas — Back of House Office Work Block","Mar 13","Dallas (2500 Cedar Springs)","2 hrs"],["2500 Cedar Springs — Bi-Weekly Food Service Worksession","Mar 27","Dallas (2500 Cedar Springs)","1 hr"],["Prep for Dallas Meeting","Mar 27","Dallas (2500 Cedar Springs)","30 min"],["Dallas — MML Email Read-Through & Study","Apr 1","Dallas (2500 Cedar Springs)","30 min"],["Site Visit — WILKS Investments, Frisco/Firefly Park","Mar 4","Dallas","45 min + lunch"],["Red Bluff Ownership Offsite","Mar 5","Red Bluff","Full day"],["Dinner with Red Bluff Owners (Eberly)","Mar 4–5","Red Bluff","~2.5 hrs"],["Red Bluff Biweekly Worksession (×2)","Recurring","Red Bluff","1 hr each"],["Red Bluff Hotel — Design Kick Off","Mar 26","Red Bluff","Half-day offsite (until 1:00 PM) · 4 hrs"],["Austin Proper Spa Kickoff","Mar 24","Spa Renovation","2 hrs"],["Dinner at Peacock — Chad Tepley","Mar 18","Minneapolis ownership","2 hrs"],["Tour / Lunch at Austin Proper","Mar 18","Minneapolis site tour","2 hrs"]],
-    note:"Active projects: Dallas · Minneapolis · Tampa · Red Bluff · Austin Spa Renovation. Includes calendar blocks tagged purple + confirmed project events without color tag." },
-  { color:"#d4a017", name:"AI / Innovation (yellow)", hrs:"~1.9 hrs/week", total:"~8 hrs / 30 days", upd:true,
-    heads:["Block","Date","Type","Duration"],
-    rows:[["Maya and Anis — Claude Code Training","Mar 24","Training w/ Maya","1 hr"],["Claude AI Coding","Mar 25","Solo deep work","30 min"],["Maya and Anis — Claude Code Training","Mar 27","Training w/ Maya","1 hr"],["Claude Code — Proper App Development","Mar 30","Solo build session","1.5 hrs"],["Claude Code — DEV Dashboard for Recon on Cities","Mar 31","Biz Dev / Dev work","30 min"],["Maya and Anis — Claude Code","Mar 31","Training w/ Maya","1 hr"],["Perplexity! (solo)","Mar","AI research","30 min"],["Claude Code — Biz Dev","Apr 1","Solo build session","15 min"]],
-    note:"Two modes: structured training with Maya (3× in 30 days) and solo deep-work sessions on internal tools and the Proper App. Trend is accelerating." },
-  { color:"#95a5a6", name:"Monthly & Financial", hrs:"~2.3 hrs/week", total:"~10 hrs / 30 days", upd:true,
-    heads:["Meeting","Scope","Duration","Type"],
-    rows:[["Anis x Gabe Review","EVP 1:1 — performance & strategy","60 min","Internal"],["Proper AI Monthly","All GMs + Corp senior leadership — AI adoption","60 min","Internal"],["Managers Monthly Financial Review","All dept. heads — P&L","60 min","Internal"],["Forecast 4 Deadline","Forecast submission","60 min","Internal"],["February 2026 Financial Review","Full P&L deep-dive","60 min","Internal"],["AUP: Capex Biweekly","Capex planning","30 min","Internal"],["AUP: Suites Budget Review","Suites renovation budget","60 min","One-time"],["Review Increases","Compensation / rate review","60 min","Ad hoc"],["Midmonth Financial Review","Mid-month P&L check","2 hrs","Internal"]],
-    note:"Financial reviews span corporate, ownership, and internal dept-head audiences." },
-  { color:"#16a085", name:"HR & Talent", hrs:"~1.7 hrs/week", total:"~7 hrs / 30 days", upd:true,
-    heads:["Meeting","Role","Duration","Type"],
-    rows:[["Resume Meeting","Weekly pipeline review — open roles","30 min","Recurring"],["Meaningful Performance Reviews","Company-wide performance review rollout","60 min ×2","Project"],["Staff Interviews (multiple)","PK Hostess, Peacock Runner, ESM, Night Mgr","30 min each","Interviews"],["Anis, Jess & Kinsey","Transition / events staffing","60 min","Planning"],["Wage Conversation — ATXP","Compensation discussion","30 min","Ad hoc"],["Proper Story / Brand / Purpose (Welcome)","Monthly onboarding for new hires","30 min","Monthly"]],
-    note:"Includes recruiting pipeline, active interviews, and performance review cycle. Spa renovation may drive additional hiring." },
-  { color:"#7f8c8d", name:"Payroll cycle meetings", hrs:"~1.4 hrs/week", total:"~6 hrs / 30 days", upd:false,
-    heads:["Session","Cadence","Duration","Attendees"],
-    rows:[["Payroll Meeting (General)","Biweekly (Thu)","30 min","HR, Finance, Dept. heads"],["Payroll Meeting — F&B FOH","Biweekly (Thu)","45 min","HR, FOH managers, F&B director"],["Payroll Meeting — F&B BOH","Biweekly (Thu)","45 min","HR, BOH managers, Culinary director"]],
-    note:"Three sessions back-to-back on payroll Thursdays = 2 hrs per cycle. GM attends all three for sign-off and visibility." },
-  { color:"#f39c12", name:"Property & Floor Time", hrs:"~32.5 hrs/week", total:"~139 hrs / 30 days", upd:false,
-    heads:["Window","Time","Activity","Notes"],
-    rows:[["Morning","7:45–9:00 AM","Property walks & team touch-points","Daily, Sun–Thu"],["Mid-day","Open windows 9AM–6PM","Floor presence & guest interaction","Any unblocked gap ≥30 min"],["Evening","6:00–8:00 PM","Walking the property","Daily, Sun–Thu"]],
-    note:"Automatically assumed for all unblocked working windows within these three time ranges on working days (Sun–Thu). Not calendar-blocked — reflects standing GM floor presence." },
-];
-
-const container = document.getElementById("cats");
-cats.forEach((cat, i) => {
-  const wrap = document.createElement("div"); wrap.className = "cat";
-  const head = document.createElement("div"); head.className = "cat-head";
-  head.innerHTML = `<div class="cat-l"><div class="dot" style="background:${cat.color}"></div><span class="cname">${cat.name}</span>${cat.upd ? '<span class="upd">updated</span>' : ''}<span class="cmeta">— ${cat.hrs}</span></div><div style="display:flex;align-items:center;gap:10px"><span class="cbadge">${cat.total}</span><span class="arr" id="arr${i}">&#9654;</span></div>`;
-  const body = document.createElement("div"); body.className = "cbody"; body.id = "b" + i;
-  let html = `<table class="mt"><thead><tr>${cat.heads.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>`;
-  cat.rows.forEach(r => { html += `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`; });
-  html += `</tbody></table>`;
-  if (cat.note) html += `<div class="cnote">${cat.note}</div>`;
-  body.innerHTML = html;
-  head.addEventListener("click", () => {
-    const open = body.classList.toggle("open");
-    document.getElementById("arr" + i).style.transform = open ? "rotate(90deg)" : "";
-  });
-  wrap.appendChild(head); wrap.appendChild(body); container.appendChild(wrap);
-});
-
-// ── Initial render ────────────────────────────────────────────────────────────
 render('30d');
 </script>
 </body>
