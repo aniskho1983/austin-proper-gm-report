@@ -116,7 +116,7 @@ Period: March 2 – April 1, 2026  |  Generated: 2026-04-01
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   09:30–09:45    0.2h    att:48  [MEETING  ] [Daily Ops Rhythm              ] AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl
   16:30–17:00    0.5h    att:27  [MEETING  ] [Daily Ops Rhythm              ] Daily Proper PM Shift
-  18:00–21:00    3.0h    att:22  [MEETING  ] [Guest & Owner Relations       ] Filming on West 2nd Street Ford Commercial
+  18:00–21:00    3.0h    att:22  [CONTEXT  ] [context_block                 ] Filming on West 2nd Street Ford Commercial
   ALL-DAY        all-day att:10  [CONTEXT  ] [context_block                 ] G in San Fran
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -499,15 +499,9 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
   2026-03-04  17:00–19:30  (150 min)  |  After: Daily Proper PM Shift | Before: Dinner at Eberly 
   2026-03-05  07:00–09:30  (150 min)  |  Before: Red Bluff by Proper Full Team Meeting
   2026-03-05  18:00–20:00  (120 min)  |  After: Anna and Anis 1 on 1
-  2026-03-06  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
-  2026-03-06  10:30–12:00  (90 min)  |  After: ATXP Daily 90-Day Rate Review | Before: Natascha and Anis catch up
-  2026-03-06  18:30–20:00  (90 min)  |  After: lobby ambassador 
-  2026-03-07  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
-  2026-03-07  09:45–16:30  (405 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift
-  2026-03-07  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
   2026-03-08  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
   2026-03-08  09:45–16:30  (405 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift
-  2026-03-08  17:00–18:00  (60 min)  |  After: Daily Proper PM Shift | Before: Filming on West 2nd Street Ford Commerci
+  2026-03-08  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
   2026-03-09  07:00–09:00  (120 min)  |  Before: Bank of America || Pre-Con 
   2026-03-09  15:30–16:30  (60 min)  |  After: SEND EXCOM AGENDA | Before: Daily Proper PM Shift
   2026-03-09  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
@@ -520,12 +514,6 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
   2026-03-12  11:30–13:00  (90 min)  |  After: Resume Meeting | Before: Kappo Kappo weekly catch up
   2026-03-12  15:00–16:30  (90 min)  |  After: Meaningful Performance Reviews - Option  | Before: Daily Proper PM Shift
   2026-03-12  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
-  2026-03-13  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
-  2026-03-13  13:00–16:30  (210 min)  |  After: Review Increases | Before: Daily Proper PM Shift
-  2026-03-13  19:00–20:00  (60 min)  |  After: DALLAS WORK ON BACK OF HOUSE OFFICE
-  2026-03-14  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
-  2026-03-14  09:45–16:30  (405 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift
-  2026-03-14  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
   2026-03-15  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
   2026-03-15  09:45–16:30  (405 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift
   2026-03-15  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
@@ -542,14 +530,6 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
   2026-03-19  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
   2026-03-19  12:00–13:00  (60 min)  |  After: ATXP Daily DBR Review | Before: Kappo Kappo weekly catch up
   2026-03-19  18:00–20:00  (120 min)  |  After: Anna and Anis 1 on 1
-  2026-03-20  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
-  2026-03-20  10:30–11:30  (60 min)  |  After: ATXP Daily 90-Day Rate Review | Before: ATXP Daily DBR Review
-  2026-03-20  13:00–14:00  (60 min)  |  After: Natascha and Anis catch up | Before: Edwin X Anis
-  2026-03-20  15:00–16:30  (90 min)  |  After: Edwin X Anis | Before: Daily Proper PM Shift
-  2026-03-20  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
-  2026-03-21  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
-  2026-03-21  09:45–16:30  (405 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift
-  2026-03-21  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
   2026-03-22  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
   2026-03-22  09:45–16:30  (405 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift
   2026-03-22  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
@@ -561,11 +541,6 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
   2026-03-25  07:00–08:30  (90 min)  |  Before: Proper Welcome - Breakfast (EC attendance optional
   2026-03-26  09:45–11:00  (75 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Resume Meeting
   2026-03-26  12:00–13:00  (60 min)  |  After: ATXP Daily DBR Review | Before: Karen Site: Deloitte F1
-  2026-03-27  07:00–08:30  (90 min)  |  Before: Anis Jess and Kinsey meeting
-  2026-03-28  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
-  2026-03-28  09:45–16:30  (405 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift
-  2026-03-28  17:00–18:00  (60 min)  |  After: Daily Proper PM Shift | Before: Site Visit - SpaceX
-  2026-03-28  19:00–20:00  (60 min)  |  After: Site Visit - SpaceX
   2026-03-29  07:00–09:30  (150 min)  |  Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W
   2026-03-29  09:45–16:30  (405 min)  |  After: AM Ops Meeting - PDR / When Not Avail, P | Before: Daily Proper PM Shift
   2026-03-29  17:00–20:00  (180 min)  |  After: Daily Proper PM Shift
@@ -581,10 +556,10 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
 ========================================================================================================================
 30-DAY SUMMARY BY CATEGORY
 ========================================================================================================================
-  Total events tracked:     264
-  Meeting hours (30d):      174.8h  (40.8h/wk)
+  Total events tracked:     263
+  Meeting hours (30d):      171.8h  (40.1h/wk)
   Solo work hours (30d):    22.2h  (5.2h/wk)
-  Total committed (30d):    197.0h  (~114.9% of 40h week)
+  Total committed (30d):    194.0h  (~113.2% of 40h week)
 
   Category                               Hours   Count    Hrs/Wk
   ----------------------------------- --------  ------  --------
@@ -596,7 +571,7 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
   Monthly & Financial                    10.0h      11      2.3h
   Payroll Cycles                          6.0h       9      1.4h
   Sales & Marketing                       8.5h       8      2.0h
-  Guest & Owner Relations                17.8h      18      4.2h
+  Guest & Owner Relations                14.8h      17      3.5h
   HR & Talent                             7.2h      12      1.7h
   Vendor / External Partners              7.2h      10      1.7h
   Legal Counsel                           0.2h       1      0.1h

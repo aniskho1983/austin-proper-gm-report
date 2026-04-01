@@ -106,13 +106,13 @@
     "end_date": "2026-04-01",
     "days": 30,
     "weeks": 4.3,
-    "total_events": 264,
-    "total_meeting_h": 174.8,
+    "total_events": 263,
+    "total_meeting_h": 171.8,
     "total_solo_h": 22.2,
-    "total_h": 197.0,
-    "meeting_h_per_wk": 40.8,
+    "total_h": 194.0,
+    "meeting_h_per_wk": 40.1,
     "solo_h_per_wk": 5.2,
-    "pct_of_40h": 114.9,
+    "pct_of_40h": 113.2,
     "by_category": {
       "daily_ops": {
         "hours": 31.75,
@@ -155,9 +155,9 @@
         "hrs_per_wk": 1.98
       },
       "guest_relations": {
-        "hours": 17.83,
-        "count": 18,
-        "hrs_per_wk": 4.16
+        "hours": 14.83,
+        "count": 17,
+        "hrs_per_wk": 3.46
       },
       "hr_talent": {
         "hours": 7.17,
@@ -207,13 +207,13 @@
     "end_date": "2026-04-01",
     "days": 90,
     "weeks": 12.9,
-    "total_events": 264,
-    "total_meeting_h": 174.8,
+    "total_events": 263,
+    "total_meeting_h": 171.8,
     "total_solo_h": 22.2,
-    "total_h": 197.0,
-    "meeting_h_per_wk": 13.6,
+    "total_h": 194.0,
+    "meeting_h_per_wk": 13.4,
     "solo_h_per_wk": 1.7,
-    "pct_of_40h": 38.3,
+    "pct_of_40h": 37.7,
     "by_category": {
       "daily_ops": {
         "hours": 31.75,
@@ -256,9 +256,9 @@
         "hrs_per_wk": 0.66
       },
       "guest_relations": {
-        "hours": 17.83,
-        "count": 18,
-        "hrs_per_wk": 1.39
+        "hours": 14.83,
+        "count": 17,
+        "hrs_per_wk": 1.15
       },
       "hr_talent": {
         "hours": 7.17,

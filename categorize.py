@@ -58,10 +58,11 @@ DIRECT_REPORTS = [
 # Subject substring (lowercase) → {block_type, category, dur_hours_override}
 # These take full precedence over all automatic classification rules.
 MANUAL_OVERRIDES = {
-    # Disregard — GM does not attend / not countable
+    # Disregard — visibility/awareness blocks, GM does not attend
     "anna mayevska and jason hammons":          {"block_type": "context_block"},
     "proper ai 10 week challenge - office hours": {"block_type": "context_block"},
     "austineater visit":                         {"block_type": "context_block"},
+    "filming":                                   {"block_type": "context_block"},  # on-property filming added for visibility only
 
     # HR / Talent
     "max houston - peacock runner":              {"block_type": "meeting",  "category": "hr_talent",    "dur_hours_override": 10/60},
