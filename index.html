@@ -3,234 +3,510 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GM Meeting Load Report — Austin Proper</title>
+<title>GM Productivity Dashboard — Austin Proper</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #ffffff; --bg2: #f5f5f5; --bg3: #ebebeb;
+  --text: #1a1a1a; --text2: #555; --text3: #999;
+  --border: rgba(0,0,0,0.09); --border2: rgba(0,0,0,0.18);
+  --accent: #1a3a5c; --accent2: #2563a8;
+  --info-bg: #e8f0fe; --info-text: #1a56b0;
+  --solo-bg: #f0f7f4; --solo-border: #b2d8cc;
+  --radius: 8px; --radius-lg: 12px;
+}
+@media (prefers-color-scheme: dark) {
   :root {
-    --bg: #ffffff; --bg2: #f5f5f5; --bg3: #efefef;
-    --text: #1a1a1a; --text2: #555555; --text3: #999999;
-    --border: rgba(0,0,0,0.1); --border2: rgba(0,0,0,0.18);
-    --info-bg: #e8f0fe; --info-text: #1a56b0;
-    --radius: 8px; --radius-lg: 12px;
+    --bg: #141414; --bg2: #1f1f1f; --bg3: #2a2a2a;
+    --text: #f0f0f0; --text2: #aaa; --text3: #666;
+    --border: rgba(255,255,255,0.08); --border2: rgba(255,255,255,0.18);
+    --accent: #4a8fd4; --accent2: #6aaae0;
+    --info-bg: #1a2f50; --info-text: #7aaade;
+    --solo-bg: #1a2820; --solo-border: #2e5a48;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #1a1a1a; --bg2: #252525; --bg3: #2e2e2e;
-      --text: #f0f0f0; --text2: #aaaaaa; --text3: #666666;
-      --border: rgba(255,255,255,0.1); --border2: rgba(255,255,255,0.18);
-      --info-bg: #1a3060; --info-text: #88aaee;
-    }
-  }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); padding: 32px 24px; max-width: 880px; margin: 0 auto; }
-  h1 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
-  .meta { font-size: 12px; color: var(--text2); margin-bottom: 28px; }
-  .kpi-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 10px; margin-bottom: 28px; }
-  .kpi { background: var(--bg2); border-radius: var(--radius); padding: 14px 10px; text-align: center; }
-  .kpi-num { font-size: 20px; font-weight: 600; }
-  .kpi-lbl { font-size: 11px; color: var(--text2); margin-top: 4px; }
-  .exec-summary { background: var(--bg2); border-left: 3px solid #2c5f9e; border-radius: var(--radius); padding: 16px 18px; margin-bottom: 28px; font-size: 13px; color: var(--text2); line-height: 1.75; }
-  .exec-summary strong { color: var(--text); }
-  .sec { font-size: 14px; font-weight: 600; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
-  .legend { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; font-size: 12px; color: var(--text2); }
-  .li { display: flex; align-items: center; gap: 5px; }
-  .ld { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
-  .chart-wrap { position: relative; width: 100%; height: 260px; margin-bottom: 4px; }
-  .chart-note { font-size: 11px; color: var(--text3); text-align: right; }
-  .donut-row { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 8px; }
-  .donut-wrap { position: relative; width: 180px; height: 180px; flex-shrink: 0; }
-  #pieLeg { font-size: 12px; color: var(--text2); line-height: 2; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 28px; }
-  th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border2); font-weight: 600; font-size: 12px; color: var(--text2); }
-  th:not(:first-child) { text-align: right; }
-  td { padding: 7px 10px; border-bottom: 0.5px solid var(--border); color: var(--text); }
-  td:not(:first-child) { text-align: right; }
-  .tfoot td { font-weight: 700; border-top: 2px solid var(--border2); border-bottom: none; }
-  .even { background: var(--bg2); }
-  .cat { border: 0.5px solid var(--border); border-radius: var(--radius-lg); margin-bottom: 10px; overflow: hidden; }
-  .cat-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; cursor: pointer; background: var(--bg2); user-select: none; }
-  .cat-head:hover { background: var(--bg3); }
-  .cat-l { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
-  .cname { font-size: 13px; font-weight: 600; }
-  .cmeta { font-size: 12px; color: var(--text2); }
-  .upd { font-size: 10px; font-weight: 600; color: var(--info-text); background: var(--info-bg); padding: 2px 6px; border-radius: 4px; }
-  .cbadge { font-size: 12px; color: var(--text2); white-space: nowrap; }
-  .arr { font-size: 10px; color: var(--text3); transition: transform .2s; flex-shrink: 0; }
-  .cbody { display: none; padding: 0 16px 14px; }
-  .cbody.open { display: block; }
-  .mt { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-top: 10px; margin-bottom: 0; }
-  .mt th { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--border2); font-size: 11px; color: var(--text2); font-weight: 600; }
-  .mt th:not(:first-child) { text-align: left; }
-  .mt td { padding: 6px 8px; border-bottom: 0.5px solid var(--border); color: var(--text); text-align: left; }
-  .mt tr:last-child td { border-bottom: none; }
-  .cnote { font-size: 12px; color: var(--text2); margin-top: 10px; border-left: 3px solid var(--border2); padding-left: 10px; line-height: 1.65; }
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg); color: var(--text);
+  padding: 28px 20px; max-width: 920px; margin: 0 auto;
+}
+
+/* ── Header ── */
+.hdr { margin-bottom: 24px; }
+.hdr h1 { font-size: 18px; font-weight: 700; letter-spacing: -.01em; }
+.hdr-meta { font-size: 12px; color: var(--text2); margin-top: 3px; }
+
+/* ── Toggle ── */
+.toggle-row {
+  display: flex; align-items: center; gap: 6px;
+  margin-bottom: 22px;
+}
+.toggle-label { font-size: 11px; font-weight: 600; color: var(--text3); letter-spacing: .07em; text-transform: uppercase; margin-right: 4px; }
+.tog {
+  padding: 5px 14px; border-radius: 20px; border: 1px solid var(--border2);
+  font-size: 12px; font-weight: 600; cursor: pointer;
+  background: var(--bg2); color: var(--text2);
+  transition: background .15s, color .15s;
+}
+.tog.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.data-note { font-size: 11px; color: var(--text3); margin-left: 6px; }
+
+/* ── Executive Summary ── */
+.exec-summary {
+  background: var(--bg2); border-left: 3px solid var(--accent2);
+  border-radius: var(--radius); padding: 13px 16px;
+  font-size: 12.5px; color: var(--text2); line-height: 1.75;
+  margin-bottom: 22px;
+}
+.exec-summary strong { color: var(--text); }
+
+/* ── KPI strip ── */
+.kpi-grid {
+  display: grid; grid-template-columns: repeat(5, minmax(0,1fr));
+  gap: 10px; margin-bottom: 22px;
+}
+@media (max-width: 600px) { .kpi-grid { grid-template-columns: repeat(3, 1fr); } }
+.kpi { background: var(--bg2); border-radius: var(--radius); padding: 13px 10px; text-align: center; }
+.kpi-num { font-size: 19px; font-weight: 700; letter-spacing: -.02em; }
+.kpi-lbl { font-size: 10.5px; color: var(--text2); margin-top: 4px; line-height: 1.35; }
+
+/* ── Section heading ── */
+.sec {
+  font-size: 11px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--text3);
+  margin: 24px 0 10px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Charts ── */
+.charts-row { display: grid; grid-template-columns: 1fr 300px; gap: 16px; margin-bottom: 4px; }
+@media (max-width: 680px) { .charts-row { grid-template-columns: 1fr; } }
+.chart-card { background: var(--bg2); border-radius: var(--radius); padding: 16px 16px 10px; }
+.chart-card-title { font-size: 11px; font-weight: 600; color: var(--text2); margin-bottom: 12px; text-transform: uppercase; letter-spacing: .06em; }
+.chart-wrap-bar { position: relative; width: 100%; height: 280px; }
+.chart-wrap-donut { position: relative; width: 100%; height: 210px; }
+.chart-note { font-size: 10px; color: var(--text3); text-align: right; margin-top: 4px; margin-bottom: 16px; }
+
+/* ── Legend ── */
+.legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.li { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text2); }
+.ld { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+
+/* ── Table ── */
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-bottom: 22px; }
+th { text-align: left; padding: 7px 10px; border-bottom: 2px solid var(--border2); font-size: 10.5px; font-weight: 700; color: var(--text3); letter-spacing: .06em; text-transform: uppercase; }
+th:not(:first-child) { text-align: right; }
+td { padding: 7px 10px; border-bottom: 0.5px solid var(--border); }
+td:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; }
+tr:hover td { background: var(--bg2); }
+.tfoot td { font-weight: 700; border-top: 2px solid var(--border2); border-bottom: none; background: var(--bg2); }
+.solo-row td { color: var(--text2); font-style: italic; }
+.solo-row td:first-child::before { content: '↳ '; opacity: .4; }
+
+/* ── Type badge ── */
+.badge {
+  display: inline-block; font-size: 9.5px; font-weight: 700;
+  padding: 1px 5px; border-radius: 3px; letter-spacing: .04em;
+  text-transform: uppercase; vertical-align: middle; margin-left: 4px;
+}
+.badge-solo { background: var(--solo-bg); color: var(--solo-border); border: 1px solid var(--solo-border); }
+.badge-meet { background: var(--info-bg); color: var(--info-text); border: 1px solid var(--info-text); }
+
+/* ── Accordion ── */
+.cat { border: 0.5px solid var(--border); border-radius: var(--radius-lg); margin-bottom: 8px; overflow: hidden; }
+.cat-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 11px 14px; cursor: pointer; background: var(--bg2); user-select: none;
+}
+.cat-head:hover { background: var(--bg3); }
+.cat-l { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.cname { font-size: 12.5px; font-weight: 600; }
+.cmeta { font-size: 11px; color: var(--text2); }
+.cbadge { font-size: 11px; color: var(--text2); white-space: nowrap; }
+.arr { font-size: 9px; color: var(--text3); transition: transform .2s; flex-shrink: 0; }
+.cbody { display: none; padding: 0 14px 13px; }
+.cbody.open { display: block; }
+.mt { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+.mt th { text-align: left; padding: 5px 7px; border-bottom: 1px solid var(--border2); font-size: 10.5px; color: var(--text2); font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.mt td { padding: 5px 7px; border-bottom: 0.5px solid var(--border); color: var(--text); }
+.mt tr:last-child td { border-bottom: none; }
+.cnote { font-size: 11.5px; color: var(--text2); margin-top: 9px; border-left: 2px solid var(--border2); padding-left: 9px; line-height: 1.65; }
+
+/* ── Gaps panel ── */
+.gaps-panel { background: var(--bg2); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 22px; }
+.gap-item { font-size: 11.5px; color: var(--text2); padding: 4px 0; border-bottom: 0.5px solid var(--border); display: flex; gap: 12px; }
+.gap-item:last-child { border-bottom: none; }
+.gap-date { font-weight: 600; color: var(--text); flex-shrink: 0; width: 95px; }
+.gap-time { color: var(--accent2); flex-shrink: 0; width: 115px; font-variant-numeric: tabular-nums; }
+.gap-ctx { color: var(--text3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 </style>
 </head>
 <body>
 
-<h1>GM Meeting Load Report</h1>
-<div class="meta">Austin Proper Hotel &nbsp;·&nbsp; Anis Khoury, General Manager &nbsp;·&nbsp; March 2 – April 1, 2026 (past 30 days)</div>
-
-<!-- KPI STRIP -->
-<div class="kpi-grid">
-  <div class="kpi"><div class="kpi-num">~29h</div><div class="kpi-lbl">hrs/week in meetings</div></div>
-  <div class="kpi"><div class="kpi-num">8</div><div class="kpi-lbl">weekly direct report 1:1s</div></div>
-  <div class="kpi"><div class="kpi-num">5</div><div class="kpi-lbl">active dev projects</div></div>
-  <div class="kpi"><div class="kpi-num">4</div><div class="kpi-lbl">daily recurring meetings</div></div>
-  <div class="kpi"><div class="kpi-num">~72%</div><div class="kpi-lbl">of 40-hr week committed</div></div>
+<!-- Header -->
+<div class="hdr">
+  <h1>GM Productivity Dashboard</h1>
+  <div class="hdr-meta">Austin Proper Hotel &nbsp;·&nbsp; Anis Khoury, General Manager &nbsp;·&nbsp; Live from Microsoft 365 Calendar</div>
 </div>
 
-<!-- EXECUTIVE SUMMARY -->
+<!-- Toggle -->
+<div class="toggle-row">
+  <span class="toggle-label">Window</span>
+  <button class="tog active" data-w="30d">30 Days</button>
+  <button class="tog" data-w="7d">7 Days</button>
+  <button class="tog" data-w="ytd">YTD</button>
+  <span class="data-note" id="dataNote"></span>
+</div>
+
+<!-- Executive Summary -->
 <div class="exec-summary" id="execSummary"></div>
 
-<!-- BAR CHART -->
+<!-- KPIs -->
+<div class="kpi-grid" id="kpiGrid"></div>
+
+<!-- Charts -->
 <div class="sec">Hours per week by category</div>
 <div class="legend" id="barLeg"></div>
-<div class="chart-wrap"><canvas id="barChart"></canvas></div>
-<div class="chart-note">* Project Dev underrepresented — full-day offsites not captured as formal meetings</div>
-
-<!-- DONUT -->
-<div class="sec">Share of total weekly time</div>
-<div class="donut-row">
-  <div class="donut-wrap"><canvas id="donut"></canvas></div>
-  <div id="pieLeg"></div>
+<div class="charts-row">
+  <div class="chart-card">
+    <div class="chart-card-title">Meetings &amp; committed time (hrs/wk)</div>
+    <div class="chart-wrap-bar"><canvas id="barChart"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-card-title">Share of total time</div>
+    <div class="chart-wrap-donut"><canvas id="donutChart"></canvas></div>
+  </div>
 </div>
+<div class="chart-note">Solo work blocks (email, prep, deep work) shown separately in table below. Tentative meetings excluded from totals.</div>
 
-<!-- SUMMARY TABLE -->
-<div class="sec">30-day summary</div>
+<!-- Summary Table -->
+<div class="sec">Breakdown by category</div>
 <table>
-  <thead><tr><th>Category</th><th>30-day total</th><th>Wkly avg</th><th>% of 40h week</th></tr></thead>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Type</th>
+      <th>Events</th>
+      <th>Total hrs</th>
+      <th>Hrs / wk</th>
+      <th>% of time</th>
+    </tr>
+  </thead>
   <tbody id="sumTbl"></tbody>
 </table>
 
-<!-- ACCORDION BREAKDOWN -->
-<div class="sec">Category breakdown — click any row to expand</div>
+<!-- Accordion -->
+<div class="sec">Full category breakdown — click to expand</div>
 <div id="cats"></div>
 
+<!-- Gaps -->
+<div class="sec">Unblocked working windows &nbsp;<span style="font-weight:400;text-transform:none;letter-spacing:0">— flagged for email cross-reference or manual fill-in</span></div>
+<div class="gaps-panel" id="gapsPanel"></div>
+
 <script>
-const barData = [
-  { label:"Daily ops rhythm",        wk:6.0,  color:"#2c5f9e", mo:"~26 hrs",  pct:"15%" },
-  { label:"Direct report 1:1s",      wk:7.25, color:"#27ae60", mo:"~29 hrs",  pct:"18.1%" },
-  { label:"Weekly ops meetings",     wk:5.75, color:"#3a7fc1", mo:"~23 hrs",  pct:"14.4%" },
-  { label:"Project dev (purple)",    wk:4.0,  color:"#8e44ad", mo:"~18+ hrs", pct:"10%+" },
-  { label:"AI / innovation (yellow)",wk:2.9,  color:"#d4a017", mo:"~6 hrs",   pct:"7.3%" },
-  { label:"Monthly meetings",        wk:1.6,  color:"#95a5a6", mo:"~6.5 hrs", pct:"4%" },
-  { label:"Payroll cycles",          wk:0.9,  color:"#7f8c8d", mo:"~4 hrs",   pct:"2.3%" },
-];
-const total = barData.reduce((s,d) => s + d.wk, 0);
-const pctOfWeek = Math.round(total / 40 * 100);
+// ── Embedded data (regenerated each refresh) ───────────────────────────────────
+const SUMMARY = {"7d":{"window":"7d","start_date":"2026-03-25","end_date":"2026-04-01","days":7,"weeks":1.0,"total_events":90,"total_meeting_h":57.8,"total_solo_h":11.2,"total_h":69.1,"meeting_h_per_wk":57.8,"solo_h_per_wk":11.2,"pct_of_40h":172.7,"by_category":{"daily_ops":{"hours":8.5,"count":23,"hrs_per_wk":8.5},"direct_reports":{"hours":7.75,"count":8,"hrs_per_wk":7.75},"weekly_ops":{"hours":5.25,"count":5,"hrs_per_wk":5.25},"project_dev":{"hours":15.0,"count":11,"hrs_per_wk":15.0},"ai_innovation":{"hours":5.25,"count":7,"hrs_per_wk":5.25},"monthly_fin":{"hours":1.5,"count":2,"hrs_per_wk":1.5},"payroll":{"hours":2.0,"count":3,"hrs_per_wk":2.0},"sales_mktg":{"hours":0.5,"count":1,"hrs_per_wk":0.5},"guest_relations":{"hours":8.33,"count":9,"hrs_per_wk":8.33},"hr_talent":{"hours":2.5,"count":4,"hrs_per_wk":2.5},"vendor_ops":{"hours":1.25,"count":2,"hrs_per_wk":1.25},"legal_external":{"hours":0.0,"count":0,"hrs_per_wk":0.0},"solo_email":{"hours":3.0,"count":3,"hrs_per_wk":3.0},"solo_admin":{"hours":6.25,"count":9,"hrs_per_wk":6.25},"guest_floor":{"hours":1.5,"count":2,"hrs_per_wk":1.5},"solo_work_other":{"hours":0.5,"count":1,"hrs_per_wk":0.5},"uncategorized":{"hours":0.0,"count":0,"hrs_per_wk":0.0}}},"30d":{"window":"30d","start_date":"2026-03-02","end_date":"2026-04-01","days":30,"weeks":4.3,"total_events":264,"total_meeting_h":174.8,"total_solo_h":22.2,"total_h":197.0,"meeting_h_per_wk":40.8,"solo_h_per_wk":5.2,"pct_of_40h":114.9,"by_category":{"daily_ops":{"hours":31.75,"count":89,"hrs_per_wk":7.41},"direct_reports":{"hours":25.25,"count":29,"hrs_per_wk":5.89},"weekly_ops":{"hours":27.0,"count":27,"hrs_per_wk":6.3},"project_dev":{"hours":25.75,"count":17,"hrs_per_wk":6.01},"ai_innovation":{"hours":8.0,"count":10,"hrs_per_wk":1.87},"monthly_fin":{"hours":10.0,"count":11,"hrs_per_wk":2.33},"payroll":{"hours":6.0,"count":9,"hrs_per_wk":1.4},"sales_mktg":{"hours":8.5,"count":8,"hrs_per_wk":1.98},"guest_relations":{"hours":17.83,"count":18,"hrs_per_wk":4.16},"hr_talent":{"hours":7.17,"count":12,"hrs_per_wk":1.67},"vendor_ops":{"hours":7.25,"count":10,"hrs_per_wk":1.69},"legal_external":{"hours":0.25,"count":1,"hrs_per_wk":0.06},"solo_email":{"hours":3.0,"count":3,"hrs_per_wk":0.7},"solo_admin":{"hours":7.75,"count":12,"hrs_per_wk":1.81},"guest_floor":{"hours":5.0,"count":4,"hrs_per_wk":1.17},"solo_work_other":{"hours":6.5,"count":4,"hrs_per_wk":1.52},"uncategorized":{"hours":0.0,"count":0,"hrs_per_wk":0.0}}},"ytd":{"window":"ytd","start_date":"2026-01-01","end_date":"2026-04-01","days":90,"weeks":12.9,"total_events":264,"total_meeting_h":174.8,"total_solo_h":22.2,"total_h":197.0,"meeting_h_per_wk":13.6,"solo_h_per_wk":1.7,"pct_of_40h":38.3,"by_category":{"daily_ops":{"hours":31.75,"count":89,"hrs_per_wk":2.47},"direct_reports":{"hours":25.25,"count":29,"hrs_per_wk":1.96},"weekly_ops":{"hours":27.0,"count":27,"hrs_per_wk":2.1},"project_dev":{"hours":25.75,"count":17,"hrs_per_wk":2.0},"ai_innovation":{"hours":8.0,"count":10,"hrs_per_wk":0.62},"monthly_fin":{"hours":10.0,"count":11,"hrs_per_wk":0.78},"payroll":{"hours":6.0,"count":9,"hrs_per_wk":0.47},"sales_mktg":{"hours":8.5,"count":8,"hrs_per_wk":0.66},"guest_relations":{"hours":17.83,"count":18,"hrs_per_wk":1.39},"hr_talent":{"hours":7.17,"count":12,"hrs_per_wk":0.56},"vendor_ops":{"hours":7.25,"count":10,"hrs_per_wk":0.56},"legal_external":{"hours":0.25,"count":1,"hrs_per_wk":0.02},"solo_email":{"hours":3.0,"count":3,"hrs_per_wk":0.23},"solo_admin":{"hours":7.75,"count":12,"hrs_per_wk":0.6},"guest_floor":{"hours":5.0,"count":4,"hrs_per_wk":0.39},"solo_work_other":{"hours":6.5,"count":4,"hrs_per_wk":0.51},"uncategorized":{"hours":0.0,"count":0,"hrs_per_wk":0.0}}}};
 
-// Executive summary — auto-updates when barData changes
-document.getElementById("execSummary").innerHTML = `
-  <strong>Executive Summary</strong><br>
-  Over the past 30 days, the GM of Austin Proper carried an estimated
-  <strong>~${total.toFixed(0)}–${(+total.toFixed(0)+1)} hours</strong> of structured meeting time per week —
-  approximately <strong>${pctOfWeek}% of a 40-hour week</strong> — before on-floor presence, email, or unplanned escalations.
-  The schedule reflects a dual mandate: running a full-service lifestyle hotel at full operational depth while serving as
-  the primary property ambassador for a growing By Proper development pipeline across
-  <strong>five active projects</strong> (Dallas, Minneapolis, Tampa, Red Bluff, Austin).
-  Project development — including a full-day Red Bluff ownership offsite, an owner dinner, and a Wilks/Dallas developer
-  site visit — is substantially underrepresented in calendar data and is growing. The AI/innovation commitment is also
-  larger than the calendar shows, anchored by a confirmed 3-hour deep-work session in March.
-`;
+const GAPS = [{"date":"2026-03-07","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-08","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-12","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-13","start":"13:00","end":"16:30","duration_min":210,"type":"gap","context":"After: Review Increases | Before: Daily Proper PM Shift"},{"date":"2026-03-14","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-15","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-16","start":"11:30","end":"14:00","duration_min":150,"type":"gap","context":"After: Ash X Anis | Before: Meaningful Performance Reviews"},{"date":"2026-03-20","start":"17:00","end":"20:00","duration_min":180,"type":"gap","context":"After: Daily Proper PM Shift"},{"date":"2026-03-21","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-22","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-28","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"},{"date":"2026-03-29","start":"09:45","end":"16:30","duration_min":405,"type":"gap","context":"After: AM Ops Meeting | Before: Daily Proper PM Shift"}];
 
-// Build legend
-const barLeg = document.getElementById("barLeg");
-barData.forEach(d => {
-  const s = document.createElement("span"); s.className = "li";
-  s.innerHTML = `<span class="ld" style="background:${d.color}"></span>${d.label}`;
-  barLeg.appendChild(s);
-});
-
-// Bar chart
-new Chart(document.getElementById("barChart"), {
-  type: "bar",
-  data: { labels: barData.map(d => d.label), datasets: [{ data: barData.map(d => d.wk), backgroundColor: barData.map(d => d.color), borderRadius: 4, borderSkipped: false }] },
-  options: { indexAxis: "y", responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => " " + c.parsed.x.toFixed(1) + " hrs/wk" } } }, scales: { x: { max: 9, grid: { color: "rgba(128,128,128,0.12)" }, ticks: { callback: v => v + "h", font: { size: 11 } } }, y: { grid: { display: false }, ticks: { font: { size: 12 } } } } }
-});
-
-// Donut
-new Chart(document.getElementById("donut"), {
-  type: "doughnut",
-  data: { labels: barData.map(d => d.label), datasets: [{ data: barData.map(d => d.wk), backgroundColor: barData.map(d => d.color), borderWidth: 2, borderColor: "#ffffff" }] },
-  options: { responsive: true, maintainAspectRatio: false, cutout: "65%", plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => " " + c.parsed.toFixed(1) + "h (" + Math.round(c.parsed / total * 100) + "%)" } } } }
-});
-
-// Donut legend
-const pieLeg = document.getElementById("pieLeg");
-barData.forEach(d => {
-  const r = document.createElement("div"); r.style.cssText = "display:flex;align-items:center;gap:7px";
-  r.innerHTML = `<span style="width:10px;height:10px;border-radius:2px;background:${d.color};flex-shrink:0;display:inline-block"></span><span>${d.label}</span><span style="margin-left:4px;opacity:0.5">${Math.round(d.wk/total*100)}%</span>`;
-  pieLeg.appendChild(r);
-});
-
-// Summary table
-const tbody = document.getElementById("sumTbl");
-[...barData].sort((a,b) => b.wk - a.wk).forEach((d, i) => {
-  const tr = document.createElement("tr"); if (i%2!==0) tr.className="even";
-  [d.label, d.mo, d.wk.toFixed(1)+" hrs", d.pct].forEach((c,j) => {
-    const td = document.createElement("td"); td.textContent = c; if(j>0) td.style.textAlign="right"; tr.appendChild(td);
-  }); tbody.appendChild(tr);
-});
-const tot = document.createElement("tr"); tot.className = "tfoot";
-["Total (estimated)", "~112+ hrs", total.toFixed(1)+" hrs", "~72%"].forEach((c,j) => {
-  const td = document.createElement("td"); td.textContent = c; if(j>0) td.style.textAlign="right"; tot.appendChild(td);
-}); tbody.appendChild(tot);
-
-// Accordion data
-const cats = [
-  { color:"#2c5f9e", name:"Daily recurring ops", hrs:"~6 hrs/week", total:"~26 hrs / 30 days", upd:true,
-    heads:["Meeting","Duration","Frequency","Notes"],
-    rows:[["AM Ops Meeting","15 min","Daily (Mon–Sat)","All managers · PDR/Piscina"],["ATXP Daily 90-Day Rate Review","15 min","Daily (Mon–Fri)","Revenue, Sales, Front Office"],["ATXP Daily DBR Review","30 min","Daily (Mon–Fri)","Revenue, Front Office · Teams"],["Daily Proper PM Shift (coverage)","30 min","~2 days/week","When Hotel Manager (Natascha) is off — GM covers"]],
-    note:"Engineering Debrief removed — GM does not attend. PM Shift: Natascha leads daily; Anis covers ~2 days/week on her days off." },
-  { color:"#3a7fc1", name:"Weekly ops meetings", hrs:"~5.75 hrs/week", total:"~23 hrs / 30 days", upd:true,
-    heads:["Meeting","Duration","Day","Key attendees"],
-    rows:[["ExCom Meeting","2 hrs","Wednesday","Full Executive Committee (all dept. heads)"],["GM Meeting — Corporate","45 min","Wednesday","All portfolio GMs · Gabriel Ratner (EVP)"],["Austin Revenue Optimization","1 hr","Wednesday","Revenue team + owner reps (McWhinney/Kor Group)"],["Proper Service Meeting","45 min","Friday","Cross-dept FOH managers · PDR"],["ATXP Property Walk","45 min","Tuesday","Rooms / Engineering / Security · Physical walk"],["Pool Plan 2026","30 min","Tuesday","Rooms / F&B / Engineering"]],
-    note:"Resume Meeting and Notion Tracking removed — GM does not attend. Wednesday = heaviest day at ~3 hrs 45 min back-to-back." },
-  { color:"#27ae60", name:"Direct report 1:1s", hrs:"~7.25 hrs/week", total:"~29 hrs / 30 days", upd:true,
-    heads:["Direct report","Title","Day","Duration","30-day total"],
-    rows:[["Natascha Seifritz","Hotel Manager","Friday","60 min","4 hrs"],["Anna Mayevska","Director of F&B","Thursday","60 min","4 hrs"],["Lalaine Green","Director of Finance","Monday","60 min","4 hrs"],["Ryan Galvin","Director of Sales","Tuesday","60 min","4 hrs"],["Ash Desai","Director of People & Culture","Monday","45 min","3 hrs"],["Jasmine Samano","Director of Spa","Thursday","60 min","4 hrs"],["Kinsey East","Director of Events","Tuesday","30 min","2 hrs"],["Bryan Pino","Director of Engineering","Varies","60 min","4 hrs"],["Executive Chef (former)","Culinary Leadership","—","60 min","On hold — position in transition"]],
-    note:"Bryan Pino added (confirmed weekly, green category). Titles corrected: Natascha = Hotel Manager, Lalaine = Director of Finance, Ash = Director of People & Culture. 8 active direct report 1:1s." },
-  { color:"#8e44ad", name:"Project development (purple)", hrs:"~4+ hrs/week", total:"~18+ hrs / 30 days", upd:true,
-    heads:["Event / block","Date","Project","Duration"],
-    rows:[["2500 Cedar Springs — Bi-Weekly Food Service Worksession","Mar 13","Dallas (2500 Cedar Springs)","1 hr"],["Dallas — Back of House Office Work Block","Mar 13","Dallas (2500 Cedar Springs)","2 hrs"],["2500 Cedar Springs — Bi-Weekly Food Service Worksession","Mar 27","Dallas (2500 Cedar Springs)","1 hr"],["Prep for Dallas Meeting","Mar 27","Dallas (2500 Cedar Springs)","30 min"],["Dallas — MML Email Read-Through & Study","Apr 1","Dallas (2500 Cedar Springs)","30 min"],["Site Visit — WILKS Investments, Frisco/Firefly Park","Mar 4","Dallas","45 min + lunch"],["Red Bluff Ownership Full-Day Offsite","Mar 5","Red Bluff","~8 hrs"],["Dinner with Red Bluff Owners (Eberly)","Mar 4–5","Red Bluff","~2.5 hrs"],["Red Bluff Biweekly Worksession (×2)","Recurring","Red Bluff","1 hr each"],["FOP Stay — Andrew Miele, CDO","Mar 2–6","Multi-project","Multi-day"]],
-    note:"Dallas = 2500 Cedar Springs. Biweekly worksession includes Adamson Associates, Kelly Wearstler, MML, Kor Group. Active projects: Dallas · Minneapolis · Tampa · Red Bluff · Austin. Cadence increasing." },
-  { color:"#e67e22", name:"External partner meetings", hrs:"~1.5 hrs/month", total:"~1.5 hrs / 30 days", upd:true,
-    heads:["Meeting","Partner","Cadence","Duration"],
-    rows:[["Proper x MML Monthly","MML Hospitality (F&B operator)","Monthly","60 min"],["Austin Proper x Autumn Communications","Autumn Communications (PR agency)","Monthly","30 min"]],
-    note:"Corrected: Revenue Optimization, Kappo, Jani-King, and OpenTable removed — GM does not attend. True external partner meetings are monthly only." },
-  { color:"#d4a017", name:"AI / innovation — last 2 weeks (yellow)", hrs:"~2.9 hrs/week (trending up)", total:"~5.75 hrs / 14 days", upd:true,
-    heads:["Block","Date","Type","Duration"],
-    rows:[["Maya and Anis — Claude Code Training","Mar 24","Training w/ Maya","1 hr"],["Claude AI Coding","Mar 25","Solo deep work","30 min"],["Maya and Anis — Claude Code Training","Mar 27","Training w/ Maya","1 hr"],["Claude Code — Proper App Development","Mar 30","Solo build session","1.5 hrs"],["Claude Code — DEV Dashboard for Recon on Cities","Mar 31","Biz Dev / Dev work","30 min"],["Maya and Anis — Claude Code","Mar 31","Training w/ Maya","1 hr"],["Claude Code — Biz Dev","Apr 1","Solo build session","15 min"]],
-    note:"Significant acceleration in last 2 weeks. Two modes: structured training with Maya (3x in 2 wks) and solo deep-work sessions on internal tools and the Proper App. ~2.9 hrs/week, up from ~1.1 hrs/week earlier. Trend is clearly upward." },
-  { color:"#95a5a6", name:"Monthly meetings", hrs:"~1.6 hrs/week", total:"~6.5 hrs / 30 days", upd:true,
-    heads:["Meeting","Scope","Duration","Type"],
-    rows:[["Anis x Gabe Review","EVP 1:1 — performance & strategy","60 min","Internal"],["Proper AI Monthly","All GMs + Corp senior leadership — AI adoption","60 min","Internal"],["Managers Monthly Financial Review","All dept. heads — P&L","60 min","Internal"],["P&L Review — Proper Corporate","Monthly P&L deep-dive with corporate finance","60 min","Internal"],["P&L Review — Ownership","Monthly financial review with owner group","60 min","External"],["Proper x MML Monthly","F&B operator alignment — OS&E, programming, ops","60 min","External"],["Austin Proper x Autumn Communications","PR agency — monthly objectives","30 min","External"]],
-    note:"Two P&L reviews added: one with Proper Corporate, one with the ownership group. 7 monthly meetings totaling ~6.5 hrs." },
-  { color:"#7f8c8d", name:"Payroll cycle meetings", hrs:"~0.9 hrs/week", total:"~4 hrs / 30 days", upd:false,
-    heads:["Session","Cadence","Duration","Attendees"],
-    rows:[["Payroll Meeting (General)","Biweekly (Thu)","30 min","HR, Finance, Dept. heads"],["Payroll Meeting — F&B FOH","Biweekly (Thu)","45 min","HR, FOH managers, F&B director"],["Payroll Meeting — F&B BOH","Biweekly (Thu)","45 min","HR, BOH managers, Culinary director"]],
-    note:"Three sessions back-to-back on payroll Thursdays = 2 hrs per cycle. GM attends all three for sign-off and visibility." },
+// ── Category config ────────────────────────────────────────────────────────────
+const CATS = [
+  { key:'daily_ops',      label:'Daily Ops Rhythm',          color:'#2c5f9e', type:'meeting' },
+  { key:'weekly_ops',     label:'Weekly Ops Meetings',        color:'#3a7fc1', type:'meeting' },
+  { key:'direct_reports', label:'Direct Report 1:1s',         color:'#27ae60', type:'meeting' },
+  { key:'project_dev',    label:'Project Development',        color:'#8e44ad', type:'meeting' },
+  { key:'guest_relations',label:'Guest & Owner Relations',    color:'#c0392b', type:'meeting' },
+  { key:'monthly_fin',    label:'Monthly & Financial',        color:'#7f8c8d', type:'meeting' },
+  { key:'sales_mktg',     label:'Sales & Marketing',          color:'#e67e22', type:'meeting' },
+  { key:'hr_talent',      label:'HR & Talent',                color:'#16a085', type:'meeting' },
+  { key:'ai_innovation',  label:'AI / Innovation',            color:'#d4a017', type:'meeting' },
+  { key:'vendor_ops',     label:'Vendor / External Partners', color:'#8e6e53', type:'meeting' },
+  { key:'payroll',        label:'Payroll Cycles',             color:'#95a5a6', type:'meeting' },
+  { key:'legal_external', label:'Legal Counsel',              color:'#5d6d7e', type:'meeting' },
+  { key:'solo_admin',     label:'Admin / Prep (solo)',         color:'#bdc3c7', type:'solo'    },
+  { key:'solo_work_other',label:'Deep Work (solo)',            color:'#a0a0a0', type:'solo'    },
+  { key:'guest_floor',    label:'Guest / Floor Time (solo)',   color:'#e8a87c', type:'solo'    },
+  { key:'solo_email',     label:'Email & Comms (solo)',        color:'#d5d8dc', type:'solo'    },
 ];
 
-const container = document.getElementById("cats");
-cats.forEach((cat, i) => {
-  const wrap = document.createElement("div"); wrap.className = "cat";
-  const head = document.createElement("div"); head.className = "cat-head";
-  head.innerHTML = `<div class="cat-l"><div class="dot" style="background:${cat.color}"></div><span class="cname">${cat.name}</span>${cat.upd ? '<span class="upd">updated</span>' : ''}<span class="cmeta">— ${cat.hrs}</span></div><div style="display:flex;align-items:center;gap:10px"><span class="cbadge">${cat.total}</span><span class="arr" id="arr${i}">&#9654;</span></div>`;
-  const body = document.createElement("div"); body.className = "cbody"; body.id = "b" + i;
-  let html = `<table class="mt"><thead><tr>${cat.heads.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>`;
-  cat.rows.forEach(r => { html += `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`; });
+const MEETING_CATS = CATS.filter(c => c.type === 'meeting');
+const SOLO_CATS    = CATS.filter(c => c.type === 'solo');
+
+// ── State ──────────────────────────────────────────────────────────────────────
+let activeWindow = '30d';
+let barChartInst = null;
+let donutInst    = null;
+
+// ── Helpers ────────────────────────────────────────────────────────────────────
+const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const gridColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.07)';
+Chart.defaults.color = isDark ? '#888' : '#666';
+Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+Chart.defaults.font.size = 11;
+
+function fmt(n, dec=1) { return n.toFixed(dec); }
+
+function windowLabel(w) {
+  if (w === '7d')  return 'Last 7 days (Mar 25 – Apr 1)';
+  if (w === '30d') return 'Last 30 days (Mar 2 – Apr 1)';
+  if (w === 'ytd') return 'YTD — calendar data from Mar 2, 2026';
+}
+
+// ── Render ─────────────────────────────────────────────────────────────────────
+function render(w) {
+  const d = SUMMARY[w];
+  const bc = d.by_category;
+  const totalH = d.total_h;
+
+  // Data note
+  document.getElementById('dataNote').textContent = windowLabel(w);
+
+  // Executive summary
+  const topMeeting = MEETING_CATS.slice().sort((a,b) => bc[b.key].hours - bc[a.key].hours)[0];
+  document.getElementById('execSummary').innerHTML =
+    `<strong>Executive Summary · ${w === '7d' ? '7-Day' : w === '30d' ? '30-Day' : 'YTD'} View</strong><br>
+    Over this window, the GM committed <strong>${fmt(d.total_h)}h total</strong> —
+    <strong>${fmt(d.meeting_h_per_wk)}h/wk</strong> in structured meetings and
+    <strong>${fmt(d.solo_h_per_wk)}h/wk</strong> in solo work blocks (email, prep, deep work).
+    Largest category: <strong>${topMeeting.label}</strong> at ${fmt(bc[topMeeting.key].hrs_per_wk)}h/wk.
+    ${w === 'ytd' ? '<em>Note: calendar data available from Mar 2 only — YTD hrs/wk is diluted across 90 days.</em>' : ''}`;
+
+  // KPIs
+  const topCat = MEETING_CATS.slice().sort((a,b) => bc[b.key].hours - bc[a.key].hours)[0];
+  document.getElementById('kpiGrid').innerHTML = `
+    <div class="kpi"><div class="kpi-num">${fmt(d.meeting_h_per_wk)}h</div><div class="kpi-lbl">meeting hrs / week</div></div>
+    <div class="kpi"><div class="kpi-num">${fmt(d.solo_h_per_wk)}h</div><div class="kpi-lbl">solo work hrs / week</div></div>
+    <div class="kpi"><div class="kpi-num">${d.total_events}</div><div class="kpi-lbl">calendar blocks tracked</div></div>
+    <div class="kpi"><div class="kpi-num">${fmt(d.total_h)}h</div><div class="kpi-lbl">total committed hrs</div></div>
+    <div class="kpi"><div class="kpi-num">${topCat.label.split(' ')[0]}</div><div class="kpi-lbl">top category</div></div>
+  `;
+
+  // Legend
+  const leg = document.getElementById('barLeg');
+  leg.innerHTML = '';
+  MEETING_CATS.filter(c => bc[c.key].hours > 0).forEach(c => {
+    const s = document.createElement('span'); s.className = 'li';
+    s.innerHTML = `<span class="ld" style="background:${c.color}"></span>${c.label}`;
+    leg.appendChild(s);
+  });
+
+  // Bar chart
+  const barCats = MEETING_CATS.filter(c => bc[c.key].hrs_per_wk > 0)
+    .sort((a,b) => bc[a.key].hrs_per_wk - bc[b.key].hrs_per_wk);
+
+  if (barChartInst) barChartInst.destroy();
+  barChartInst = new Chart(document.getElementById('barChart'), {
+    type: 'bar',
+    data: {
+      labels: barCats.map(c => c.label),
+      datasets: [{
+        data: barCats.map(c => bc[c.key].hrs_per_wk),
+        backgroundColor: barCats.map(c => c.color + 'cc'),
+        borderColor: barCats.map(c => c.color),
+        borderWidth: 1, borderRadius: 3, borderSkipped: false,
+      }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: c => ` ${c.parsed.x.toFixed(1)} hrs/wk` } }
+      },
+      scales: {
+        x: { beginAtZero: true, grid: { color: gridColor }, ticks: { callback: v => v + 'h' } },
+        y: { grid: { display: false }, ticks: {
+          callback: function(val) {
+            const l = this.getLabelForValue(val);
+            return l.length > 24 ? l.slice(0,24)+'…' : l;
+          }
+        }}
+      }
+    }
+  });
+
+  // Donut
+  const donutCats = CATS.filter(c => bc[c.key].hours > 0);
+  if (donutInst) donutInst.destroy();
+  donutInst = new Chart(document.getElementById('donutChart'), {
+    type: 'doughnut',
+    data: {
+      labels: donutCats.map(c => c.label),
+      datasets: [{
+        data: donutCats.map(c => bc[c.key].hours),
+        backgroundColor: donutCats.map(c => c.color + 'cc'),
+        borderColor: donutCats.map(c => c.color),
+        borderWidth: 1.5, hoverOffset: 6,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, cutout: '62%',
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            boxWidth: 9, boxHeight: 9, padding: 8, font: { size: 10 },
+            generateLabels: chart => {
+              const ds = chart.data.datasets[0];
+              return chart.data.labels.map((lbl, i) => ({
+                text: lbl.length > 22 ? lbl.slice(0,22)+'…' : lbl,
+                fillStyle: ds.backgroundColor[i],
+                strokeStyle: ds.borderColor[i],
+                lineWidth: 1, hidden: false, index: i,
+              }));
+            }
+          }
+        },
+        tooltip: { callbacks: { label: c => ` ${c.label}: ${fmt(c.parsed)}h (${Math.round(c.parsed/totalH*100)}%)` } }
+      }
+    }
+  });
+
+  // Summary table
+  const tbody = document.getElementById('sumTbl');
+  tbody.innerHTML = '';
+  let totalMeetH = 0, totalSoloH = 0, totalCount = 0;
+
+  MEETING_CATS.filter(c => bc[c.key].hours > 0).forEach(c => {
+    const r = bc[c.key];
+    totalMeetH += r.hours; totalCount += r.count;
+    const pct = totalH > 0 ? (r.hours / totalH * 100).toFixed(1) : '0.0';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><span class="dot" style="background:${c.color};display:inline-block;margin-right:6px;vertical-align:middle"></span>${c.label}</td>
+      <td><span class="badge badge-meet">mtg</span></td>
+      <td>${r.count}</td>
+      <td>${fmt(r.hours)}h</td>
+      <td>${fmt(r.hrs_per_wk)}h</td>
+      <td>${pct}%</td>`;
+    tbody.appendChild(tr);
+  });
+
+  SOLO_CATS.filter(c => bc[c.key].hours > 0).forEach(c => {
+    const r = bc[c.key];
+    totalSoloH += r.hours; totalCount += r.count;
+    const pct = totalH > 0 ? (r.hours / totalH * 100).toFixed(1) : '0.0';
+    const tr = document.createElement('tr');
+    tr.className = 'solo-row';
+    tr.innerHTML = `
+      <td><span class="dot" style="background:${c.color};display:inline-block;margin-right:6px;vertical-align:middle"></span>${c.label}</td>
+      <td><span class="badge badge-solo">solo</span></td>
+      <td>${r.count}</td>
+      <td>${fmt(r.hours)}h</td>
+      <td>${fmt(r.hrs_per_wk)}h</td>
+      <td>${pct}%</td>`;
+    tbody.appendChild(tr);
+  });
+
+  // Footer
+  const tf = document.createElement('tr'); tf.className = 'tfoot';
+  tf.innerHTML = `
+    <td>Total</td><td></td><td>${totalCount}</td>
+    <td>${fmt(totalMeetH + totalSoloH)}h</td>
+    <td>${fmt(d.total_meeting_h/d.weeks + d.total_solo_h/d.weeks)}h</td>
+    <td>100%</td>`;
+  tbody.appendChild(tf);
+}
+
+// ── Toggle ─────────────────────────────────────────────────────────────────────
+document.querySelectorAll('.tog').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tog').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeWindow = btn.dataset.w;
+    render(activeWindow);
+  });
+});
+
+// ── Accordion ─────────────────────────────────────────────────────────────────
+const accData = [
+  { color:'#2c5f9e', name:'Daily Ops Rhythm', hrs:'7.4 hrs/wk · 30d avg', total:'31.8 hrs / 30 days',
+    heads:['Meeting','Duration','Frequency','Notes'],
+    rows:[['AM Ops Meeting (PDR / Piscina)','15 min','Daily Mon–Sat','48 attendees — all managers'],['ATXP Daily 90-Day Rate Review','15 min','Daily Mon–Fri','Revenue, Sales, Front Office'],['ATXP Daily DBR Review','30 min','Daily (from Mar 19)','Revenue, Front Office · Teams'],['Daily Proper PM Shift','30 min','Daily','Natascha leads; Anis covers ~2 days/wk'],['Eng. Dept. Debrief','15 min','Daily Mon–Fri','In-person · Bryan Pino']],
+    note:'Most reliable recurring anchor of the day. AM Ops is Mon–Sat including weekends. DBR Review added mid-March as a daily cadence.' },
+
+  { color:'#3a7fc1', name:'Weekly Ops Meetings', hrs:'6.3 hrs/wk · 30d avg', total:'27.0 hrs / 30 days',
+    heads:['Meeting','Duration','Day','Key attendees'],
+    rows:[['ExCom Meeting','2 hrs','Wednesday','Full Executive Committee (all dept heads)'],['GM Meeting — Corporate','45 min','Wednesday','All portfolio GMs · Gabriel Ratner (EVP)'],['Austin Revenue Optimization','1 hr','Wednesday','Revenue team + owner reps (McWhinney / Kor Group)'],['Proper Service Meeting','45 min','Friday','Cross-dept FOH managers · PDR'],['ATXP Property Walk','45 min','Tuesday','Rooms / Engineering / Security · physical walk'],['Pool Plan 2026','30 min','Tuesday','Rooms / F&B / Engineering'],['AUP Weekly Notion Tracking','60 min','Tuesday','Cross-dept · project tracking'],['BEO Meeting','30 min','Ad hoc','Events team'],['Radio Implementation','60 min','Ad hoc','Operations-wide system rollout'],['EC Outing','90 min','Ad hoc','Executive Committee team event']],
+    note:'Wednesday is the heaviest day — GM Meeting + ExCom + Revenue Optimization = ~3h 45m back-to-back. SXSW planning added in early March.' },
+
+  { color:'#27ae60', name:'Direct Report 1:1s', hrs:'5.9 hrs/wk · 30d avg', total:'25.2 hrs / 30 days',
+    heads:['Direct report','Title','Day','Duration'],
+    rows:[['Natascha Seifritz','Hotel Manager','Friday','60 min'],['Anna Mayevska','Director of F&B','Thursday','60 min'],['Lalaine Green','Director of Finance','Monday','60 min — extended to 30 min Mar 23'],['Ryan Galvin','Director of Sales','Tuesday','60 min'],['Ash Desai','Director of People & Culture','Monday','45–75 min'],['Jasmine Samano','Director of Spa','Thursday','60 min'],['Kinsey East','Director of Events','Tuesday','30 min · departed late March'],['Bryan Pino','Director of Engineering','Varies','60 min'],['Edwin (F&B)','F&B Leadership','Friday','60 min'],['Shannon','Legal Counsel','Ad hoc','15–30 min']],
+    note:'8 active direct report 1:1s. Kinsey East departed late March. Ash and Lalaine had extended sessions Mar 30 due to performance assessment cycle.' },
+
+  { color:'#8e44ad', name:'Project Development', hrs:'6.0 hrs/wk · 30d avg', total:'25.8 hrs / 30 days',
+    heads:['Block / Meeting','Date','Project','Duration'],
+    rows:[['Red Bluff Full Team Meeting','Mar 5','Red Bluff','4.0h'],['Red Bluff solo prep','Mar 5','Red Bluff','1.75h'],['Dinner at Eberly (owner dinner)','Mar 4','Red Bluff','2.5h'],['2500 CS | HC B1M Worksession','Mar 6','Dallas','1.0h'],['2500 CS | B1M - Program Review','Mar 23','Dallas','1.0h'],['FW: 2500 Cedar Springs Bi-Weekly','Mar 13 + Mar 27','Dallas','1.0h each'],['DALLAS WORK — BOH Office','Mar 13','Dallas','2.0h'],['Prep for Dallas Meeting','Mar 27','Dallas','0.5h'],['Dallas MML email study','Apr 1','Dallas','0.5h'],['Red Bluff Hotel Design Kick Off','Mar 26','Red Bluff','4.0h'],['Zack and Anis Breakfast','Mar 26','Red Bluff','1.0h'],['Red Bluff Prep block','Mar 25','Red Bluff','1.0h'],['Site with Andrew Miele + WILKS','Mar 4','Dallas (Frisco)','0.75h'],['Site and Dinner — Chad Tepley','Mar 30','Minneapolis','2.5h'],['Minneapolis meeting','Mar 27','Minneapolis','0.5h'],['Minneapolis continued','Mar 27','Minneapolis','0.5h'],['FOP Site Inspection — Chad Tepley','Mar 31','Minneapolis','0.5h'],['FFOP Site + Lunch (Anneke / Nozar)','Mar 31','Multi-project','3.0h']],
+    note:'5 active projects: Dallas (2500 Cedar Springs), Red Bluff, Minneapolis, Tampa, Austin. Cadence accelerating — Red Bluff Design Kick Off was a full-day offsite Mar 26. Minneapolis owner engagement ramping with Chad Tepley site and dinner.' },
+
+  { color:'#c0392b', name:'Guest & Owner Relations', hrs:'4.2 hrs/wk · 30d avg', total:'17.8 hrs / 30 days',
+    heads:['Block','Date','Type','Duration'],
+    rows:[['Filming — Ford Commercial on W 2nd St','Mar 8','On-property event','3.0h'],['Adidas x Proper x The Loop','Mar 9','Brand partnership','1.0h'],['Bank of America Pre-Con','Mar 9','Group pre-con (tentative)','1.0h'],['Guest Reviews Workflow','Mar 2','Guest experience','1.0h'],['La Pisina Flooring Meeting','Mar 19','Renovation / guest impact','0.5h'],['Verbena Spa / KWI Review','Mar 25','Spa vendor + guest product','0.75h'],['Proper Welcome (onboarding)','Mar 25','Culture / GM presence','0.5h'],['Tea with Anis + Steward Team','Mar 25','Team culture','1.0h'],['Site Visit — SpaceX','Mar 28','External site buy','1.0h'],['Farewell — Kinsey East','Mar 27','Team culture','0.5h'],['Dinner at Peacock (Chad Tepley)','Mar 30','Owner dinner','2.0h'],['Tour / Lunch at Austin Proper','Mar 31','Property tour (prospects)','2.0h'],['Lobby Ambassador block','Mar 6','Floor time / guest presence','1.0h'],['Drink with Mo Abouchalbak (FOP)','Mar 27','FOP guest engagement','1.0h'],['Austin Proper Spa Kickoff','Mar 19','Spa programming','1.0h']],
+    note:'Includes on-property events (Ford filming, Adidas), owner dinners, site tours, guest recovery, and GM floor/lobby presence time. Harder to capture fully — actual floor time is higher than what is blocked.' },
+
+  { color:'#7f8c8d', name:'Monthly & Financial', hrs:'2.3 hrs/wk · 30d avg', total:'10.0 hrs / 30 days',
+    heads:['Meeting','Scope','Duration','Cadence'],
+    rows:[['Anis x Gabe Review','EVP 1:1 — performance & strategy','30 min','Monthly + ad hoc'],['Proper AI Monthly','All GMs + corporate senior leadership','60 min (tentative)','Monthly'],['Midmonth Financial Review (Group 1)','Mid-month P&L check','2.0h','Monthly'],['February 2026 Financial Review','Full P&L deep-dive','60 min','Monthly'],['Manager\'s Financial Review','All dept heads — P&L','60 min','Monthly'],['AUP: Capex Biweekly','Capex planning','30 min','Biweekly'],['AUP: Suites Budget Review','Suites renovation budget','60 min','One-time'],['Review Increases','Compensation / rate review','60 min','Ad hoc'],['Forecast 4 Deadline','Forecast submission','60 min','Monthly']],
+    note:'Two financial review tracks run in parallel: mid-month check (Group 1) and full monthly close. Gabe 1:1 is monthly but critical for corporate alignment.' },
+
+  { color:'#16a085', name:'HR & Talent', hrs:'1.7 hrs/wk · 30d avg', total:'7.2 hrs / 30 days',
+    heads:['Meeting','Context','Duration','Type'],
+    rows:[['Resume Meeting','Weekly pipeline review — open roles','30 min','Recurring weekly'],['Meaningful Performance Reviews','Company-wide performance review rollout','60 min ×2','One-time project'],['Amanda Guerrero — PK Hostess Interview','Peacock Kitchen hire','30 min (tentative)','Interview'],['Max Houston — Peacock Runner','Staff role','10 min','Interview'],['Anis x Jacob Shaw — ESM Interview','Event Service Manager candidate','30 min','Interview'],['Overnight Hotel Manager Interview (Joanna)','Night manager role','30 min','Interview'],['Catch up — Chief Engineer position','Engineering leadership search','30 min','Search planning'],['Anis, Jess & Kinsey','Transition / events staffing','60 min','Transition planning'],['Wage Conversation — ATXP','Compensation discussion','30 min','Ad hoc'],['Proper Story / Leadership / Brand (Welcome)','Monthly Proper Welcome for new hires','30 min','Monthly recurring'],['FMLA next steps (solo block)','FMLA case admin','60 min','Admin'],['Ash & Lalaine Assessments (solo)','Performance assessment completion','90 min','Cycle work'],['Complete Ryan / Jasmine Assessments','Assessment prep','45 min','Cycle work']],
+    note:'Active search on multiple roles: Chief Engineer, Event Service Manager, Overnight Hotel Manager, F&B. Performance review cycle ran in March alongside operational load.' },
+
+  { color:'#d4a017', name:'AI / Innovation', hrs:'1.9 hrs/wk · 30d avg', total:'8.0 hrs / 30 days',
+    heads:['Block','Date','Mode','Duration'],
+    rows:[['AI — Building a site request form','Mar 3','Solo deep work (3h)','3.0h'],['OPEN CLAW AI Setup','Mar 11','Solo setup','1.0h'],['CLAUDE AI CODING','Mar 25','Solo build','0.5h'],['Claude Code — Proper App','Mar 30','Solo build session','1.5h'],['Claude Code — DEV Dashboard (Recon)','Mar 31','Solo build session','0.5h'],['Maya and Anis — Claude Code Training','Mar 24','Training w/ Maya','1.0h'],['Maya and Anis — Claude Code Training','Mar 27','Training w/ Maya','1.0h'],['Maya and Anis — Claude Code','Mar 31','Training w/ Maya','1.0h'],['Perplexity! (team demo)','Mar 23','AI tool review','0.75h'],['Claude Code — Biz Dev','Apr 1','Solo','0.25h'],['Perplexity computer tweaks','Apr 1','Solo AI work','0.5h']],
+    note:'Two modes: structured training sessions with Maya (3× in last 2 weeks) and solo deep-work build sessions on internal tools and Proper App. ~1.9 hrs/wk on 30d average but accelerating — last 7 days show 5.25h.' },
+];
+
+const container = document.getElementById('cats');
+accData.forEach((cat, i) => {
+  const wrap = document.createElement('div'); wrap.className = 'cat';
+  const head = document.createElement('div'); head.className = 'cat-head';
+  head.innerHTML = `
+    <div class="cat-l">
+      <div class="dot" style="background:${cat.color}"></div>
+      <span class="cname">${cat.name}</span>
+      <span class="cmeta">— ${cat.hrs}</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span class="cbadge">${cat.total}</span>
+      <span class="arr" id="arr${i}">&#9654;</span>
+    </div>`;
+  const body = document.createElement('div'); body.className = 'cbody';
+  let html = `<table class="mt"><thead><tr>${cat.heads.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>`;
+  cat.rows.forEach(r => { html += `<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`; });
   html += `</tbody></table>`;
   if (cat.note) html += `<div class="cnote">${cat.note}</div>`;
   body.innerHTML = html;
-  head.addEventListener("click", () => {
-    const open = body.classList.toggle("open");
-    document.getElementById("arr" + i).style.transform = open ? "rotate(90deg)" : "";
+  head.addEventListener('click', () => {
+    const open = body.classList.toggle('open');
+    document.getElementById('arr'+i).style.transform = open ? 'rotate(90deg)' : '';
   });
   wrap.appendChild(head); wrap.appendChild(body); container.appendChild(wrap);
 });
+
+// ── Gaps panel ─────────────────────────────────────────────────────────────────
+const gp = document.getElementById('gapsPanel');
+const significantGaps = GAPS.filter(g => g.duration_min >= 120);
+if (significantGaps.length === 0) {
+  gp.innerHTML = '<div style="font-size:12px;color:var(--text3)">No significant unblocked windows detected in this period.</div>';
+} else {
+  significantGaps.forEach(g => {
+    const d = new Date(g.date + 'T00:00:00');
+    const dayLabel = d.toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric' });
+    const durH = Math.round(g.duration_min / 60 * 10) / 10;
+    const div = document.createElement('div'); div.className = 'gap-item';
+    div.innerHTML = `<span class="gap-date">${dayLabel}</span><span class="gap-time">${g.start}–${g.end} (${durH}h)</span><span class="gap-ctx">${g.context}</span>`;
+    gp.appendChild(div);
+  });
+}
+
+// ── Initial render ─────────────────────────────────────────────────────────────
+render('30d');
 </script>
 </body>
 </html>
