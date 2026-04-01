@@ -633,8 +633,8 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
 ========================================================================================================================
   Total events tracked:     391
   Meeting hours (30d):      171.8h  (40.1h/wk)
-  Solo work hours (30d):    161.7h  (37.7h/wk)
-  Total committed (30d):    333.4h  (~194.5% of 40h week)
+  Solo work hours (30d):    85.4h  (19.9h/wk)
+  Total committed (30d):    257.1h  (~100.0% of 60h week)
 
   Category                               Hours   Count    Hrs/Wk
   ----------------------------------- --------  ------  --------
@@ -653,5 +653,5 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
   Email & Comms (solo)                    3.0h       3      0.7h
   Admin / Prep (solo)                     7.8h      12      1.8h
   Guest / Floor Time (solo)               5.0h       4      1.2h
-  Property & Floor Time                 139.4h     128     32.5h
+  Property & Floor Time                  63.1h     128     14.7h
   Deep Work / Other (solo)                6.5h       4      1.5h

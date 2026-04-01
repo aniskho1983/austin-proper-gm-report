@@ -48,6 +48,13 @@ MIN_GAP_MINUTES = 45  # gaps smaller than this are ignored
 # Scheduled days off — no gap detection on these days (0=Mon … 4=Fri, 5=Sat, 6=Sun)
 DAYS_OFF = {4, 5}  # Friday, Saturday
 
+# GM work-day assumption: 12h/day (7:45 AM – 8:00 PM), 5 working days = 60h/week.
+# property_floor is capped so total tracked hours never exceed this.
+# As more calendar blocks are added, property_floor shrinks automatically.
+GM_HOURS_PER_DAY  = 12
+GM_WORK_DAYS_PER_WEEK = 5
+GM_HOURS_PER_WEEK = GM_HOURS_PER_DAY * GM_WORK_DAYS_PER_WEEK  # 60
+
 # Standing floor-time windows (minutes since midnight, local time)
 # Any unblocked portion of these windows is automatically credited as Property & Floor Time.
 FLOOR_WINDOWS = [
@@ -613,6 +620,17 @@ def run(input_file='calendar_raw.json',
         days_in_window = (today - start_date).days
         weeks = max(days_in_window / 7, 1)
 
+        # Cap property_floor so total tracked hours ≤ GM_HOURS_PER_WEEK × weeks.
+        # All other categories are real calendar data and are never reduced.
+        # If meetings alone exceed the cap (heavy week), property_floor = 0.
+        max_total_h = GM_HOURS_PER_WEEK * weeks
+        non_floor_h = sum(v for k, v in cat_hours.items() if k != 'property_floor')
+        capped_floor = max(0.0, max_total_h - non_floor_h)
+        if cat_hours['property_floor'] > capped_floor:
+            excess = cat_hours['property_floor'] - capped_floor
+            cat_hours['property_floor'] = round(capped_floor, 2)
+            total_solo_h = max(0.0, total_solo_h - excess)
+
         summaries[window_key] = {
             'window':           window_key,
             'start_date':       start_date.isoformat(),
@@ -625,7 +643,7 @@ def run(input_file='calendar_raw.json',
             'total_h':          round(total_meeting_h + total_solo_h, 1),
             'meeting_h_per_wk': round(total_meeting_h / weeks, 1),
             'solo_h_per_wk':    round(total_solo_h / weeks, 1),
-            'pct_of_40h':       round((total_meeting_h + total_solo_h) / (weeks * 40) * 100, 1),
+            'pct_of_60h':       round((total_meeting_h + total_solo_h) / (weeks * GM_HOURS_PER_WEEK) * 100, 1),
             'by_category':      {k: {'hours': cat_hours[k], 'count': cat_count[k], 'hrs_per_wk': round(cat_hours[k] / weeks, 2)} for k in CATEGORY_META},
         }
 
@@ -703,7 +721,7 @@ def run(input_file='calendar_raw.json',
     lines.append(f"  Total events tracked:     {s30['total_events']}")
     lines.append(f"  Meeting hours (30d):      {s30['total_meeting_h']}h  ({s30['meeting_h_per_wk']}h/wk)")
     lines.append(f"  Solo work hours (30d):    {s30['total_solo_h']}h  ({s30['solo_h_per_wk']}h/wk)")
-    lines.append(f"  Total committed (30d):    {s30['total_h']}h  (~{s30['pct_of_40h']}% of 40h week)")
+    lines.append(f"  Total committed (30d):    {s30['total_h']}h  (~{s30['pct_of_60h']}% of 60h week)")
     lines.append("")
     lines.append(f"  {'Category':<35} {'Hours':>8}  {'Count':>6}  {'Hrs/Wk':>8}")
     lines.append(f"  {'-'*35} {'-'*8}  {'-'*6}  {'-'*8}")
