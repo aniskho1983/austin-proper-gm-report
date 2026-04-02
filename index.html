@@ -123,11 +123,7 @@
 <!-- KPIs -->
 <div class="kpi-grid" id="kpiGrid"></div>
 
-<!-- Bar chart -->
-<div class="sec">Meeting hours per week by category</div>
-<div class="legend" id="barLeg"></div>
-<div class="chart-wrap"><canvas id="barChart"></canvas></div>
-<div class="chart-note">Property &amp; floor time shown separately in donut below · Solo blocks excluded from bar chart</div>
+
 
 <!-- Donut -->
 <div class="sec">Share of total tracked time</div>
@@ -190,7 +186,7 @@ const WIN_RANGES = {
 
 // ── State ─────────────────────────────────────────────────────────────────────
 let activeWindow = '30d';
-let barInst = null, donutInst = null;
+let donutInst = null;
 const GM_HOURS_PER_WEEK = 60;
 
 function fmt(n) { return Number(n).toFixed(1); }
@@ -243,40 +239,6 @@ function render(w) {
     <div class="kpi"><div class="kpi-num">${fmt(adminHpw)}h</div><div class="kpi-lbl">solo admin &amp; email / week</div></div>
     <div class="kpi"><div class="kpi-num">${pct60(totalHpw)}</div><div class="kpi-lbl">of 60h week committed</div></div>
   `;
-
-  // Bar legend
-  const leg = document.getElementById('barLeg');
-  leg.innerHTML = '';
-  MEETING_CATS.filter(c => bc[c.key].hrs_per_wk > 0).forEach(c => {
-    const s = document.createElement('span'); s.className = 'li';
-    s.innerHTML = `<span class="ld" style="background:${c.color}"></span>${c.label}`;
-    leg.appendChild(s);
-  });
-
-  // Bar chart
-  const barCats = MEETING_CATS.filter(c => bc[c.key].hrs_per_wk > 0)
-    .sort((a,b) => bc[a.key].hrs_per_wk - bc[b.key].hrs_per_wk);
-  if (barInst) barInst.destroy();
-  barInst = new Chart(document.getElementById('barChart'), {
-    type: 'bar',
-    data: {
-      labels: barCats.map(c => c.label),
-      datasets: [{ data: barCats.map(c => bc[c.key].hrs_per_wk),
-        backgroundColor: barCats.map(c => c.color + 'cc'),
-        borderColor: barCats.map(c => c.color),
-        borderWidth: 1, borderRadius: 3, borderSkipped: false }]
-    },
-    options: {
-      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false },
-        tooltip: { callbacks: { label: c => ' ' + c.parsed.x.toFixed(1) + ' hrs/wk' } } },
-      scales: {
-        x: { beginAtZero: true, grid: { color: 'rgba(128,128,128,0.12)' }, ticks: { callback: v => v + 'h', font: { size: 11 } } },
-        y: { grid: { display: false }, ticks: { font: { size: 12 },
-          callback: function(val) { const l = this.getLabelForValue(val); return l.length > 26 ? l.slice(0,26)+'…' : l; } } }
-      }
-    }
-  });
 
   // Donut
   const donutCats = ALL_CATS.filter(c => bc[c.key] && bc[c.key].hours > 0);
