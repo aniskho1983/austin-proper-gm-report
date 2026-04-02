@@ -308,23 +308,26 @@ function render(w) {
     pieLeg.appendChild(r);
   });
 
-  // Summary table
+  // Summary table — sorted by % of 60h week descending
   const tbody = document.getElementById('sumTbl');
   tbody.innerHTML = '';
   let totMeet = 0, totSolo = 0;
-  MEETING_CATS.filter(c => bc[c.key].hours > 0).forEach(c => {
-    const r = bc[c.key]; totMeet += r.hours;
+
+  const allTableCats = [
+    ...MEETING_CATS.map(c => ({ ...c, badge: 'meeting' })),
+    ...SOLO_CATS.map(c => ({ ...c, badge: 'solo' })),
+  ]
+  .filter(c => bc[c.key] && bc[c.key].hours > 0)
+  .sort((a, b) => bc[b.key].hrs_per_wk - bc[a.key].hrs_per_wk);
+
+  allTableCats.forEach(c => {
+    const r = bc[c.key];
+    const isMeet = c.badge === 'meeting';
+    if (isMeet) totMeet += r.hours; else totSolo += r.hours;
+    const badge = isMeet ? '<span class="badge-meet">meeting</span>' : '<span class="badge-solo">solo</span>';
     const tr = document.createElement('tr');
     tr.innerHTML = `<td><span style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${c.color};margin-right:6px;vertical-align:middle"></span>${c.label}</td>
-      <td><span class="badge-meet">meeting</span></td>
-      <td>${fmt(r.hours)}h</td><td>${fmt(r.hrs_per_wk)}h</td><td>${pct60(r.hrs_per_wk)}</td>`;
-    tbody.appendChild(tr);
-  });
-  SOLO_CATS.filter(c => bc[c.key] && bc[c.key].hours > 0).forEach(c => {
-    const r = bc[c.key]; totSolo += r.hours;
-    const tr = document.createElement('tr');
-    tr.innerHTML = `<td><span style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${c.color};margin-right:6px;vertical-align:middle"></span>${c.label}</td>
-      <td><span class="badge-solo">solo</span></td>
+      <td>${badge}</td>
       <td>${fmt(r.hours)}h</td><td>${fmt(r.hrs_per_wk)}h</td><td>${pct60(r.hrs_per_wk)}</td>`;
     tbody.appendChild(tr);
   });
