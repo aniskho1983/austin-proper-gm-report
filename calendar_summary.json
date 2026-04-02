@@ -1,52 +1,52 @@
 {
   "7d": {
     "window": "7d",
-    "start_date": "2026-03-25",
-    "end_date": "2026-04-01",
+    "start_date": "2026-03-26",
+    "end_date": "2026-04-02",
     "days": 7,
     "weeks": 1.0,
-    "total_events": 116,
-    "total_meeting_h": 57.8,
+    "total_events": 120,
+    "total_meeting_h": 57.5,
     "total_solo_h": 11.2,
-    "total_h": 69.1,
-    "meeting_h_per_wk": 57.8,
+    "total_h": 68.8,
+    "meeting_h_per_wk": 57.5,
     "solo_h_per_wk": 11.2,
-    "pct_of_60h": 115.1,
+    "pct_of_60h": 114.6,
     "by_category": {
       "daily_ops": {
-        "hours": 8.5,
-        "count": 23,
-        "hrs_per_wk": 8.5
+        "hours": 9.0,
+        "count": 24,
+        "hrs_per_wk": 9.0
       },
       "direct_reports": {
-        "hours": 7.75,
-        "count": 8,
-        "hrs_per_wk": 7.75
+        "hours": 7.25,
+        "count": 7,
+        "hrs_per_wk": 7.25
       },
       "weekly_ops": {
-        "hours": 5.25,
-        "count": 5,
-        "hrs_per_wk": 5.25
+        "hours": 4.5,
+        "count": 4,
+        "hrs_per_wk": 4.5
       },
       "project_dev": {
-        "hours": 19.0,
+        "hours": 18.5,
         "count": 13,
-        "hrs_per_wk": 19.0
+        "hrs_per_wk": 18.5
       },
       "ai_innovation": {
-        "hours": 5.25,
-        "count": 7,
-        "hrs_per_wk": 5.25
+        "hours": 5.75,
+        "count": 8,
+        "hrs_per_wk": 5.75
       },
       "monthly_fin": {
-        "hours": 1.5,
-        "count": 2,
-        "hrs_per_wk": 1.5
+        "hours": 0.5,
+        "count": 1,
+        "hrs_per_wk": 0.5
       },
       "payroll": {
-        "hours": 2.0,
-        "count": 3,
-        "hrs_per_wk": 2.0
+        "hours": 4.0,
+        "count": 6,
+        "hrs_per_wk": 4.0
       },
       "sales_mktg": {
         "hours": 0.5,
@@ -54,9 +54,9 @@
         "hrs_per_wk": 0.5
       },
       "guest_relations": {
-        "hours": 4.33,
-        "count": 7,
-        "hrs_per_wk": 4.33
+        "hours": 1.5,
+        "count": 2,
+        "hrs_per_wk": 1.5
       },
       "hr_talent": {
         "hours": 2.5,
@@ -64,14 +64,14 @@
         "hrs_per_wk": 2.5
       },
       "vendor_ops": {
-        "hours": 1.25,
-        "count": 2,
-        "hrs_per_wk": 1.25
+        "hours": 3.0,
+        "count": 4,
+        "hrs_per_wk": 3.0
       },
       "legal_external": {
-        "hours": 0.0,
-        "count": 0,
-        "hrs_per_wk": 0.0
+        "hours": 0.5,
+        "count": 1,
+        "hrs_per_wk": 0.5
       },
       "solo_email": {
         "hours": 3.0,
@@ -79,9 +79,9 @@
         "hrs_per_wk": 3.0
       },
       "solo_admin": {
-        "hours": 6.25,
-        "count": 9,
-        "hrs_per_wk": 6.25
+        "hours": 5.75,
+        "count": 8,
+        "hrs_per_wk": 5.75
       },
       "guest_floor": {
         "hours": 1.5,
@@ -90,44 +90,44 @@
       },
       "property_floor": {
         "hours": 0.0,
-        "count": 26,
+        "count": 29,
         "hrs_per_wk": 0.0
       },
       "solo_work_other": {
+        "hours": 1.0,
+        "count": 2,
+        "hrs_per_wk": 1.0
+      },
+      "uncategorized": {
         "hours": 0.5,
         "count": 1,
         "hrs_per_wk": 0.5
-      },
-      "uncategorized": {
-        "hours": 0.0,
-        "count": 0,
-        "hrs_per_wk": 0.0
       }
     }
   },
   "30d": {
     "window": "30d",
-    "start_date": "2026-03-02",
-    "end_date": "2026-04-01",
+    "start_date": "2026-03-03",
+    "end_date": "2026-04-02",
     "days": 30,
     "weeks": 4.3,
-    "total_events": 391,
-    "total_meeting_h": 171.8,
-    "total_solo_h": 85.4,
-    "total_h": 257.1,
-    "meeting_h_per_wk": 40.1,
-    "solo_h_per_wk": 19.9,
-    "pct_of_60h": 100.0,
+    "total_events": 397,
+    "total_meeting_h": 174.0,
+    "total_solo_h": 82.6,
+    "total_h": 256.6,
+    "meeting_h_per_wk": 40.6,
+    "solo_h_per_wk": 19.3,
+    "pct_of_60h": 99.8,
     "by_category": {
       "daily_ops": {
-        "hours": 31.75,
+        "hours": 32.0,
         "count": 89,
-        "hrs_per_wk": 7.41
+        "hrs_per_wk": 7.47
       },
       "direct_reports": {
-        "hours": 25.25,
-        "count": 29,
-        "hrs_per_wk": 5.89
+        "hours": 24.5,
+        "count": 28,
+        "hrs_per_wk": 5.72
       },
       "weekly_ops": {
         "hours": 27.0,
@@ -135,24 +135,24 @@
         "hrs_per_wk": 6.3
       },
       "project_dev": {
-        "hours": 30.75,
-        "count": 20,
-        "hrs_per_wk": 7.17
+        "hours": 31.25,
+        "count": 21,
+        "hrs_per_wk": 7.29
       },
       "ai_innovation": {
-        "hours": 8.0,
-        "count": 10,
-        "hrs_per_wk": 1.87
+        "hours": 9.0,
+        "count": 12,
+        "hrs_per_wk": 2.1
       },
       "monthly_fin": {
-        "hours": 10.0,
-        "count": 11,
-        "hrs_per_wk": 2.33
+        "hours": 8.0,
+        "count": 8,
+        "hrs_per_wk": 1.87
       },
       "payroll": {
-        "hours": 6.0,
-        "count": 9,
-        "hrs_per_wk": 1.4
+        "hours": 8.0,
+        "count": 12,
+        "hrs_per_wk": 1.87
       },
       "sales_mktg": {
         "hours": 8.5,
@@ -160,9 +160,9 @@
         "hrs_per_wk": 1.98
       },
       "guest_relations": {
-        "hours": 9.83,
-        "count": 14,
-        "hrs_per_wk": 2.29
+        "hours": 8.83,
+        "count": 13,
+        "hrs_per_wk": 2.06
       },
       "hr_talent": {
         "hours": 7.17,
@@ -170,14 +170,14 @@
         "hrs_per_wk": 1.67
       },
       "vendor_ops": {
-        "hours": 7.25,
-        "count": 10,
-        "hrs_per_wk": 1.69
+        "hours": 9.0,
+        "count": 12,
+        "hrs_per_wk": 2.1
       },
       "legal_external": {
-        "hours": 0.25,
-        "count": 1,
-        "hrs_per_wk": 0.06
+        "hours": 0.75,
+        "count": 2,
+        "hrs_per_wk": 0.18
       },
       "solo_email": {
         "hours": 3.0,
@@ -185,9 +185,9 @@
         "hrs_per_wk": 0.7
       },
       "solo_admin": {
-        "hours": 7.75,
-        "count": 12,
-        "hrs_per_wk": 1.81
+        "hours": 7.25,
+        "count": 11,
+        "hrs_per_wk": 1.69
       },
       "guest_floor": {
         "hours": 5.0,
@@ -195,75 +195,75 @@
         "hrs_per_wk": 1.17
       },
       "property_floor": {
-        "hours": 63.14,
-        "count": 128,
-        "hrs_per_wk": 14.73
+        "hours": 60.39,
+        "count": 129,
+        "hrs_per_wk": 14.09
       },
       "solo_work_other": {
-        "hours": 6.5,
-        "count": 4,
-        "hrs_per_wk": 1.52
+        "hours": 7.0,
+        "count": 5,
+        "hrs_per_wk": 1.63
       },
       "uncategorized": {
-        "hours": 0.0,
-        "count": 0,
-        "hrs_per_wk": 0.0
+        "hours": 0.5,
+        "count": 1,
+        "hrs_per_wk": 0.12
       }
     }
   },
   "ytd": {
     "window": "ytd",
     "start_date": "2026-01-01",
-    "end_date": "2026-04-01",
-    "days": 90,
-    "weeks": 12.9,
-    "total_events": 397,
-    "total_meeting_h": 171.8,
-    "total_solo_h": 186.2,
-    "total_h": 357.9,
-    "meeting_h_per_wk": 13.4,
-    "solo_h_per_wk": 14.5,
-    "pct_of_60h": 46.4,
+    "end_date": "2026-04-02",
+    "days": 91,
+    "weeks": 13.0,
+    "total_events": 420,
+    "total_meeting_h": 180.5,
+    "total_solo_h": 190.4,
+    "total_h": 370.9,
+    "meeting_h_per_wk": 13.9,
+    "solo_h_per_wk": 14.6,
+    "pct_of_60h": 47.6,
     "by_category": {
       "daily_ops": {
-        "hours": 31.75,
-        "count": 89,
-        "hrs_per_wk": 2.47
+        "hours": 33.25,
+        "count": 93,
+        "hrs_per_wk": 2.56
       },
       "direct_reports": {
-        "hours": 25.25,
-        "count": 29,
-        "hrs_per_wk": 1.96
+        "hours": 26.25,
+        "count": 30,
+        "hrs_per_wk": 2.02
       },
       "weekly_ops": {
         "hours": 27.0,
         "count": 27,
-        "hrs_per_wk": 2.1
+        "hrs_per_wk": 2.08
       },
       "project_dev": {
-        "hours": 30.75,
-        "count": 20,
-        "hrs_per_wk": 2.39
+        "hours": 31.25,
+        "count": 21,
+        "hrs_per_wk": 2.4
       },
       "ai_innovation": {
-        "hours": 8.0,
-        "count": 10,
-        "hrs_per_wk": 0.62
+        "hours": 9.0,
+        "count": 12,
+        "hrs_per_wk": 0.69
       },
       "monthly_fin": {
         "hours": 10.0,
         "count": 11,
-        "hrs_per_wk": 0.78
+        "hrs_per_wk": 0.77
       },
       "payroll": {
-        "hours": 6.0,
-        "count": 9,
-        "hrs_per_wk": 0.47
+        "hours": 8.0,
+        "count": 12,
+        "hrs_per_wk": 0.62
       },
       "sales_mktg": {
         "hours": 8.5,
         "count": 8,
-        "hrs_per_wk": 0.66
+        "hrs_per_wk": 0.65
       },
       "guest_relations": {
         "hours": 9.83,
@@ -271,19 +271,19 @@
         "hrs_per_wk": 0.76
       },
       "hr_talent": {
-        "hours": 7.17,
-        "count": 12,
-        "hrs_per_wk": 0.56
+        "hours": 7.67,
+        "count": 13,
+        "hrs_per_wk": 0.59
       },
       "vendor_ops": {
-        "hours": 7.25,
-        "count": 10,
-        "hrs_per_wk": 0.56
+        "hours": 9.0,
+        "count": 12,
+        "hrs_per_wk": 0.69
       },
       "legal_external": {
-        "hours": 0.25,
-        "count": 1,
-        "hrs_per_wk": 0.02
+        "hours": 0.75,
+        "count": 2,
+        "hrs_per_wk": 0.06
       },
       "solo_email": {
         "hours": 3.0,
@@ -298,22 +298,22 @@
       "guest_floor": {
         "hours": 5.0,
         "count": 4,
-        "hrs_per_wk": 0.39
+        "hrs_per_wk": 0.38
       },
       "property_floor": {
-        "hours": 163.92,
-        "count": 134,
-        "hrs_per_wk": 12.75
+        "hours": 167.67,
+        "count": 140,
+        "hrs_per_wk": 12.9
       },
       "solo_work_other": {
-        "hours": 6.5,
-        "count": 4,
-        "hrs_per_wk": 0.51
+        "hours": 7.0,
+        "count": 5,
+        "hrs_per_wk": 0.54
       },
       "uncategorized": {
-        "hours": 0.0,
-        "count": 0,
-        "hrs_per_wk": 0.0
+        "hours": 0.5,
+        "count": 1,
+        "hrs_per_wk": 0.04
       }
     }
   }

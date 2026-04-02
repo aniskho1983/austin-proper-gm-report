@@ -514,7 +514,7 @@ Period: March 2 – April 1, 2026  |  Generated: 2026-04-01
   16:30–17:00    0.5h    att:0   [SOLO     ] [Project Development           ] Minneapolis continued
   17:00–18:00    1.0h    att:0   [SOLO     ] [Guest / Floor Time (solo)     ] drink with Mo abouchalbak FOP
   18:00–18:30    0.5h    att:0   [SOLO     ] [Admin / Prep (solo)           ] GM REPORT
-  18:30–19:00    0.5h    att:0   [SOLO     ] [Deep Work / Other (solo)      ] deal with public noise
+  18:30–19:00    0.5h    att:0   [MEETING  ] [Legal Counsel                 ] CAll with Shannon to deal with public noise
   19:00–20:00    1.0h    att:0   [SOLO     ] [Admin / Prep (solo)           ] FMLA next steps
   ALL-DAY        all-day att:3   [CONTEXT  ] [context_block                 ] FOP - Rebecca Cohen
 
@@ -612,10 +612,39 @@ Period: March 2 – April 1, 2026  |  Generated: 2026-04-01
   12:00–12:15    0.2h    att:0   [SOLO     ] [AI / Innovation               ] Claude Code - BIZ DEV
   12:15–13:00    0.8h    att:20  [MEETING  ] [Weekly Ops Meetings           ] GM Meeting
   13:00–15:00    2.0h    att:11  [MEETING  ] [Weekly Ops Meetings           ] ExCom Meeting - resending series 
-  15:00–16:00    1.0h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Midday Floor Time)
+  15:00–15:30    0.5h    att:0   [SOLO     ] [AI / Innovation               ] Claude Code Biz DEV
+  15:30–16:00    0.5h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Midday Floor Time)
   16:00–17:00    1.0h    att:17  [MEETING  ] [Weekly Ops Meetings           ] Austin Revenue Optimization Meeting
   16:30–17:00    0.5h    att:27  [MEETING  ] [Daily Ops Rhythm              ] Daily Proper PM Shift
-  17:00–17:45    0.8h    att:0   [SOLO     ] [Admin / Prep (solo)           ] Complete Jasmine Assessment
+  17:00–17:30    0.5h    att:0   [MEETING  ] [AI / Innovation               ] Call with BK on AI
+  17:30–18:00    0.5h    att:0   [SOLO     ] [Deep Work / Other (solo)      ] Walk of prop
+  18:00–18:45    0.8h    att:0   [SOLO     ] [Admin / Prep (solo)           ] Complete Jasmine Assessment
+  18:30–19:00    0.5h    att:0   [SOLO     ] [Deep Work / Other (solo)      ] Suite overbooking bdt plan with ryan and Nat
+  19:00–19:30    0.5h    att:0   [SOLO     ] [Project Development           ] Zack V and Anis Minneapolis BOH call
+  ALL-DAY        all-day att:3   [CONTEXT  ] [context_block                 ] FOP Reservation - Ben Trodd
+  ALL-DAY        all-day att:1   [CONTEXT  ] [context_block                 ] AirCo Scheduled for Service
+  19:30–20:00    0.5h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Evening Property Walk)
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Thu Apr 02
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  07:45–09:00    1.2h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Morning Property Walk)
+  09:00–09:30    0.5h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Midday Floor Time)
+  09:30–09:45    0.2h    att:2   [MEETING  ] [Daily Ops Rhythm              ] AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd fl
+  09:45–10:15    0.5h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Midday Floor Time)
+  10:15–10:30    0.2h    att:2   [MEETING  ] [Daily Ops Rhythm              ] ATXP Daily 90-Day Rate Review
+  10:30–11:00    0.5h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Midday Floor Time)
+  11:00–11:30    0.5h    att:2   [MEETING  ] [HR & Talent                   ] Resume Meeting
+  11:30–12:00    0.5h    att:2   [MEETING  ] [Daily Ops Rhythm              ] ATXP Daily DBR Review
+  12:00–13:00    1.0h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Midday Floor Time)
+  13:00–13:45    0.8h    att:2   [MEETING  ] [Vendor / External Partners    ] Kappo Kappo weekly catch up
+  14:00–14:30    0.5h    att:2   [MEETING  ] [Payroll Cycles                ] Payroll Meeting
+  14:30–15:15    0.8h    att:2   [MEETING  ] [Payroll Cycles                ] Payroll Meeting - F&B FOH
+  15:15–16:00    0.8h    att:2   [MEETING  ] [Payroll Cycles                ] Payroll Meeting - F&B BOH
+  16:00–17:00    1.0h    att:2   [MEETING  ] [Vendor / External Partners    ] MEET - Proper x MML Monthly
+  16:30–17:00    0.5h    att:2   [MEETING  ] [Daily Ops Rhythm              ] Daily Proper PM Shift
+  17:00–18:00    1.0h    att:1   [MEETING  ] [Direct Report 1:1s            ] Anna and Anis 1 on 1
+  17:30–18:00    0.5h    att:2   [TENTATIVE] [⚠ Needs Review                ] Coretta Send Off Dinner
   18:00–20:00    2.0h    att:0   [SOLO     ] [Property & Floor Time         ] Property & Floor Time (Evening Property Walk)
 
 ========================================================================================================================
@@ -629,29 +658,35 @@ GAPS IN WORKING HOURS (>45 min, no calendar block)
   2026-03-31  10:30–11:30  (60 min)  |  After: ATXP Daily 90-Day Rate Review | Before: ATXP Daily DBR Review
 
 ========================================================================================================================
+⚠  UNCATEGORIZED EVENTS — Needs Manual Review
+========================================================================================================================
+  Thu Apr 02     Coretta Send Off Dinner
+
+========================================================================================================================
 30-DAY SUMMARY BY CATEGORY
 ========================================================================================================================
-  Total events tracked:     391
-  Meeting hours (30d):      171.8h  (40.1h/wk)
-  Solo work hours (30d):    85.4h  (19.9h/wk)
-  Total committed (30d):    257.1h  (~100.0% of 60h week)
+  Total events tracked:     397
+  Meeting hours (30d):      174.0h  (40.6h/wk)
+  Solo work hours (30d):    82.6h  (19.3h/wk)
+  Total committed (30d):    256.6h  (~99.8% of 60h week)
 
   Category                               Hours   Count    Hrs/Wk
   ----------------------------------- --------  ------  --------
-  Daily Ops Rhythm                       31.8h      89      7.4h
-  Direct Report 1:1s                     25.2h      29      5.9h
+  Daily Ops Rhythm                       32.0h      89      7.5h
+  Direct Report 1:1s                     24.5h      28      5.7h
   Weekly Ops Meetings                    27.0h      27      6.3h
-  Project Development                    30.8h      20      7.2h
-  AI / Innovation                         8.0h      10      1.9h
-  Monthly & Financial                    10.0h      11      2.3h
-  Payroll Cycles                          6.0h       9      1.4h
+  Project Development                    31.2h      21      7.3h
+  AI / Innovation                         9.0h      12      2.1h
+  Monthly & Financial                     8.0h       8      1.9h
+  Payroll Cycles                          8.0h      12      1.9h
   Sales & Marketing                       8.5h       8      2.0h
-  Guest & Owner Relations                 9.8h      14      2.3h
+  Guest & Owner Relations                 8.8h      13      2.1h
   HR & Talent                             7.2h      12      1.7h
-  Vendor / External Partners              7.2h      10      1.7h
-  Legal Counsel                           0.2h       1      0.1h
+  Vendor / External Partners              9.0h      12      2.1h
+  Legal Counsel                           0.8h       2      0.2h
   Email & Comms (solo)                    3.0h       3      0.7h
-  Admin / Prep (solo)                     7.8h      12      1.8h
+  Admin / Prep (solo)                     7.2h      11      1.7h
   Guest / Floor Time (solo)               5.0h       4      1.2h
-  Property & Floor Time                  63.1h     128     14.7h
-  Deep Work / Other (solo)                6.5h       4      1.5h
+  Property & Floor Time                  60.4h     129     14.1h
+  Deep Work / Other (solo)                7.0h       5      1.6h
+  ⚠ Needs Review                          0.5h       1      0.1h

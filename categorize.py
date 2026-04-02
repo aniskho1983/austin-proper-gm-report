@@ -91,8 +91,8 @@ MANUAL_OVERRIDES = {
     "tour/ lunch at austin proper":              {"block_type": "meeting",  "category": "project_dev"},  # Minneapolis site tour
     "austin proper spa kickoff":                 {"block_type": "meeting",  "category": "project_dev"},  # Spa renovation project
 
-    # Legal counsel
-    "shannon and anis":                          {"block_type": "meeting",  "category": "legal_external"},
+    # Legal counsel — match any block mentioning Shannon
+    "shannon":                                   {"block_type": "meeting",  "category": "legal_external"},
 
     # AI / Innovation
     "perplexity!":                               {"block_type": "meeting",  "category": "ai_innovation"},
@@ -178,6 +178,14 @@ def classify_block_type(e):
         'minneapolis continued', 'fop site and lunch', 'home close',
         'deal with public noise', 'gm report', 'stewarding follow up'
     ]
+    # Collaborative-subject detection: "call with X", "meet with X", "work with X"
+    # upgrade 0-attendee blocks to meetings when the subject signals collaboration.
+    COLLAB_PREFIXES = ['call with', 'meet with', 'work with', 'chat with',
+                       'sync with', 'connect with', 'talk with', 'discussion with']
+    subj_l = subj.lower()
+    if any(p in subj_l for p in COLLAB_PREFIXES):
+        return 'meeting'
+
     if n_att == 0:
         if any(k in subj.lower() for k in solo_keywords):
             return 'solo_work'
@@ -579,7 +587,7 @@ def run(input_file='calendar_raw.json',
     gaps = find_gaps(events_by_date)
 
     # ── Step 4: Summary by time window ───────────────────────────────────────
-    today = date(2026, 4, 1)  # Report date
+    today = date(2026, 4, 2)  # Report date
     windows = {
         '7d':  today - timedelta(days=7),
         '30d': today - timedelta(days=30),
