@@ -34,6 +34,7 @@ Categories (maps to dashboard):
 import json
 import re
 from datetime import datetime, timedelta, timezone, date
+from slack_notify import send_briefing as send_slack_briefing
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
@@ -759,6 +760,14 @@ def run(input_file='calendar_raw.json',
     print(f"   {report_file}       — full human-readable audit")
     print(f"   {gaps_file}         — working-hour gaps to review")
     print(f"   {summary_file}      — hours by category for 7d/30d/YTD dashboard")
+
+    # Send to Slack (in addition to email)
+    print("\n📤 Sending briefing to Slack...")
+    slack_ok = send_slack_briefing(summary_file, gaps_file, categorized_file)
+    if slack_ok:
+        print("✓  Slack notification sent successfully")
+    else:
+        print("⚠  Slack notification skipped (configure SLACK_WEBHOOK_URL or SLACK_BOT_TOKEN)")
 
 
 if __name__ == '__main__':
