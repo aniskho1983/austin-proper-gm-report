@@ -1,0 +1,2098 @@
+{
+  "generated": "2026-06-26",
+  "window_start": "2026-06-12",
+  "summaries": {
+    "7d": {
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-26",
+      "days": 7,
+      "weeks": 1.0,
+      "total_events": 94,
+      "total_meeting_h": 46.3,
+      "total_solo_h": 16.5,
+      "total_h": 62.8,
+      "recovered_h": 14.2,
+      "meeting_h_per_wk": 46.3,
+      "solo_h_per_wk": 16.5,
+      "pct_of_60h": 104.7,
+      "by_category": {
+        "daily_ops": {
+          "hours": 8.25,
+          "count": 23,
+          "hrs_per_wk": 8.25
+        },
+        "direct_reports": {
+          "hours": 7.75,
+          "count": 9,
+          "hrs_per_wk": 7.75
+        },
+        "weekly_ops": {
+          "hours": 7.25,
+          "count": 7,
+          "hrs_per_wk": 7.25
+        },
+        "project_dev": {
+          "hours": 4.67,
+          "count": 5,
+          "hrs_per_wk": 4.67
+        },
+        "ai_innovation": {
+          "hours": 4.25,
+          "count": 5,
+          "hrs_per_wk": 4.25
+        },
+        "monthly_fin": {
+          "hours": 0.5,
+          "count": 1,
+          "hrs_per_wk": 0.5
+        },
+        "payroll": {
+          "hours": 0.0,
+          "count": 0,
+          "hrs_per_wk": 0.0
+        },
+        "sales_mktg": {
+          "hours": 2.0,
+          "count": 4,
+          "hrs_per_wk": 2.0
+        },
+        "guest_relations": {
+          "hours": 8.67,
+          "count": 10,
+          "hrs_per_wk": 8.67
+        },
+        "hr_talent": {
+          "hours": 2.0,
+          "count": 3,
+          "hrs_per_wk": 2.0
+        },
+        "vendor_ops": {
+          "hours": 1.0,
+          "count": 1,
+          "hrs_per_wk": 1.0
+        },
+        "legal_external": {
+          "hours": 0.0,
+          "count": 0,
+          "hrs_per_wk": 0.0
+        },
+        "solo_email": {
+          "hours": 0.5,
+          "count": 1,
+          "hrs_per_wk": 0.5
+        },
+        "solo_admin": {
+          "hours": 8.5,
+          "count": 9,
+          "hrs_per_wk": 8.5
+        },
+        "guest_floor": {
+          "hours": 0.0,
+          "count": 0,
+          "hrs_per_wk": 0.0
+        },
+        "property_floor": {
+          "hours": 0.0,
+          "count": 0,
+          "hrs_per_wk": 0.0
+        },
+        "solo_work_other": {
+          "hours": 7.5,
+          "count": 15,
+          "hrs_per_wk": 7.5
+        },
+        "uncategorized": {
+          "hours": 0.5,
+          "count": 1,
+          "hrs_per_wk": 0.5
+        }
+      }
+    },
+    "14d": {
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-26",
+      "days": 14,
+      "weeks": 2.0,
+      "total_events": 174,
+      "total_meeting_h": 94.3,
+      "total_solo_h": 23.0,
+      "total_h": 117.3,
+      "recovered_h": 20.0,
+      "meeting_h_per_wk": 47.2,
+      "solo_h_per_wk": 11.5,
+      "pct_of_60h": 97.8,
+      "by_category": {
+        "daily_ops": {
+          "hours": 16.5,
+          "count": 45,
+          "hrs_per_wk": 8.25
+        },
+        "direct_reports": {
+          "hours": 17.0,
+          "count": 19,
+          "hrs_per_wk": 8.5
+        },
+        "weekly_ops": {
+          "hours": 16.25,
+          "count": 16,
+          "hrs_per_wk": 8.12
+        },
+        "project_dev": {
+          "hours": 8.67,
+          "count": 8,
+          "hrs_per_wk": 4.33
+        },
+        "ai_innovation": {
+          "hours": 5.0,
+          "count": 6,
+          "hrs_per_wk": 2.5
+        },
+        "monthly_fin": {
+          "hours": 4.25,
+          "count": 5,
+          "hrs_per_wk": 2.12
+        },
+        "payroll": {
+          "hours": 0.0,
+          "count": 0,
+          "hrs_per_wk": 0.0
+        },
+        "sales_mktg": {
+          "hours": 3.0,
+          "count": 6,
+          "hrs_per_wk": 1.5
+        },
+        "guest_relations": {
+          "hours": 15.92,
+          "count": 17,
+          "hrs_per_wk": 7.96
+        },
+        "hr_talent": {
+          "hours": 2.5,
+          "count": 4,
+          "hrs_per_wk": 1.25
+        },
+        "vendor_ops": {
+          "hours": 5.25,
+          "count": 6,
+          "hrs_per_wk": 2.62
+        },
+        "legal_external": {
+          "hours": 0.0,
+          "count": 0,
+          "hrs_per_wk": 0.0
+        },
+        "solo_email": {
+          "hours": 0.5,
+          "count": 1,
+          "hrs_per_wk": 0.25
+        },
+        "solo_admin": {
+          "hours": 12.5,
+          "count": 16,
+          "hrs_per_wk": 6.25
+        },
+        "guest_floor": {
+          "hours": 0.0,
+          "count": 0,
+          "hrs_per_wk": 0.0
+        },
+        "property_floor": {
+          "hours": 0.0,
+          "count": 0,
+          "hrs_per_wk": 0.0
+        },
+        "solo_work_other": {
+          "hours": 10.0,
+          "count": 22,
+          "hrs_per_wk": 5.0
+        },
+        "uncategorized": {
+          "hours": 2.0,
+          "count": 3,
+          "hrs_per_wk": 1.0
+        }
+      }
+    }
+  },
+  "events": [
+    [
+      "2026-06-12",
+      "09:00-10:00",
+      "1.0h",
+      "FFOP site - Xenel Industries  - Jeddah Proper ",
+      "project_dev",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "10:45-11:30",
+      "0.75h",
+      "Patrick and Anis catch up",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "11:00-12:00",
+      "1.0h",
+      "Site Visit - Samsung E&C America",
+      "guest_relations",
+      "tentative",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "11:30-12:00",
+      "0.5h",
+      "ATXP Daily DBR Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "12:00-13:00",
+      "1.0h",
+      "Natascha and Anis catch up",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "13:00-13:30",
+      "0.5h",
+      "Proper ",
+      "uncategorized",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "13:30-14:00",
+      "0.5h",
+      "AUP: Capex Weekly",
+      "monthly_fin",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "14:00-15:45",
+      "1.75h",
+      "CAPEX Review",
+      "monthly_fin",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "15:00-16:00",
+      "1.0h",
+      "F&B meeting -weekly ",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "16:30-17:00",
+      "0.5h",
+      "GM REPORT",
+      "solo_admin",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "17:00-17:30",
+      "0.5h",
+      "Proper OS \u2014 Budget Season Intro",
+      "monthly_fin",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-12",
+      "18:00-19:00",
+      "1.0h",
+      "Bryan and Anis catch ups",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-13",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-13",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-13",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-14",
+      "08:00-08:30",
+      "0.5h",
+      "Kevin Andruss - 7951151118-1 - Exec FOP",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-14",
+      "08:45-09:15",
+      "0.5h",
+      "Recovered: Sunday F&B / World Cup viewing coordination",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-14",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-14",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-14",
+      "11:00-12:45",
+      "1.75h",
+      "Recovered: midday guest-recovery comps and survey push",
+      "guest_relations",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-14",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "10:45-11:30",
+      "0.75h",
+      "Ash X Anis",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "11:30-12:00",
+      "0.5h",
+      "ATXP Daily DBR Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "11:30-13:00",
+      "1.5h",
+      "FW: 2500 Cedar Springs | Hotel/Condo MEP - Bi-Weekly",
+      "project_dev",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "12:00-14:00",
+      "2.0h",
+      "Mati - Site Visit & Lunch w/ St. Davids Medical Center",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "12:00-12:15",
+      "0.25h",
+      "Weekly Generator Run",
+      "vendor_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "13:30-14:30",
+      "1.0h",
+      "Lalaine x Anis ",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "15:00-15:30",
+      "0.5h",
+      "SEND EXCOM AGENDA",
+      "solo_admin",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "15:00-15:30",
+      "0.5h",
+      "Proper OS - Weekly Standup",
+      "weekly_ops",
+      "tentative",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "16:00-17:00",
+      "1.0h",
+      "Training Call | Revenue Command Center + Group Pricing Tool",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-15",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "08:15-09:15",
+      "1.0h",
+      "Recovered: morning GM-search, ExCom agenda and ops coordination",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-16",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "10:30-11:00",
+      "0.5h",
+      "Recovered: late-morning email triage and F&B/marketing follow-ups",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-16",
+      "11:00-11:30",
+      "0.5h",
+      "Kat - Site Visit, Gift of Water Gala",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "11:00-11:15",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "11:30-12:00",
+      "0.5h",
+      "ATXP Daily DBR Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "12:00-12:45",
+      "0.75h",
+      "ATXP Property walk",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "12:00-13:15",
+      "1.25h",
+      "Leadership Meeting",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "13:00-14:00",
+      "1.0h",
+      "AUP Weekly Notion Tracking",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "14:45-15:15",
+      "0.5h",
+      "Recovered: afternoon STR comp-set analysis and ExCom prep",
+      "weekly_ops",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-16",
+      "16:00-17:00",
+      "1.0h",
+      "Craftable Issues - Support Meeting",
+      "vendor_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-16",
+      "17:30-18:30",
+      "1.0h",
+      "Ryan and Anis 1 on 1",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "09:00-09:30",
+      "0.5h",
+      "Recovered: morning Revinate guest-recovery drafts and rate strategy",
+      "guest_relations",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-17",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "10:00-11:00",
+      "1.0h",
+      "ACR Air Quality Testing (Kitchens) - 06.17.2026",
+      "vendor_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "10:00-10:45",
+      "0.75h",
+      "Austin Proper + BluIP - AIVA 3.0 Weekly Call",
+      "ai_innovation",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "11:00-12:00",
+      "1.0h",
+      "Kappo Kappo Meeting",
+      "vendor_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "12:30-13:00",
+      "0.5h",
+      "Recovered: midday EC/PDR, GM-search refs and Kappo promo coordination",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-17",
+      "13:00-13:30",
+      "0.5h",
+      "Karen Site: Madison Industries",
+      "sales_mktg",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "13:00-14:00",
+      "1.0h",
+      "May 2026 Financial Review",
+      "monthly_fin",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "13:00-15:00",
+      "2.0h",
+      "ExCom Meeting - resending series ",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "15:00-16:30",
+      "1.5h",
+      "Red Bluff Hotel - Bi-Weekly OAC",
+      "project_dev",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "16:00-17:00",
+      "1.0h",
+      "Austin Revenue Optimization Meeting",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-17",
+      "17:00-18:00",
+      "1.0h",
+      "Proper OS - Operations Standup",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "07:00-08:00",
+      "1.0h",
+      "PROPER RUN CLUB",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "08:30-09:30",
+      "1.0h",
+      "MEET - Breakfast TL/AK",
+      "uncategorized",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "09:30-10:00",
+      "0.5h",
+      "Ryan for Karen Site: Milwaukee Bucks",
+      "sales_mktg",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "10:45-11:30",
+      "0.75h",
+      "Patrick and Anis catch up",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "11:30-12:00",
+      "0.5h",
+      "ATXP Daily DBR Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "12:00-13:00",
+      "1.0h",
+      "Jasmine and Anis 1 on 1",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "13:00-13:30",
+      "0.5h",
+      "Meet with Keny Ayala - Candidate for Assistant Director of People & Culture",
+      "hr_talent",
+      "tentative",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "14:00-15:00",
+      "1.0h",
+      "Kappo Kappo weekly catch up",
+      "vendor_ops",
+      "tentative",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "16:00-16:30",
+      "0.5h",
+      "Recovered: afternoon GM-search sourcing, revenue and marketing follow-ups",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-18",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "17:00-18:00",
+      "1.0h",
+      "Anna and Anis 1 on 1",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-18",
+      "18:00-19:00",
+      "1.0h",
+      "Richard Wales and Anis catch up",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "10:15-11:00",
+      "0.75h",
+      "Proper Service Meeting",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "11:00-12:00",
+      "1.0h",
+      "2500 Cedar Springs | Hotel/Condo Food Service - Bi-Weekly",
+      "project_dev",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "12:00-13:00",
+      "1.0h",
+      "Natascha and Anis catch up",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "15:00-16:00",
+      "1.0h",
+      "Bryan and Anis catch ups",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "15:00-16:00",
+      "1.0h",
+      "F&B meeting -weekly ",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-19",
+      "16:30-17:00",
+      "0.5h",
+      "GM REPORT",
+      "solo_admin",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-20",
+      "06:00-06:30",
+      "0.5h",
+      "Goldie's Coffee moved to PK Lounge",
+      "uncategorized",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-20",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-20",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-20",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-21",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-21",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-21",
+      "13:15-13:45",
+      "0.5h",
+      "Recovered: Father's Day team shout-outs across ops channels",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-21",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "08:30-09:30",
+      "1.0h",
+      "Recovered: Morning email triage + ops/revenue coordination (filters, group report, RM)",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-22",
+      "09:30-10:30",
+      "1.0h",
+      "Sophie Site Visit - Cambridge Forums",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "10:45-11:30",
+      "0.75h",
+      "Ash X Anis",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "11:30-12:00",
+      "0.5h",
+      "ATXP Daily DBR Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "12:00-12:30",
+      "0.5h",
+      "Luke and Anis catch up",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "13:00-14:00",
+      "1.0h",
+      "Red Bluff F&B Concept Discussion",
+      "project_dev",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "14:00-14:25",
+      "0.42h",
+      "Virtual Meeting with DA Garza",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "14:30-15:00",
+      "0.5h",
+      "SEND EXCOM AGENDA",
+      "solo_admin",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "15:00-16:15",
+      "1.25h",
+      "Recovered: FOP/owner correspondence + reservations (Dorothee tour, Gindy, Room Request)",
+      "guest_relations",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-22",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "17:30-18:30",
+      "1.0h",
+      "ANIS LOBBY DUTY",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-22",
+      "18:30-19:45",
+      "1.25h",
+      "Recovered: Evening site-visit setup + surveillance/chiller capex correspondence",
+      "project_dev",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-23",
+      "08:00-09:00",
+      "1.0h",
+      "Recovered: Morning ops/revenue/DBR coordination + FOP coffee (Gindy)",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-23",
+      "09:00-10:00",
+      "1.0h",
+      "Coffee with Andrew Gindy - FOP from BDL",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "11:00-12:00",
+      "1.0h",
+      "Site with Dorothee Melizichon - Designer of Minneapolis By Proper",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "11:30-12:00",
+      "0.5h",
+      "ATXP Daily DBR Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "12:00-13:15",
+      "1.25h",
+      "Leadership Meeting",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "13:30-14:00",
+      "0.5h",
+      "Forbes Travel Guide/Austin Proper Catch-Up",
+      "sales_mktg",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "14:00-15:00",
+      "1.0h",
+      "Tea With Anis + 2nd Floor Culinary Team Request ",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "15:00-15:30",
+      "0.5h",
+      "Recovered: Owner/FOP follow-ups (Brian DeLowe Austin, site visits)",
+      "guest_relations",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-23",
+      "16:00-17:00",
+      "1.0h",
+      "Proper OS - Operations Standup",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "17:00-17:30",
+      "0.5h",
+      "Vanessa Eckert interview",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-23",
+      "18:00-19:00",
+      "1.0h",
+      "Recovered: FOP site-visit coordination + OOO calendar processing",
+      "guest_relations",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-24",
+      "08:15-09:30",
+      "1.25h",
+      "Recovered: GM exec briefing review + Kappo/AV/budget email triage",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-24",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "11:00-11:30",
+      "0.5h",
+      "LP Manager Interview - Hrushikesh ",
+      "hr_talent",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "12:00-13:00",
+      "1.0h",
+      "GM Meeting",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "13:00-13:45",
+      "0.75h",
+      "\ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f Wellness Day, Session 1 \ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f",
+      "hr_talent",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "13:00-14:30",
+      "1.5h",
+      "ExCom Meeting - resending series ",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "14:00-14:45",
+      "0.75h",
+      "\ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f Wellness Day, Session 2 \ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f",
+      "hr_talent",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "14:45-15:10",
+      "0.42h",
+      "[EXTERNAL] Discussion Regarding Residential Service Opportunities",
+      "project_dev",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "15:15-16:00",
+      "0.75h",
+      "Recovered: AIVA/BluIP webhook validations + community/eng follow-ups",
+      "ai_innovation",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-24",
+      "16:00-17:00",
+      "1.0h",
+      "Austin Revenue Optimization Meeting",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "17:00-18:00",
+      "1.0h",
+      "Download Hermes",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-24",
+      "18:00-20:00",
+      "2.0h",
+      "Recovered: Evening GM-call agenda admin, FFOP comp res, residential + Mind Matrix",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-25",
+      "07:00-08:00",
+      "1.0h",
+      "PROPER RUN CLUB",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "08:00-09:15",
+      "1.25h",
+      "Recovered: AM briefing review + Forbes prep, security (Mendoza), AIVA 2.5 vs 3.0 coordination",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-25",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "10:00-10:30",
+      "0.5h",
+      "AVENDRA - ECOLAB RESEARCH",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "11:00-11:30",
+      "0.5h",
+      "WELLNESS ROOMS START TO ROLL OUT",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "11:30-12:00",
+      "0.5h",
+      "ATXP Daily DBR Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "12:00-13:00",
+      "1.0h",
+      "Jasmine and Anis 1 on 1",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "13:00-14:00",
+      "1.0h",
+      "Recovered: Guest/wellness correspondence + webhook scheduling + wedding site",
+      "guest_relations",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-25",
+      "14:00-15:00",
+      "1.0h",
+      "Kappo Kappo weekly catch up",
+      "vendor_ops",
+      "tentative",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "15:00-15:45",
+      "0.75h",
+      "Proper Hotels + BluIP - AIVA 3.0 Discussion",
+      "ai_innovation",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "16:00-16:45",
+      "0.75h",
+      "Austin Proper + BluIP - AIVA 3.0 Weekly Call",
+      "ai_innovation",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "17:30-18:00",
+      "0.5h",
+      "Recovered: OXYLIGHT/Verbena spa marketing + press outreach correspondence",
+      "solo_email",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-25",
+      "18:00-19:00",
+      "1.0h",
+      "Review Hotel California Proforma",
+      "project_dev",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-25",
+      "19:00-20:00",
+      "1.0h",
+      "Recovered: Evening AI data-validation demos (Toast/Snowflake/AIVA) + Dallas 2500 Cedar Springs concept",
+      "ai_innovation",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-26",
+      "08:30-09:30",
+      "1.0h",
+      "Clean up Claude Code - / work on daily task checker for teams",
+      "ai_innovation",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "09:30-10:00",
+      "0.5h",
+      "Sophie for Karen Site: ABPM",
+      "sales_mktg",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "09:30-09:45",
+      "0.25h",
+      "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "09:45-10:00",
+      "0.25h",
+      "GLITCH AND REVINATE REVIEW",
+      "solo_work_other",
+      "solo_work",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "10:15-11:00",
+      "0.75h",
+      "Proper Service Meeting",
+      "weekly_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "10:30-10:45",
+      "0.25h",
+      "ATXP Daily 90-Day Rate Review",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "11:00-11:45",
+      "0.75h",
+      "Tokhir Anis catch up - Ecolab",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "12:00-12:45",
+      "0.75h",
+      "Phil and Anis Caesar wrap catch up",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "13:30-14:00",
+      "0.5h",
+      "Kat - Wedding Site, Nicholson Dodson Wedding",
+      "sales_mktg",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "13:30-14:00",
+      "0.5h",
+      "AUP: Capex Weekly",
+      "monthly_fin",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "14:00-15:00",
+      "1.0h",
+      "Natascha and Anis catch up",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "14:30-15:00",
+      "0.5h",
+      "Kat - Site Visit, White Construction Holiday Party",
+      "guest_relations",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "15:00-16:00",
+      "1.0h",
+      "Bryan and Anis catch ups",
+      "direct_reports",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "16:00-16:30",
+      "0.5h",
+      "Austin Grand Prix/FTG/Alba Larsen Discovery Call",
+      "sales_mktg",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "16:30-17:00",
+      "0.5h",
+      "Daily Proper PM Shift",
+      "daily_ops",
+      "meeting",
+      "logged"
+    ],
+    [
+      "2026-06-26",
+      "16:30-17:00",
+      "0.5h",
+      "GM REPORT",
+      "solo_admin",
+      "solo_work",
+      "logged"
+    ]
+  ],
+  "inferred_detail": [
+    {
+      "date": "2026-06-14",
+      "time": "08:45-09:15",
+      "subject": "Recovered: Sunday F&B / World Cup viewing coordination",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 0.5,
+      "evidence": [
+        "08:50 Slack #atxp-fb World Cup viewing amenity",
+        "08:52 Slack #atxp-fb F&B coordination",
+        "09:12 Slack #atxp-fb",
+        "09:13 Slack #atxp-fb World Cup game selection/turnout"
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "time": "11:00-12:45",
+      "subject": "Recovered: midday guest-recovery comps and survey push",
+      "category": "guest_relations",
+      "confidence": "high",
+      "hours": 1.75,
+      "evidence": [
+        "10:59 Slack #atxp-fd \"Comp the night\" guest recovery",
+        "11:00 Slack #atxp-fd survey push / 92 overall score",
+        "11:08 Slack #atxp-fb Super Bowl/World Series viewing ideas",
+        "12:38 Slack DM Natascha \"I texted too\""
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "time": "08:15-09:15",
+      "subject": "Recovered: morning GM-search, ExCom agenda and ops coordination",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 1.0,
+      "evidence": [
+        "08:09 Slack #atxp-runclub",
+        "08:22 Slack #atxp-gm-search candidate assessment",
+        "08:26 Slack #atxp-digital-marketing SMS database",
+        "08:28 Slack #atxp-eng-leaders chiller",
+        "08:47 Slack group DM (Gabriel/Leah) leadership",
+        "08:56 Slack #atxp-leaders ExCom agenda request",
+        "09:09 Slack #atxp-fd UK arrivals / amenities",
+        "09:19 Slack #atxp-leaders agenda"
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "time": "10:30-11:00",
+      "subject": "Recovered: late-morning email triage and F&B/marketing follow-ups",
+      "category": "solo_admin",
+      "confidence": "med",
+      "hours": 0.5,
+      "evidence": [
+        "10:27 Sent email RE: Panel interviews ADoP&C",
+        "10:32 Slack #atxp-fb IRD amenity plating",
+        "10:40 Slack #atxp-digital-marketing email database growth"
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "time": "14:45-15:15",
+      "subject": "Recovered: afternoon STR comp-set analysis and ExCom prep",
+      "category": "weekly_ops",
+      "confidence": "high",
+      "hours": 0.5,
+      "evidence": [
+        "14:39 Slack #atxp-leaders ExCom/holiday coverage",
+        "14:46 Slack #atxp-revenue STR comp-set analysis (4S/Driskill)",
+        "14:49 Slack #atxp-ops team kudos",
+        "14:51 Slack group DM channel consolidation (Madden/Tracie)",
+        "14:57 Slack #atxp-revenue rate/comp set"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "time": "09:00-09:30",
+      "subject": "Recovered: morning Revinate guest-recovery drafts and rate strategy",
+      "category": "guest_relations",
+      "confidence": "med",
+      "hours": 0.5,
+      "evidence": [
+        "09:03 Slack DM self: Revinate guest-recovery drafts (NPS detractors)",
+        "09:19 Slack #atxp-revenue rate strategy"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "time": "12:30-13:00",
+      "subject": "Recovered: midday EC/PDR, GM-search refs and Kappo promo coordination",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 0.5,
+      "evidence": [
+        "12:24 Slack #atxp-sales Apollo/Lee Solomon",
+        "12:25 Slack #atxp-outlets-hosts PDR for EC meeting",
+        "12:26 Slack #atxp-gm-search candidate references",
+        "12:31 Slack #atxp-leaders PDR owner meeting + EC",
+        "12:45 Slack #atxp-kappo-mgmt Petit Kappo promo / 30 covers",
+        "12:52 Slack #atxp-leaders"
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "time": "16:00-16:30",
+      "subject": "Recovered: afternoon GM-search sourcing, revenue and marketing follow-ups",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 0.5,
+      "evidence": [
+        "16:07 Slack #atxp-revenue weekend pickup \"go big\"",
+        "16:08 Slack #atxp-gm-search sourcing ex-Pendry candidate",
+        "16:09 Slack #atxp-revenue weekend pace",
+        "16:14 Slack #atxp-digital-marketing list growth/dedup questions",
+        "16:18 Slack DM Ryan Galvin sales lead review (Nov past Ds)",
+        "16:24 Sent email \"Great meeting you at Austin Proper\" (Tudor / guest)"
+      ]
+    },
+    {
+      "date": "2026-06-21",
+      "time": "13:15-13:45",
+      "subject": "Recovered: Father's Day team shout-outs across ops channels",
+      "category": "solo_admin",
+      "confidence": "low",
+      "hours": 0.5,
+      "evidence": [
+        "13:28 Slack #atxp-leaders 'Happy Father's Day to all the dads on here'",
+        "13:28 Slack #atxp-ops 'Happy Father's Day to all the dads of Austin Proper'"
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "time": "08:30-09:30",
+      "subject": "Recovered: Morning email triage + ops/revenue coordination (filters, group report, RM)",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 1.0,
+      "evidence": [
+        "08:39 sent email 'Re: Thomas Knowles - Asst F&B Director'",
+        "08:39 sent email 'FW: Thomas Knowles'",
+        "08:43 Slack #atxp-lp-eng filter cleaning checks",
+        "08:44 Slack #atxp-revenue '1 hotels brand up to 40% off'",
+        "08:54 Slack DM Group In-House Report (manual pull, auto-run failed)",
+        "09:04 Slack #atxp-revenue Proper Pulse rooms-left use case",
+        "09:25 Slack DM Andrew Miele Jeddah crew"
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "time": "15:00-16:15",
+      "subject": "Recovered: FOP/owner correspondence + reservations (Dorothee tour, Gindy, Room Request)",
+      "category": "guest_relations",
+      "confidence": "high",
+      "hours": 1.25,
+      "evidence": [
+        "15:07 sent email 'Re: Intro - Dorothee Meilichzon / Anis tour'",
+        "16:12 sent email 'Re: Room Request' (MCW rate)",
+        "16:16 sent email 'Re: Austin' (Mr. Gindy meeting AM)"
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "time": "18:30-19:45",
+      "subject": "Recovered: Evening site-visit setup + surveillance/chiller capex correspondence",
+      "category": "project_dev",
+      "confidence": "high",
+      "hours": 1.25,
+      "evidence": [
+        "18:31 sent email 'Site with Dorothee Melizichon - Designer of Minneapolis By Proper'",
+        "19:26 sent email 'Accepted: AUP: AV Upgrades'",
+        "19:46 sent email 'Re: Surveillance Expansion: Two Budget Options'"
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "time": "08:00-09:00",
+      "subject": "Recovered: Morning ops/revenue/DBR coordination + FOP coffee (Gindy)",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 1.0,
+      "evidence": [
+        "08:32 Slack #atxp-revenue World Cup travelers / booking.com visibility",
+        "08:45 Slack #atxp-pk-leaders coffee with FFOP Andrew Gindy",
+        "08:47 Slack #atxp-dbr daily transaction reporting standard",
+        "08:51 sent email 'Re: Coffee with Andrew Gindy - FOP from BDL'",
+        "08:51 Slack #atxp-leaders prospective 4S buyers meeting"
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "time": "15:00-15:30",
+      "subject": "Recovered: Owner/FOP follow-ups (Brian DeLowe Austin, site visits)",
+      "category": "guest_relations",
+      "confidence": "med",
+      "hours": 0.5,
+      "evidence": [
+        "15:13 sent email 'Re: Austin' (Brian DeLowe, more forthcoming given relationship)",
+        "15:14 sent email 'Accepted: Kat - Site Visit, White Construction Holiday Party'"
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "time": "18:00-19:00",
+      "subject": "Recovered: FOP site-visit coordination + OOO calendar processing",
+      "category": "guest_relations",
+      "confidence": "med",
+      "hours": 1.0,
+      "evidence": [
+        "18:04 sent email 'FOP site visit: Austin visit 6/29' (DEV rate)",
+        "18:54 sent email 'Accepted: Bryan Pino - Out of Office'"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "time": "08:15-09:30",
+      "subject": "Recovered: GM exec briefing review + Kappo/AV/budget email triage",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 1.25,
+      "evidence": [
+        "08:15 Slack #atxp-revenue July/August pace watch",
+        "08:32 sent email 'Re: Kappo incident - 6.20.26'",
+        "08:39 sent email 'Re: Great meeting you at Austin Proper'",
+        "08:49 Slack DM GM Executive Briefing (Proper OS / Claude)",
+        "09:14 sent email 'Re: F&B & AI, Expanding My Role'",
+        "09:17 Slack DM Kat AV utilization assumptions"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "time": "15:15-16:00",
+      "subject": "Recovered: AIVA/BluIP webhook validations + community/eng follow-ups",
+      "category": "ai_innovation",
+      "confidence": "high",
+      "hours": 0.75,
+      "evidence": [
+        "15:21 sent email 'Re: New submission from Report' (Shoal Creek)",
+        "15:33 sent email 'Re: Webhook Validations' (AIVA export tab daily)",
+        "15:59 sent email 'FW: Austin Proper + BluIP - AIVA 3.0 Meeting Recap'"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "time": "18:00-20:00",
+      "subject": "Recovered: Evening GM-call agenda admin, FFOP comp res, residential + Mind Matrix",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 2.0,
+      "evidence": [
+        "18:40 Slack DM Leah GM Call Agenda location",
+        "18:48 Slack DM Mind Matrix Briefing (23 items added)",
+        "19:06 Slack #atxp-res COMP res Richard Wales (FFOP)",
+        "19:31 sent email '[EXTERNAL] Residential Service Opportunities'",
+        "19:51 Slack #atxp-dbr BT rates / need periods"
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "time": "08:00-09:15",
+      "subject": "Recovered: AM briefing review + Forbes prep, security (Mendoza), AIVA 2.5 vs 3.0 coordination",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 1.25,
+      "evidence": [
+        "08:02 sent email/Slack #atxp-gr no synth scents",
+        "08:17 Slack #atxp-security Ms. Mendoza updates",
+        "08:27 Slack GroupDM Forbes YOY variance study for tomorrow",
+        "08:29 Slack GroupDM AIVA 2.5 vs 3.0 audit",
+        "09:02 Slack GroupDM prioritize Forbes"
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "time": "13:00-14:00",
+      "subject": "Recovered: Guest/wellness correspondence + webhook scheduling + wedding site",
+      "category": "guest_relations",
+      "confidence": "high",
+      "hours": 1.0,
+      "evidence": [
+        "13:04 sent email 'Re: The Proper - Fitness Bike' (Mr. Hood community run)",
+        "13:24 sent email 'Re: Webhook Validations' (3-4pm works)",
+        "13:36 sent email 'Accepted: Kat - Wedding Site, Nicholson Dodson Wedding'"
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "time": "17:30-18:00",
+      "subject": "Recovered: OXYLIGHT/Verbena spa marketing + press outreach correspondence",
+      "category": "solo_email",
+      "confidence": "med",
+      "hours": 0.5,
+      "evidence": [
+        "17:42 sent email 'Re: OXYLIGHT Marketing plan' (banner retargeting, Verbena IG)"
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "time": "19:00-20:00",
+      "subject": "Recovered: Evening AI data-validation demos (Toast/Snowflake/AIVA) + Dallas 2500 Cedar Springs concept",
+      "category": "ai_innovation",
+      "confidence": "high",
+      "hours": 1.0,
+      "evidence": [
+        "19:33 Slack #atxp-av-upgrad AV doc update",
+        "19:35 Slack #dallas-2500-cedar-springs-proper Eastern Mediterranean concept",
+        "19:49 Slack DM Claude delegate-check tasks",
+        "19:57 Slack #gms Snowflake connector references",
+        "19:58 Slack #gms prompts to validate Toast/AIVA glitch data"
+      ]
+    }
+  ]
+}

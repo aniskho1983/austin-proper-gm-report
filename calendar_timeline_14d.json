@@ -1,0 +1,662 @@
+{
+  "2026-06-07": [],
+  "2026-06-09": [],
+  "2026-06-10": [],
+  "2026-06-11": [],
+  "2026-06-14": [
+    {
+      "start": "08:00",
+      "end": "08:30",
+      "subject": "Kevin Andruss - 7951151118-1 - Exec FOP",
+      "category": "uncategorized"
+    },
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    }
+  ],
+  "2026-06-15": [
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "10:45",
+      "end": "11:30",
+      "subject": "Ash X Anis",
+      "category": "direct_reports"
+    },
+    {
+      "start": "11:30",
+      "end": "12:00",
+      "subject": "ATXP Daily DBR Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "11:30",
+      "end": "13:00",
+      "subject": "FW: 2500 Cedar Springs | Hotel/Condo MEP - Bi-Weekly",
+      "category": "uncategorized"
+    },
+    {
+      "start": "12:00",
+      "end": "14:00",
+      "subject": "Mati - Site Visit & Lunch w/ St. Davids Medical Center",
+      "category": "guest_relations"
+    },
+    {
+      "start": "12:00",
+      "end": "12:15",
+      "subject": "Weekly Generator Run",
+      "category": "uncategorized"
+    },
+    {
+      "start": "13:30",
+      "end": "14:30",
+      "subject": "Lalaine x Anis ",
+      "category": "direct_reports"
+    },
+    {
+      "start": "15:00",
+      "end": "15:30",
+      "subject": "SEND EXCOM AGENDA",
+      "category": "solo_admin"
+    },
+    {
+      "start": "15:00",
+      "end": "15:30",
+      "subject": "Proper OS - Weekly Standup",
+      "category": "uncategorized"
+    },
+    {
+      "start": "16:00",
+      "end": "17:00",
+      "subject": "Training Call | Revenue Command Center + Group Pricing Tool",
+      "category": "uncategorized"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    }
+  ],
+  "2026-06-16": [
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "11:00",
+      "end": "11:30",
+      "subject": "Kat - Site Visit, Gift of Water Gala",
+      "category": "guest_relations"
+    },
+    {
+      "start": "11:00",
+      "end": "11:15",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "11:30",
+      "end": "12:00",
+      "subject": "ATXP Daily DBR Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "12:00",
+      "end": "12:45",
+      "subject": "ATXP Property walk",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "12:00",
+      "end": "13:15",
+      "subject": "Leadership Meeting",
+      "category": "uncategorized"
+    },
+    {
+      "start": "13:00",
+      "end": "14:00",
+      "subject": "AUP Weekly Notion Tracking",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "16:00",
+      "end": "17:00",
+      "subject": "Craftable Issues - Support Meeting",
+      "category": "uncategorized"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    },
+    {
+      "start": "17:30",
+      "end": "18:30",
+      "subject": "Ryan and Anis 1 on 1",
+      "category": "direct_reports"
+    }
+  ],
+  "2026-06-17": [
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:00",
+      "end": "11:00",
+      "subject": "ACR Air Quality Testing (Kitchens) - 06.17.2026",
+      "category": "uncategorized"
+    },
+    {
+      "start": "10:00",
+      "end": "10:45",
+      "subject": "Austin Proper + BluIP - AIVA 3.0 Weekly Call",
+      "category": "uncategorized"
+    },
+    {
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "11:00",
+      "end": "12:00",
+      "subject": "Kappo Kappo Meeting",
+      "category": "vendor_ops"
+    },
+    {
+      "start": "13:00",
+      "end": "13:30",
+      "subject": "Karen Site: Madison Industries",
+      "category": "sales_mktg"
+    },
+    {
+      "start": "13:00",
+      "end": "14:00",
+      "subject": "May 2026 Financial Review",
+      "category": "monthly_fin"
+    },
+    {
+      "start": "13:00",
+      "end": "15:00",
+      "subject": "ExCom Meeting - resending series ",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "15:00",
+      "end": "16:30",
+      "subject": "Red Bluff Hotel - Bi-Weekly OAC",
+      "category": "project_dev"
+    },
+    {
+      "start": "16:00",
+      "end": "17:00",
+      "subject": "Austin Revenue Optimization Meeting",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    },
+    {
+      "start": "17:00",
+      "end": "18:00",
+      "subject": "Proper OS - Operations Standup",
+      "category": "uncategorized"
+    }
+  ],
+  "2026-06-18": [
+    {
+      "start": "07:00",
+      "end": "08:00",
+      "subject": "PROPER RUN CLUB",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "08:30",
+      "end": "09:30",
+      "subject": "MEET - Breakfast TL/AK",
+      "category": "uncategorized"
+    },
+    {
+      "start": "09:30",
+      "end": "10:00",
+      "subject": "Ryan for Karen Site: Milwaukee Bucks",
+      "category": "sales_mktg"
+    },
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "10:45",
+      "end": "11:30",
+      "subject": "Patrick and Anis catch up",
+      "category": "direct_reports"
+    },
+    {
+      "start": "11:30",
+      "end": "12:00",
+      "subject": "ATXP Daily DBR Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "12:00",
+      "end": "13:00",
+      "subject": "Jasmine and Anis 1 on 1",
+      "category": "direct_reports"
+    },
+    {
+      "start": "13:00",
+      "end": "13:30",
+      "subject": "Meet with Keny Ayala - Candidate for Assistant Director of People & Culture",
+      "category": "uncategorized"
+    },
+    {
+      "start": "14:00",
+      "end": "15:00",
+      "subject": "Kappo Kappo weekly catch up",
+      "category": "vendor_ops"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    },
+    {
+      "start": "17:00",
+      "end": "18:00",
+      "subject": "Anna and Anis 1 on 1",
+      "category": "direct_reports"
+    },
+    {
+      "start": "18:00",
+      "end": "19:00",
+      "subject": "Richard Wales and Anis catch up",
+      "category": "direct_reports"
+    }
+  ],
+  "2026-06-21": [
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    }
+  ],
+  "2026-06-22": [
+    {
+      "start": "09:30",
+      "end": "10:30",
+      "subject": "Sophie Site Visit - Cambridge Forums",
+      "category": "guest_relations"
+    },
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "10:45",
+      "end": "11:30",
+      "subject": "Ash X Anis",
+      "category": "direct_reports"
+    },
+    {
+      "start": "11:30",
+      "end": "12:00",
+      "subject": "ATXP Daily DBR Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "12:00",
+      "end": "12:30",
+      "subject": "Luke and Anis catch up",
+      "category": "direct_reports"
+    },
+    {
+      "start": "13:00",
+      "end": "14:00",
+      "subject": "Red Bluff F&B Concept Discussion",
+      "category": "uncategorized"
+    },
+    {
+      "start": "14:00",
+      "end": "14:25",
+      "subject": "Virtual Meeting with DA Garza",
+      "category": "uncategorized"
+    },
+    {
+      "start": "14:30",
+      "end": "15:00",
+      "subject": "SEND EXCOM AGENDA",
+      "category": "solo_admin"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    },
+    {
+      "start": "17:30",
+      "end": "18:30",
+      "subject": "ANIS LOBBY DUTY",
+      "category": "solo_work_other"
+    }
+  ],
+  "2026-06-23": [
+    {
+      "start": "09:00",
+      "end": "10:00",
+      "subject": "Coffee with Andrew Gindy - FOP from BDL",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "11:00",
+      "end": "12:00",
+      "subject": "Site with Dorothee Melizichon - Designer of Minneapolis By Proper",
+      "category": "guest_relations"
+    },
+    {
+      "start": "11:30",
+      "end": "12:00",
+      "subject": "ATXP Daily DBR Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "12:00",
+      "end": "13:15",
+      "subject": "Leadership Meeting",
+      "category": "uncategorized"
+    },
+    {
+      "start": "13:30",
+      "end": "14:00",
+      "subject": "Forbes Travel Guide/Austin Proper Catch-Up",
+      "category": "uncategorized"
+    },
+    {
+      "start": "14:00",
+      "end": "15:00",
+      "subject": "Tea With Anis + 2nd Floor Culinary Team Request ",
+      "category": "guest_relations"
+    },
+    {
+      "start": "16:00",
+      "end": "17:00",
+      "subject": "Proper OS - Operations Standup",
+      "category": "uncategorized"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    },
+    {
+      "start": "17:00",
+      "end": "17:30",
+      "subject": "Vanessa Eckert interview",
+      "category": "solo_work_other"
+    }
+  ],
+  "2026-06-24": [
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "11:00",
+      "end": "11:30",
+      "subject": "LP Manager Interview - Hrushikesh ",
+      "category": "hr_talent"
+    },
+    {
+      "start": "12:00",
+      "end": "13:00",
+      "subject": "GM Meeting",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "13:00",
+      "end": "13:45",
+      "subject": "\ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f Wellness Day, Session 1 \ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f",
+      "category": "uncategorized"
+    },
+    {
+      "start": "13:00",
+      "end": "14:30",
+      "subject": "ExCom Meeting - resending series ",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "14:00",
+      "end": "14:45",
+      "subject": "\ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f Wellness Day, Session 2 \ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f",
+      "category": "uncategorized"
+    },
+    {
+      "start": "14:45",
+      "end": "15:10",
+      "subject": "[EXTERNAL] Discussion Regarding Residential Service Opportunities",
+      "category": "uncategorized"
+    },
+    {
+      "start": "16:00",
+      "end": "17:00",
+      "subject": "Austin Revenue Optimization Meeting",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "17:00",
+      "end": "18:00",
+      "subject": "Download Hermes",
+      "category": "solo_work_other"
+    }
+  ],
+  "2026-06-25": [
+    {
+      "start": "07:00",
+      "end": "08:00",
+      "subject": "PROPER RUN CLUB",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:00",
+      "end": "10:30",
+      "subject": "AVENDRA - ECOLAB RESEARCH",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "11:00",
+      "end": "11:30",
+      "subject": "WELLNESS ROOMS START TO ROLL OUT",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "11:30",
+      "end": "12:00",
+      "subject": "ATXP Daily DBR Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "12:00",
+      "end": "13:00",
+      "subject": "Jasmine and Anis 1 on 1",
+      "category": "direct_reports"
+    },
+    {
+      "start": "14:00",
+      "end": "15:00",
+      "subject": "Kappo Kappo weekly catch up",
+      "category": "vendor_ops"
+    },
+    {
+      "start": "15:00",
+      "end": "15:45",
+      "subject": "Proper Hotels + BluIP - AIVA 3.0 Discussion",
+      "category": "uncategorized"
+    },
+    {
+      "start": "16:00",
+      "end": "16:45",
+      "subject": "Austin Proper + BluIP - AIVA 3.0 Weekly Call",
+      "category": "uncategorized"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    },
+    {
+      "start": "18:00",
+      "end": "19:00",
+      "subject": "Review Hotel California Proforma",
+      "category": "uncategorized"
+    }
+  ]
+}

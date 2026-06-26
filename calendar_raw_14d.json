@@ -1,0 +1,3471 @@
+[
+  {
+    "subject": "Andrew in Dallas and Minneapolis",
+    "start": "2026-06-08T00:00:00Z",
+    "end": "2026-06-12T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "andrew.miele@properhotel.com",
+      "corp.seniorleadership@properhotel.com",
+      "anneke.anderson@properhotel.com",
+      "mark.zikov@thekorgroup.com",
+      "william.rottman@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "sommer.janssen@properhotel.com",
+      "luis.villaneda@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "FOP - Anne Lauture",
+    "start": "2026-06-08T00:00:00Z",
+    "end": "2026-06-12T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "Kristin.Robinson@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "FOP - Anneke Anderson",
+    "start": "2026-06-10T00:00:00Z",
+    "end": "2026-06-12T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "Kristin.Robinson@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "FFOP - Amber Asher",
+    "start": "2026-06-10T00:00:00Z",
+    "end": "2026-06-15T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "Kristin.Robinson@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "@ 10:30am Technogym Scheduled Delivery ",
+    "start": "2026-06-11T00:00:00Z",
+    "end": "2026-06-12T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "atxp.security@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "joe.clonan@worthross.com",
+      "xavier.nieto@worthross.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Makenna-8:30am to10:30am-Daughter's middle school graduation ",
+    "start": "2026-06-11T00:00:00Z",
+    "end": "2026-06-12T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "Makenna.Davis@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "michael.gregory@thehoteljune.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "al.palad@avalonbeverlyhills.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "FFOP - Raaid Alireza, Ferdinando Scalamandre, Antoun Chebat",
+    "start": "2026-06-11T00:00:00Z",
+    "end": "2026-06-13T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "Kristin.Robinson@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "MCS Scheduled for Wellness Check ",
+    "start": "2026-06-12T00:00:00Z",
+    "end": "2026-06-13T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "vanessa.Frederick@properhotel.com",
+      "Alex.Dunn@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "antonio.arcidiacono@properhotel.com",
+      "Celal.Canbaz@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "giulio.perone@properhotel.com",
+      "Tarun.Girish@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Starting 8am: Goldie's Patio CLOSURE",
+    "start": "2026-06-12T00:00:00Z",
+    "end": "2026-06-13T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "atxp.allmanagers@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Julia.Martin@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "joanna.rodriguez@properhotel.com",
+      "Scott.Oshan@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "Regina.Mitchell@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "Elina.Rasmussen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "FFOP site - Xenel Industries  - Jeddah Proper ",
+    "start": "2026-06-12T14:00:00Z",
+    "end": "2026-06-12T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.sitevisits@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "atxp.hk@properhotel.com",
+      "ATXP.FOHManagers@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "danielle.sustendal@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "Elina.Rasmussen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-12T15:30:00Z",
+    "end": "2026-06-12T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Patrick and Anis catch up",
+    "start": "2026-06-12T15:45:00Z",
+    "end": "2026-06-12T16:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "patrick.flynn@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Site Visit - Samsung E&C America",
+    "start": "2026-06-12T16:00:00Z",
+    "end": "2026-06-12T17:00:00Z",
+    "showAs": "tentative",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Jacob.Shaw@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "Alex.Dunn@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "Caryn.allen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily DBR Review",
+    "start": "2026-06-12T16:30:00Z",
+    "end": "2026-06-12T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "sophie.auvray@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "mike.thomas@properhotel.com",
+      "Michael.Kwee-Bintoro@properhotel.com",
+      "brittany.liveoak@properhotel.com",
+      "elena.ruiz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Natascha and Anis catch up",
+    "start": "2026-06-12T17:00:00Z",
+    "end": "2026-06-12T18:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "Proper ",
+    "start": "2026-06-12T18:00:00Z",
+    "end": "2026-06-12T18:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gabriel.Ratner@properhotel.com",
+      "rsorensen2000@gmail.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AUP: Capex Weekly",
+    "start": "2026-06-12T18:30:00Z",
+    "end": "2026-06-12T19:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "abby.zakharin@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Zack.Vourlas@thekorgroup.com",
+      "jasmine.samano@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "taylor.horvat@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "CAPEX Review",
+    "start": "2026-06-12T19:00:00Z",
+    "end": "2026-06-12T20:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "lalaine.green@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "chloe.box@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "anna.mayevska@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "F&B meeting -weekly ",
+    "start": "2026-06-12T20:00:00Z",
+    "end": "2026-06-12T21:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "anna.mayevska@properhotel.com",
+      "Alex.Dunn@properhotel.com",
+      "Alex.Pyser@properhotel.com",
+      "antonio.arcidiacono@properhotel.com",
+      "April.Lyman@properhotel.com",
+      "baris.kizilgedik@properhotel.com",
+      "Dalton.Gebhardt@properhotel.com",
+      "Edwin.Fernandez@properhotel.com",
+      "eric.tamayo@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "giulio.perone@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Jorge.Tejero-zerra@properhotel.com",
+      "Julia.Martin@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "katie.paschall@properhotel.com",
+      "Lauren.Whitsell@properhotel.com",
+      "meagan.flaig@properhotel.com",
+      "nicole.wiggins@properhotel.com",
+      "Tarun.Girish@properhotel.com",
+      "Taylor.Burlingame@properhotel.com",
+      "Vanessa.medina@properhotel.com",
+      "william.corke@properhotel.com",
+      "Fernando.Arellano@properhotel.com",
+      "Anisa.Boukhlif@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-12T21:30:00Z",
+    "end": "2026-06-12T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GM REPORT",
+    "start": "2026-06-12T21:30:00Z",
+    "end": "2026-06-12T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Proper OS \u2014 Budget Season Intro",
+    "start": "2026-06-12T22:00:00Z",
+    "end": "2026-06-12T22:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "mike.thomas@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Gabriel.Ratner@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Bryan and Anis catch ups",
+    "start": "2026-06-12T23:00:00Z",
+    "end": "2026-06-13T00:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-13T14:30:00Z",
+    "end": "2026-06-13T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-13T14:45:00Z",
+    "end": "2026-06-13T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-13T21:30:00Z",
+    "end": "2026-06-13T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "@10:30pm Hood Boss Scheduled for Monthly Service",
+    "start": "2026-06-14T00:00:00Z",
+    "end": "2026-06-15T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "Alex.Pyser@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Kevin Andruss - 7951151118-1 - Exec FOP",
+    "start": "2026-06-14T13:00:00Z",
+    "end": "2026-06-14T13:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.reservations@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-14T14:30:00Z",
+    "end": "2026-06-14T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-14T14:45:00Z",
+    "end": "2026-06-14T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-14T21:30:00Z",
+    "end": "2026-06-14T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "@6am FCS: Scheduled for AHU 3-1 PM",
+    "start": "2026-06-15T00:00:00Z",
+    "end": "2026-06-16T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "@10:30pm Hood Boss Scheduled for Monthly Service",
+    "start": "2026-06-15T00:00:00Z",
+    "end": "2026-06-16T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "Alex.Pyser@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Central Texas Scheduled for Wallpaper Repairs",
+    "start": "2026-06-15T00:00:00Z",
+    "end": "2026-06-16T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "joanna.rodriguez@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Comfort System's Scheduled for Start Up",
+    "start": "2026-06-15T00:00:00Z",
+    "end": "2026-06-16T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Trane Scheduled for Start Up",
+    "start": "2026-06-15T00:00:00Z",
+    "end": "2026-06-16T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Anis OOO - Catch up Mother's day weekend + Memorial day - back 6/17",
+    "start": "2026-06-15T00:00:00Z",
+    "end": "2026-06-17T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.ec@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "jess.schoenholtz@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "jasmine.samano@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Anis OOO - Lieu Mother's day Wend and MEM day - Return 6/17",
+    "start": "2026-06-15T00:00:00Z",
+    "end": "2026-06-17T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "corp.seniorleadership@properhotel.com",
+      "atxp.ec@properhotel.com",
+      "jess.schoenholtz@properhotel.com",
+      "sommer.janssen@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "andrew.miele@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "luis.villaneda@properhotel.com",
+      "Ash.Desai@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Pool CLOSURE",
+    "start": "2026-06-15T00:00:00Z",
+    "end": "2026-06-17T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "atxp.allmanagers@properhotel.com",
+      "Nicholas.Voyer@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "joanna.rodriguez@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "chloe.box@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "Regina.Mitchell@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-15T14:30:00Z",
+    "end": "2026-06-15T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-15T14:45:00Z",
+    "end": "2026-06-15T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-15T15:30:00Z",
+    "end": "2026-06-15T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Ash X Anis",
+    "start": "2026-06-15T15:45:00Z",
+    "end": "2026-06-15T16:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "ashdesai708@gmail.com",
+      "Ash.Desai@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "ATXP Daily DBR Review",
+    "start": "2026-06-15T16:30:00Z",
+    "end": "2026-06-15T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "sophie.auvray@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "mike.thomas@properhotel.com",
+      "Michael.Kwee-Bintoro@properhotel.com",
+      "brittany.liveoak@properhotel.com",
+      "elena.ruiz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "FW: 2500 Cedar Springs | Hotel/Condo MEP - Bi-Weekly",
+    "start": "2026-06-15T16:30:00Z",
+    "end": "2026-06-15T18:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "MSalette@adamson-associates.com",
+      "anis.khoury@properhotel.com",
+      "NSimpson@suffolk.com",
+      "ALaFranco@suffolk.com",
+      "SMeixner@suffolk.com",
+      "Arvid@oceanpm.com",
+      "seth@oceanpm.com",
+      "TOborny@suffolk.com",
+      "jzimmer@oceanpm.com",
+      "miked@oceanpm.com",
+      "hmotavali@oceanpm.com",
+      "jmusick@blumeng.com",
+      "sswan@blumeng.com",
+      "jaehyun.lee@som.com",
+      "GMetzger@adamson-associates.com",
+      "EJee@adamson-associates.com",
+      "JRussell@adamson-associates.com",
+      "MWang@adamson-associates.com",
+      "CNa@adamson-associates.com",
+      "MBennett@adamson-associates.com",
+      "RLucio@suffolk.com",
+      "BWright@suffolk.com",
+      "mcollins@blumeng.com",
+      "sabdelmeguid@blumeng.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Mati - Site Visit & Lunch w/ St. Davids Medical Center",
+    "start": "2026-06-15T17:00:00Z",
+    "end": "2026-06-15T19:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "matilde.gamarra@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "juan.lopez@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "Elina.Rasmussen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Weekly Generator Run",
+    "start": "2026-06-15T17:00:00Z",
+    "end": "2026-06-15T17:15:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "chloe.box@properhotel.com",
+      "atxp.allmanagers@properhotel.com",
+      "xavier.nieto@worthross.com",
+      "joe.clonan@worthross.com",
+      "Bryan.Pino@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "juan.lopez@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "antonio.arcidiacono@properhotel.com",
+      "meagan.flaig@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Lalaine x Anis ",
+    "start": "2026-06-15T18:30:00Z",
+    "end": "2026-06-15T19:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "lalaine.green@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "SEND EXCOM AGENDA",
+    "start": "2026-06-15T20:00:00Z",
+    "end": "2026-06-15T20:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Proper OS - Weekly Standup",
+    "start": "2026-06-15T20:00:00Z",
+    "end": "2026-06-15T20:30:00Z",
+    "showAs": "tentative",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "mike.thomas@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "cara.stoffel@properhotel.com",
+      "payas.parab@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Training Call | Revenue Command Center + Group Pricing Tool",
+    "start": "2026-06-15T21:00:00Z",
+    "end": "2026-06-15T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "rowan.hand@properhotel.com",
+      "tracie.heisterkamp@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-15T21:30:00Z",
+    "end": "2026-06-15T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-16T14:30:00Z",
+    "end": "2026-06-16T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-16T14:45:00Z",
+    "end": "2026-06-16T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Kat - Site Visit, Gift of Water Gala",
+    "start": "2026-06-16T16:00:00Z",
+    "end": "2026-06-16T16:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "kathryn.gasdick@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "anna.mayevska@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-16T16:00:00Z",
+    "end": "2026-06-16T16:15:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily DBR Review",
+    "start": "2026-06-16T16:30:00Z",
+    "end": "2026-06-16T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "sophie.auvray@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "mike.thomas@properhotel.com",
+      "Michael.Kwee-Bintoro@properhotel.com",
+      "brittany.liveoak@properhotel.com",
+      "elena.ruiz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Property walk",
+    "start": "2026-06-16T17:00:00Z",
+    "end": "2026-06-16T17:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Juan.Martinez@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "rodrigo.martinez@properhotel.com",
+      "juan.lopez@properhotel.com",
+      "chloe.box@properhotel.com",
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Leadership Meeting",
+    "start": "2026-06-16T17:00:00Z",
+    "end": "2026-06-16T18:15:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gabriel.Ratner@properhotel.com",
+      "andrew.miele@properhotel.com",
+      "brad.korzen@thekorgroup.com",
+      "brian.delowe@properhotel.com",
+      "jamie.mark@properhotel.com",
+      "keith.hansen@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "sommer.janssen@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Zack.Vourlas@thekorgroup.com",
+      "mike.thomas@properhotel.com",
+      "leah.edwards@properhotel.com",
+      "luis.villaneda@properhotel.com",
+      "casey.dolkas@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "azy.saii@properhotel.com",
+      "CorporateConferenceRoom@properhotel.com",
+      "tokhirjon.bobokhujaev@properhotel.com",
+      "cara.stoffel@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AUP Weekly Notion Tracking",
+    "start": "2026-06-16T18:00:00Z",
+    "end": "2026-06-16T19:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "taylor.horvat@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Dennis.Brooks@properhotel.com",
+      "juan.lopez@properhotel.com",
+      "chloe.box@properhotel.com",
+      "Brayan.Cortez@properhotel.com",
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Craftable Issues - Support Meeting",
+    "start": "2026-06-16T21:00:00Z",
+    "end": "2026-06-16T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "tokhirjon.bobokhujaev@properhotel.com",
+      "keith.hansen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-16T21:30:00Z",
+    "end": "2026-06-16T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Ryan and Anis 1 on 1",
+    "start": "2026-06-16T22:30:00Z",
+    "end": "2026-06-16T23:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "ryan.galvin@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "RESCHEDULED: @10am ACR Environmental Consultants Scheduled for Service",
+    "start": "2026-06-17T00:00:00Z",
+    "end": "2026-06-18T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "Alex.Pyser@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-17T14:30:00Z",
+    "end": "2026-06-17T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-17T14:45:00Z",
+    "end": "2026-06-17T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "ACR Air Quality Testing (Kitchens) - 06.17.2026",
+    "start": "2026-06-17T15:00:00Z",
+    "end": "2026-06-17T16:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Ash.Desai@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Austin Proper + BluIP - AIVA 3.0 Weekly Call",
+    "start": "2026-06-17T15:00:00Z",
+    "end": "2026-06-17T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "afrothingham@bluip.com",
+      "anis.khoury@properhotel.com",
+      "natascha.seifritz@properhotel.com",
+      "elina.rasmussen@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "bluip.mia@meetinginsights.com",
+      "thomas.madden@properhotel.com",
+      "humberto.alvarez@properhotel.com",
+      "la.saelee@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-17T15:30:00Z",
+    "end": "2026-06-17T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Kappo Kappo Meeting",
+    "start": "2026-06-17T16:00:00Z",
+    "end": "2026-06-17T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Alex.Pyser@properhotel.com",
+      "harutaka.kishi@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "gohei.kishi@properhotel.com",
+      "April.Lyman@properhotel.com",
+      "anna.mayevska@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Karen Site: Madison Industries",
+    "start": "2026-06-17T18:00:00Z",
+    "end": "2026-06-17T18:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "karen.gartner@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "kathryn.gasdick@properhotel.com",
+      "Nicholas.Voyer@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "anna.mayevska@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "May 2026 Financial Review",
+    "start": "2026-06-17T18:00:00Z",
+    "end": "2026-06-17T19:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "lalaine.green@properhotel.com",
+      "atxp.ec@properhotel.com",
+      "clay.dines@realberry.com",
+      "jason.dorfman@realberry.com",
+      "Gabriel.Ratner@properhotel.com",
+      "keith.hansen@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "anna.mayevska@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ExCom Meeting - resending series ",
+    "start": "2026-06-17T18:00:00Z",
+    "end": "2026-06-17T20:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.ec@properhotel.com",
+      "Juan.Martinez@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Lena.Babani@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "john.albertsen@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Red Bluff Hotel - Bi-Weekly OAC",
+    "start": "2026-06-17T20:00:00Z",
+    "end": "2026-06-17T21:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "jselman@hncapitalpartners.com",
+      "jay@studioluck.com",
+      "matt@studioluck.com",
+      "banks@jbchisum.com",
+      "jake@jbchisum.com",
+      "bernt10@gmail.com",
+      "john@4csourcing.com",
+      "vnambiar@hncapitalpartners.com",
+      "ahammack@hncapitalpartners.com",
+      "richard.liu@tylin.com",
+      "jmusick@blumeng.com",
+      "marce@aagnes.mx",
+      "omar@aagnes.mx",
+      "jeff.michel@tylin.com",
+      "andrew.miele@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "zack.vourlas@thekorgroup.com",
+      "sarah@studioluck.com",
+      "miguel@aagnes.mx",
+      "fernanda@aagnes.mx",
+      "daniela@aagnes.mx",
+      "sofia@aagnes.mx",
+      "dani@aagnes.mx",
+      "sara@4csourcing.com"
+    ],
+    "categories": [
+      "Purple category"
+    ]
+  },
+  {
+    "subject": "Austin Revenue Optimization Meeting",
+    "start": "2026-06-17T21:00:00Z",
+    "end": "2026-06-17T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "kinsey.east@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "jaimie.weiss@properhotel.com",
+      "Christopher.Winn@mcwhinney.com",
+      "patricia.justice@properhotel.com",
+      "tripp.dubois@thekorgroup.com",
+      "Catherine.Weirick@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "shane.phelan@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "jess.schoenholtz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-17T21:30:00Z",
+    "end": "2026-06-17T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Proper OS - Operations Standup",
+    "start": "2026-06-17T22:00:00Z",
+    "end": "2026-06-17T23:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "mike.thomas@properhotel.com",
+      "cara.stoffel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Armando.Campos@properhotel.com",
+      "martin.weiss@avalonbeverlyhills.com",
+      "brad.korzen@thekorgroup.com",
+      "brian.delowe@properhotel.com",
+      "payas.parab@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "rowan.hand@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Sure Pro HVAC Scheduled for Service",
+    "start": "2026-06-18T00:00:00Z",
+    "end": "2026-06-19T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "vanessa.Frederick@properhotel.com",
+      "Alex.Pyser@properhotel.com",
+      "Dalton.Gebhardt@properhotel.com",
+      "eric.tamayo@properhotel.com",
+      "Alex.Dunn@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "Julia.Martin@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "Taylor.Burlingame@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Comfort Systems Scheduled for Repairs",
+    "start": "2026-06-18T00:00:00Z",
+    "end": "2026-06-19T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "joe.clonan@worthross.com",
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Pecan Plumbing Scheduled for Repairs",
+    "start": "2026-06-18T00:00:00Z",
+    "end": "2026-06-19T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Alex.Pyser@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "PROPER RUN CLUB",
+    "start": "2026-06-18T12:00:00Z",
+    "end": "2026-06-18T13:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "MEET - Breakfast TL/AK",
+    "start": "2026-06-18T13:30:00Z",
+    "end": "2026-06-18T14:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "thomas.lennard@mmlhospitality.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Ryan for Karen Site: Milwaukee Bucks",
+    "start": "2026-06-18T14:30:00Z",
+    "end": "2026-06-18T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "karen.gartner@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "atxp.sales@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "kathryn.gasdick@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "Jacob.Shaw@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-18T14:30:00Z",
+    "end": "2026-06-18T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-18T14:45:00Z",
+    "end": "2026-06-18T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-18T15:30:00Z",
+    "end": "2026-06-18T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Patrick and Anis catch up",
+    "start": "2026-06-18T15:45:00Z",
+    "end": "2026-06-18T16:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "patrick.flynn@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily DBR Review",
+    "start": "2026-06-18T16:30:00Z",
+    "end": "2026-06-18T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "sophie.auvray@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "Michael.Kwee-Bintoro@properhotel.com",
+      "brittany.liveoak@properhotel.com",
+      "elena.ruiz@properhotel.com",
+      "mike.thomas@properhotel.com",
+      "rowan.hand@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Jasmine and Anis 1 on 1",
+    "start": "2026-06-18T17:00:00Z",
+    "end": "2026-06-18T18:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "jasmine.samano@properhotel.com"
+    ],
+    "categories": [
+      "Green category",
+      "Blue category"
+    ]
+  },
+  {
+    "subject": "Meet with Keny Ayala - Candidate for Assistant Director of People & Culture",
+    "start": "2026-06-18T18:00:00Z",
+    "end": "2026-06-18T18:30:00Z",
+    "showAs": "tentative",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Ash.Desai@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Kappo Kappo weekly catch up",
+    "start": "2026-06-18T19:00:00Z",
+    "end": "2026-06-18T20:00:00Z",
+    "showAs": "tentative",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "harutaka.kishi@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "April.Lyman@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "gohei.kishi@properhotel.com",
+      "jess.schoenholtz@properhotel.com",
+      "meagan.flaig@properhotel.com",
+      "Alex.Pyser@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-18T21:30:00Z",
+    "end": "2026-06-18T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Anna and Anis 1 on 1",
+    "start": "2026-06-18T22:00:00Z",
+    "end": "2026-06-18T23:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "anna.mayevska@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "Richard Wales and Anis catch up",
+    "start": "2026-06-18T23:00:00Z",
+    "end": "2026-06-19T00:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "rwales78@gmail.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Anis OOO - Juneteenth Holiday",
+    "start": "2026-06-19T00:00:00Z",
+    "end": "2026-06-20T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.ec@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "jess.schoenholtz@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "jasmine.samano@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "JASMINE OFF- HOLIDAY + CATCH UP FOR MEMORIAL DAY",
+    "start": "2026-06-19T00:00:00Z",
+    "end": "2026-06-21T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "jasmine.samano@properhotel.com",
+      "Hope.Biemeret@properhotel.com",
+      "olivia.weiss@properhotel.com",
+      "jess.schoenholtz@properhotel.com",
+      "atxp.ec@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "FOP - Quinn Ewers",
+    "start": "2026-06-19T00:00:00Z",
+    "end": "2026-06-22T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "Kristin.Robinson@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-19T14:30:00Z",
+    "end": "2026-06-19T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-19T14:45:00Z",
+    "end": "2026-06-19T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Proper Service Meeting",
+    "start": "2026-06-19T15:15:00Z",
+    "end": "2026-06-19T16:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "ATXP.FOHManagers@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "atxp.guestrelations@properhotel.com",
+      "atxp.hk@properhotel.com",
+      "atxp.EngLeadership@properhotel.com",
+      "atxp.ec@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "danielle.sustendal@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "meagan.flaig@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "juan.lopez@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Alejandra.Cabrera@properhotel.com",
+      "rodrigo.martinez@properhotel.com",
+      "antonio.arcidiacono@properhotel.com",
+      "Tarun.Girish@properhotel.com",
+      "Lena.Babani@properhotel.com",
+      "chloe.box@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "2500 Cedar Springs | Hotel/Condo Food Service - Bi-Weekly",
+    "start": "2026-06-19T16:00:00Z",
+    "end": "2026-06-19T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "MSalette@adamson-associates.com",
+      "jrusso@nextstepdesign.com",
+      "Zack.Vourlas@thekorgroup.com",
+      "ayupangco@kellywearstler.com",
+      "GMetzger@adamson-associates.com",
+      "JRussell@adamson-associates.com",
+      "kristin@mmlhospitality.com",
+      "Matt.Green@thekorgroup.com",
+      "courtland@mmlhospitality.com",
+      "hanna@mmlhospitality.com",
+      "luis.villaneda@properhotel.com",
+      "MWang@adamson-associates.com",
+      "tlokapur@kellywearstler.com",
+      "mnagar@kellywearstler.com",
+      "agalindo@kellywearstler.com",
+      "dverostic@nextstepdesign.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": [
+      "Purple category"
+    ]
+  },
+  {
+    "subject": "Natascha and Anis catch up",
+    "start": "2026-06-19T17:00:00Z",
+    "end": "2026-06-19T18:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "Bryan and Anis catch ups",
+    "start": "2026-06-19T20:00:00Z",
+    "end": "2026-06-19T21:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "F&B meeting -weekly ",
+    "start": "2026-06-19T20:00:00Z",
+    "end": "2026-06-19T21:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "anna.mayevska@properhotel.com",
+      "Alex.Dunn@properhotel.com",
+      "Alex.Pyser@properhotel.com",
+      "antonio.arcidiacono@properhotel.com",
+      "April.Lyman@properhotel.com",
+      "baris.kizilgedik@properhotel.com",
+      "Dalton.Gebhardt@properhotel.com",
+      "Edwin.Fernandez@properhotel.com",
+      "eric.tamayo@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "giulio.perone@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Jorge.Tejero-zerra@properhotel.com",
+      "Julia.Martin@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "katie.paschall@properhotel.com",
+      "Lauren.Whitsell@properhotel.com",
+      "meagan.flaig@properhotel.com",
+      "nicole.wiggins@properhotel.com",
+      "Tarun.Girish@properhotel.com",
+      "Taylor.Burlingame@properhotel.com",
+      "Vanessa.medina@properhotel.com",
+      "william.corke@properhotel.com",
+      "Fernando.Arellano@properhotel.com",
+      "Anisa.Boukhlif@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-19T21:30:00Z",
+    "end": "2026-06-19T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GM REPORT",
+    "start": "2026-06-19T21:30:00Z",
+    "end": "2026-06-19T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Goldie's Coffee moved to PK Lounge",
+    "start": "2026-06-20T11:00:00Z",
+    "end": "2026-06-20T11:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "meagan.flaig@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-20T14:30:00Z",
+    "end": "2026-06-20T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-20T14:45:00Z",
+    "end": "2026-06-20T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-20T21:30:00Z",
+    "end": "2026-06-20T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-21T14:30:00Z",
+    "end": "2026-06-21T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-21T14:45:00Z",
+    "end": "2026-06-21T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-21T21:30:00Z",
+    "end": "2026-06-21T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "@5am Surface Experts Scheduled for Service",
+    "start": "2026-06-22T00:00:00Z",
+    "end": "2026-06-23T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "vanessa.Frederick@properhotel.com",
+      "Alex.Dunn@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "Julia.Martin@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "FOP - Doroth\u00e9e Meilichzon",
+    "start": "2026-06-22T00:00:00Z",
+    "end": "2026-06-25T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "Kristin.Robinson@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "LG - PTO",
+    "start": "2026-06-22T00:00:00Z",
+    "end": "2026-06-27T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "lalaine.green@properhotel.com",
+      "Austin.McCartney@properhotel.com",
+      "Shaun.Simpson@properhotel.com",
+      "coretta.kinghoggard@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Joseph.Glasser@shelborne.com",
+      "atxp.ec@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Ash.Desai@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Andrew OOO",
+    "start": "2026-06-22T00:00:00Z",
+    "end": "2026-07-03T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "andrew.miele@properhotel.com",
+      "corp.seniorleadership@properhotel.com",
+      "anneke.anderson@properhotel.com",
+      "mark.zikov@thekorgroup.com",
+      "william.rottman@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "sommer.janssen@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Sophie Site Visit - Cambridge Forums",
+    "start": "2026-06-22T14:30:00Z",
+    "end": "2026-06-22T15:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "sophie.auvray@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Elina.Rasmussen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-22T14:30:00Z",
+    "end": "2026-06-22T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-22T14:45:00Z",
+    "end": "2026-06-22T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-22T15:30:00Z",
+    "end": "2026-06-22T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Ash X Anis",
+    "start": "2026-06-22T15:45:00Z",
+    "end": "2026-06-22T16:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "ashdesai708@gmail.com",
+      "Ash.Desai@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "ATXP Daily DBR Review",
+    "start": "2026-06-22T16:30:00Z",
+    "end": "2026-06-22T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "sophie.auvray@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "brittany.liveoak@properhotel.com",
+      "elena.ruiz@properhotel.com",
+      "mike.thomas@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "Michael.Kwee-Bintoro@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Luke and Anis catch up",
+    "start": "2026-06-22T17:00:00Z",
+    "end": "2026-06-22T17:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "luke.barnard@spacex.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Red Bluff F&B Concept Discussion",
+    "start": "2026-06-22T18:00:00Z",
+    "end": "2026-06-22T19:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "luis.villaneda@properhotel.com",
+      "Zack.Vourlas@thekorgroup.com",
+      "john@4csourcing.com",
+      "vnambiar@hncapitalpartners.com",
+      "ahammack@hncapitalpartners.com",
+      "jselman@hncapitalpartners.com",
+      "andrew.miele@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Noah.Gigliotti@thekorgroup.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Virtual Meeting with DA Garza",
+    "start": "2026-06-22T19:00:00Z",
+    "end": "2026-06-22T19:25:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Susie.Duttinger@traviscountytx.gov",
+      "anis.khoury@properhotel.com",
+      "rsuttle@abaustin.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "SEND EXCOM AGENDA",
+    "start": "2026-06-22T19:30:00Z",
+    "end": "2026-06-22T20:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-22T21:30:00Z",
+    "end": "2026-06-22T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ANIS LOBBY DUTY",
+    "start": "2026-06-22T22:30:00Z",
+    "end": "2026-06-22T23:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Bryan Pino - Out of Office - 06.23.2026",
+    "start": "2026-06-23T00:00:00Z",
+    "end": "2026-06-24T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "Bryan.Pino@properhotel.com",
+      "atxp.ec@properhotel.com",
+      "atxp.EngLeadership@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "chloe.box@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "juan.lopez@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "@1am CaRuth Scheduled for Sprinkler Head Repairs",
+    "start": "2026-06-23T00:00:00Z",
+    "end": "2026-06-24T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "joe.clonan@worthross.com",
+      "xavier.nieto@worthross.com",
+      "Alex.Pyser@properhotel.com",
+      "Taylor.Burlingame@properhotel.com",
+      "eric.tamayo@properhotel.com",
+      "Dalton.Gebhardt@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "Alejandra.Cabrera@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Elina.Rasmussen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Central Texas Scheduled for Repairs",
+    "start": "2026-06-23T00:00:00Z",
+    "end": "2026-06-24T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "Alejandra.Cabrera@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Elina.Rasmussen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Anna OFF - Memorial Day",
+    "start": "2026-06-23T00:00:00Z",
+    "end": "2026-06-24T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "anna.mayevska@properhotel.com",
+      "atxp.ec@properhotel.com",
+      "Alex.Pyser@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "jasmine.samano@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "@10am FCS Scheduled for Service",
+    "start": "2026-06-23T00:00:00Z",
+    "end": "2026-06-24T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "vanessa.Frederick@properhotel.com",
+      "Alex.Dunn@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Thomas @ Gartner CIO Summit",
+    "start": "2026-06-23T00:00:00Z",
+    "end": "2026-06-24T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "thomas.madden@properhotel.com",
+      "corp.seniorleadership@properhotel.com",
+      "corp.it@properhotel.com",
+      "andrew.miele@properhotel.com",
+      "leah.edwards@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "Stephen.Lyncook@shelborne.com",
+      "tracie.heisterkamp@properhotel.com",
+      "sommer.janssen@properhotel.com",
+      "rudy.avalos@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "la.saelee@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Coffee with Andrew Gindy - FOP from BDL",
+    "start": "2026-06-23T14:00:00Z",
+    "end": "2026-06-23T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "agindy@remlp.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-23T14:30:00Z",
+    "end": "2026-06-23T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-23T14:45:00Z",
+    "end": "2026-06-23T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-23T15:30:00Z",
+    "end": "2026-06-23T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Site with Dorothee Melizichon - Designer of Minneapolis By Proper",
+    "start": "2026-06-23T16:00:00Z",
+    "end": "2026-06-23T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.sitevisits@properhotel.com",
+      "atxp.hk@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "ATXP.FOHManagers@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily DBR Review",
+    "start": "2026-06-23T16:30:00Z",
+    "end": "2026-06-23T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "sophie.auvray@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "mike.thomas@properhotel.com",
+      "Michael.Kwee-Bintoro@properhotel.com",
+      "brittany.liveoak@properhotel.com",
+      "elena.ruiz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Leadership Meeting",
+    "start": "2026-06-23T17:00:00Z",
+    "end": "2026-06-23T18:15:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gabriel.Ratner@properhotel.com",
+      "andrew.miele@properhotel.com",
+      "brad.korzen@thekorgroup.com",
+      "brian.delowe@properhotel.com",
+      "jamie.mark@properhotel.com",
+      "keith.hansen@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "sommer.janssen@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Zack.Vourlas@thekorgroup.com",
+      "mike.thomas@properhotel.com",
+      "leah.edwards@properhotel.com",
+      "luis.villaneda@properhotel.com",
+      "casey.dolkas@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "azy.saii@properhotel.com",
+      "CorporateConferenceRoom@properhotel.com",
+      "tokhirjon.bobokhujaev@properhotel.com",
+      "cara.stoffel@properhotel.com",
+      "Ash.Desai@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Forbes Travel Guide/Austin Proper Catch-Up",
+    "start": "2026-06-23T18:30:00Z",
+    "end": "2026-06-23T19:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "cthomas@forbestravelguide.com",
+      "anis.khoury@properhotel.com",
+      "natascha.seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Tea With Anis + 2nd Floor Culinary Team Request ",
+    "start": "2026-06-23T19:00:00Z",
+    "end": "2026-06-23T20:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Sarah.Espitia-Cabrera@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "kathryn.gasdick@properhotel.com",
+      "nicole.wiggins@properhotel.com",
+      "Ash.Desai@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Proper OS - Operations Standup",
+    "start": "2026-06-23T21:00:00Z",
+    "end": "2026-06-23T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "mike.thomas@properhotel.com",
+      "cara.stoffel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Armando.Campos@properhotel.com",
+      "martin.weiss@avalonbeverlyhills.com",
+      "brad.korzen@thekorgroup.com",
+      "brian.delowe@properhotel.com",
+      "payas.parab@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "rowan.hand@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-23T21:30:00Z",
+    "end": "2026-06-23T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Vanessa Eckert interview",
+    "start": "2026-06-23T22:00:00Z",
+    "end": "2026-06-23T22:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Aaron Schmiedel - McWhinney FOP",
+    "start": "2026-06-24T00:00:00Z",
+    "end": "2026-06-25T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "finn.jagelski@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Central Texas Scheduled for Repairs",
+    "start": "2026-06-24T00:00:00Z",
+    "end": "2026-06-25T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AirCo is on Site for PM's",
+    "start": "2026-06-24T00:00:00Z",
+    "end": "2026-06-27T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-24T14:30:00Z",
+    "end": "2026-06-24T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-24T14:45:00Z",
+    "end": "2026-06-24T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-24T15:30:00Z",
+    "end": "2026-06-24T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "LP Manager Interview - Hrushikesh ",
+    "start": "2026-06-24T16:00:00Z",
+    "end": "2026-06-24T16:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "vanessa.Frederick@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "santoshrushi1993@gmail.com",
+      "antonio.arcidiacono@properhotel.com",
+      "anna.mayevska@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GM Meeting",
+    "start": "2026-06-24T17:00:00Z",
+    "end": "2026-06-24T18:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gabriel.Ratner@properhotel.com",
+      "adam.sydenham@properhotel.com",
+      "Robert.Barnes@avalonpalmsprings.com",
+      "anis.khoury@properhotel.com",
+      "danielle.goller@theculverhotel.com",
+      "michael.gregory@thehoteljune.com",
+      "bruno.vergeynst@properhotel.com",
+      "leah.edwards@properhotel.com",
+      "Armando.Campos@properhotel.com",
+      "Guy.Chetwynd@shelborne.com",
+      "martin.weiss@avalonbeverlyhills.com",
+      "Mariannie.santiago@shelborne.com",
+      "omar.abreu@montaukyachtclub.com",
+      "sommer.janssen@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "mike.thomas@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "\ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f Wellness Day, Session 1 \ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f",
+    "start": "2026-06-24T18:00:00Z",
+    "end": "2026-06-24T18:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.hr@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ExCom Meeting - resending series ",
+    "start": "2026-06-24T18:00:00Z",
+    "end": "2026-06-24T19:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.ec@properhotel.com",
+      "Juan.Martinez@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Lena.Babani@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "john.albertsen@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "\ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f Wellness Day, Session 2 \ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f",
+    "start": "2026-06-24T19:00:00Z",
+    "end": "2026-06-24T19:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.hr@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "[EXTERNAL] Discussion Regarding Residential Service Opportunities",
+    "start": "2026-06-24T19:45:00Z",
+    "end": "2026-06-24T20:10:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "xavier.nieto@worthross.com",
+      "anis.khoury@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "jess.schoenholtz@properhotel.com",
+      "candace.sparks@worthross.com",
+      "Natascha.Seifritz@properhotel.com",
+      "anna.mayevska@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Austin Revenue Optimization Meeting",
+    "start": "2026-06-24T21:00:00Z",
+    "end": "2026-06-24T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "kinsey.east@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "jaimie.weiss@properhotel.com",
+      "Christopher.Winn@mcwhinney.com",
+      "patricia.justice@properhotel.com",
+      "tripp.dubois@thekorgroup.com",
+      "Catherine.Weirick@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "shane.phelan@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "jess.schoenholtz@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Download Hermes",
+    "start": "2026-06-24T22:00:00Z",
+    "end": "2026-06-24T23:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Gasket Guy Scheduled for Service",
+    "start": "2026-06-25T00:00:00Z",
+    "end": "2026-06-26T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "juan.lopez@properhotel.com",
+      "atxp.engineering@properhotel.com",
+      "chloe.box@properhotel.com",
+      "atxp.security@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "vanessa.Frederick@properhotel.com",
+      "Alex.Pyser@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Jess - OOO",
+    "start": "2026-06-25T00:00:00Z",
+    "end": "2026-06-29T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "jess.schoenholtz@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Vanessa.medina@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "kinsey.east@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "PROPER RUN CLUB",
+    "start": "2026-06-25T12:00:00Z",
+    "end": "2026-06-25T13:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-25T14:30:00Z",
+    "end": "2026-06-25T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-25T14:45:00Z",
+    "end": "2026-06-25T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "AVENDRA - ECOLAB RESEARCH",
+    "start": "2026-06-25T15:00:00Z",
+    "end": "2026-06-25T15:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-25T15:30:00Z",
+    "end": "2026-06-25T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "WELLNESS ROOMS START TO ROLL OUT",
+    "start": "2026-06-25T16:00:00Z",
+    "end": "2026-06-25T16:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily DBR Review",
+    "start": "2026-06-25T16:30:00Z",
+    "end": "2026-06-25T17:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "sophie.auvray@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Makenna.Davis@properhotel.com",
+      "Michael.Kwee-Bintoro@properhotel.com",
+      "brittany.liveoak@properhotel.com",
+      "elena.ruiz@properhotel.com",
+      "mike.thomas@properhotel.com",
+      "rowan.hand@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Jasmine and Anis 1 on 1",
+    "start": "2026-06-25T17:00:00Z",
+    "end": "2026-06-25T18:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "jasmine.samano@properhotel.com"
+    ],
+    "categories": [
+      "Green category",
+      "Blue category"
+    ]
+  },
+  {
+    "subject": "Kappo Kappo weekly catch up",
+    "start": "2026-06-25T19:00:00Z",
+    "end": "2026-06-25T20:00:00Z",
+    "showAs": "tentative",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "harutaka.kishi@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "April.Lyman@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "gohei.kishi@properhotel.com",
+      "jess.schoenholtz@properhotel.com",
+      "meagan.flaig@properhotel.com",
+      "Alex.Pyser@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Proper Hotels + BluIP - AIVA 3.0 Discussion",
+    "start": "2026-06-25T20:00:00Z",
+    "end": "2026-06-25T20:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "afrothingham@bluip.com",
+      "anis.khoury@properhotel.com",
+      "Gmorgan@bluip.com",
+      "bluip.mia@meetinginsights.com",
+      "lhayrapetyan@bluip.com",
+      "vkuppuswamy@bluip.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Austin Proper + BluIP - AIVA 3.0 Weekly Call",
+    "start": "2026-06-25T21:00:00Z",
+    "end": "2026-06-25T21:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "afrothingham@bluip.com",
+      "anis.khoury@properhotel.com",
+      "natascha.seifritz@properhotel.com",
+      "elina.rasmussen@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "thomas.madden@properhotel.com",
+      "humberto.alvarez@properhotel.com",
+      "la.saelee@properhotel.com",
+      "bluip.mia@meetinginsights.com",
+      "Gmorgan@bluip.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-25T21:30:00Z",
+    "end": "2026-06-25T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Review Hotel California Proforma",
+    "start": "2026-06-25T23:00:00Z",
+    "end": "2026-06-26T00:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "mark.zikov@thekorgroup.com",
+      "anis.khoury@properhotel.com",
+      "william.rottman@properhotel.com",
+      "Zack.Vourlas@thekorgroup.com",
+      "rowan.hand@properhotel.com",
+      "andrew.miele@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Ryan in at 10am",
+    "start": "2026-06-26T00:00:00Z",
+    "end": "2026-06-27T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "ryan.galvin@properhotel.com",
+      "atxp.ec@properhotel.com",
+      "atxp.sales@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Caryn.allen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Thomas PTO",
+    "start": "2026-06-26T00:00:00Z",
+    "end": "2026-06-27T00:00:00Z",
+    "showAs": "free",
+    "isAllDay": true,
+    "isCancelled": false,
+    "attendees": [
+      "thomas.madden@properhotel.com",
+      "corp.seniorleadership@properhotel.com",
+      "corp.it@properhotel.com",
+      "rudy.avalos@properhotel.com",
+      "casey.dolkas@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "rowan.hand@properhotel.com",
+      "leah.edwards@properhotel.com",
+      "luis.villaneda@properhotel.com",
+      "la.saelee@properhotel.com",
+      "Stephen.Lyncook@shelborne.com",
+      "anis.khoury@properhotel.com",
+      "sommer.janssen@properhotel.com",
+      "andrew.miele@properhotel.com",
+      "Gabriel.Ratner@properhotel.com",
+      "humberto.alvarez@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Clean up Claude Code - / work on daily task checker for teams",
+    "start": "2026-06-26T13:30:00Z",
+    "end": "2026-06-26T14:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Sophie for Karen Site: ABPM",
+    "start": "2026-06-26T14:30:00Z",
+    "end": "2026-06-26T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "karen.gartner@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "sophie.auvray@properhotel.com",
+      "kathryn.gasdick@properhotel.com",
+      "jasmine.samano@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+    "start": "2026-06-26T14:30:00Z",
+    "end": "2026-06-26T14:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "atxp.gm@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GLITCH AND REVINATE REVIEW",
+    "start": "2026-06-26T14:45:00Z",
+    "end": "2026-06-26T15:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  },
+  {
+    "subject": "Proper Service Meeting",
+    "start": "2026-06-26T15:15:00Z",
+    "end": "2026-06-26T16:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "ATXP.FOHManagers@properhotel.com",
+      "atxp.fomanagers@properhotel.com",
+      "atxp.guestrelations@properhotel.com",
+      "atxp.hk@properhotel.com",
+      "atxp.EngLeadership@properhotel.com",
+      "atxp.ec@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "danielle.sustendal@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "fedor.zhukov@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "meagan.flaig@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "juan.lopez@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "Alejandra.Cabrera@properhotel.com",
+      "rodrigo.martinez@properhotel.com",
+      "antonio.arcidiacono@properhotel.com",
+      "Tarun.Girish@properhotel.com",
+      "Lena.Babani@properhotel.com",
+      "chloe.box@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "ATXP Daily 90-Day Rate Review",
+    "start": "2026-06-26T15:30:00Z",
+    "end": "2026-06-26T15:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Gretta.Peil@properhotel.com",
+      "tracie.heisterkamp@properhotel.com",
+      "Elina.Rasmussen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "matilde.gamarra@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Makenna.Davis@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Tokhir Anis catch up - Ecolab",
+    "start": "2026-06-26T16:00:00Z",
+    "end": "2026-06-26T16:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "tokhirjon.bobokhujaev@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Phil and Anis Caesar wrap catch up",
+    "start": "2026-06-26T17:00:00Z",
+    "end": "2026-06-26T17:45:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "philip@comedortx.com",
+      "philip@assemblytx.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Kat - Wedding Site, Nicholson Dodson Wedding",
+    "start": "2026-06-26T18:30:00Z",
+    "end": "2026-06-26T19:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "kathryn.gasdick@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "anna.mayevska@properhotel.com",
+      "vanessa.Frederick@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Elina.Rasmussen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "AUP: Capex Weekly",
+    "start": "2026-06-26T18:30:00Z",
+    "end": "2026-06-26T19:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "abby.zakharin@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "Zack.Vourlas@thekorgroup.com",
+      "jasmine.samano@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "taylor.horvat@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Natascha and Anis catch up",
+    "start": "2026-06-26T19:00:00Z",
+    "end": "2026-06-26T20:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "Kat - Site Visit, White Construction Holiday Party",
+    "start": "2026-06-26T19:30:00Z",
+    "end": "2026-06-26T20:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "kathryn.gasdick@properhotel.com",
+      "atxp.sitevisits@properhotel.com",
+      "Jacob.Shaw@properhotel.com",
+      "Caryn.allen@properhotel.com",
+      "atxp.verbenaspa@properhotel.com",
+      "Damin.Kiesel@properhotel.com",
+      "jordan.richter@properhotel.com",
+      "karen.gartner@properhotel.com",
+      "Ash.Desai@properhotel.com",
+      "Gretta.Peil@properhotel.com",
+      "Paula.Diaz@properhotel.com",
+      "lalaine.green@properhotel.com",
+      "anis.khoury@properhotel.com",
+      "kaly.oneal@properhotel.com",
+      "Natascha.Seifritz@properhotel.com",
+      "ryan.galvin@properhotel.com",
+      "jasmine.samano@properhotel.com",
+      "Bryan.Pino@properhotel.com",
+      "Elina.Rasmussen@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Bryan and Anis catch ups",
+    "start": "2026-06-26T20:00:00Z",
+    "end": "2026-06-26T21:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Bryan.Pino@properhotel.com"
+    ],
+    "categories": [
+      "Green category"
+    ]
+  },
+  {
+    "subject": "Austin Grand Prix/FTG/Alba Larsen Discovery Call",
+    "start": "2026-06-26T21:00:00Z",
+    "end": "2026-06-26T21:30:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "cthomas@forbestravelguide.com",
+      "snauta@forbestravelguide.com",
+      "anis.khoury@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "Daily Proper PM Shift",
+    "start": "2026-06-26T21:30:00Z",
+    "end": "2026-06-26T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [
+      "Natascha.Seifritz@properhotel.com",
+      "atxp.allmanagers@properhotel.com"
+    ],
+    "categories": null
+  },
+  {
+    "subject": "GM REPORT",
+    "start": "2026-06-26T21:30:00Z",
+    "end": "2026-06-26T22:00:00Z",
+    "showAs": "busy",
+    "isAllDay": false,
+    "isCancelled": false,
+    "attendees": [],
+    "categories": null
+  }
+]

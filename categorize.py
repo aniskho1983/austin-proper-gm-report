@@ -295,6 +295,29 @@ def classify_category(e, block_type):
     if 'meaningful performance' in subj:
         return 'hr_talent'
 
+    # ── June 2026 additions: new recurring blocks & subjects ─────────────────
+    # (order matters — most specific project/financial keywords first)
+    if any(k in subj for k in ['budget season', 'proforma', 'hotel california']):
+        return 'monthly_fin' if 'budget season' in subj else 'project_dev'
+    if any(k in subj for k in ['2500 cedar', 'cedar springs', 'red bluff', 'jeddah',
+                               'minneapolis', 'residential service']):
+        return 'project_dev'
+    if any(k in subj for k in ['aiva', 'bluip']):
+        return 'ai_innovation'
+    if any(k in subj for k in ['proper os', 'leadership meeting', 'revenue command',
+                               'group pricing']):
+        return 'weekly_ops'
+    if any(k in subj for k in ['craftable', 'generator run', 'air quality', 'acr air']):
+        return 'vendor_ops'
+    if any(k in subj for k in ['candidate', 'wellness day', 'director of people',
+                               'people & cu']):
+        return 'hr_talent'
+    if any(k in subj for k in ['forbes travel', 'ftg', 'grand prix', 'discovery call',
+                               'wedding', 'gala']):
+        return 'sales_mktg'
+    if any(k in subj for k in ['exec fop', 'da garza']) or 'fop' in subj:
+        return 'guest_relations'
+
     # Catch-all for named catch-ups
     if any(k in subj for k in ['catch up', 'touch base', 'connect']):
         return 'direct_reports' if n_att <= 3 else 'weekly_ops'
