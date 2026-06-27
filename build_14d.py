@@ -136,6 +136,66 @@ def inferred_to_event(b):
     }
 
 
+GM_HOURS_PER_DAY = 12  # max realistic working day (→ 60h over a 5-day week)
+_CONF_RANK = {'high': 2, 'med': 1, 'low': 0}
+
+
+def _counted_hours(e):
+    if e['block_type'] in ('cancelled', 'context_block', 'personal'):
+        return 0.0
+    return e.get('dur_hours') or 0.0
+
+
+def cap_recovered_to_12h(logged_events, inf_events):
+    """Trim recovered blocks so logged+recovered never exceeds 12h on any day.
+
+    Logged time is fixed. Per day, recovered blocks are admitted highest-confidence
+    first up to the remaining headroom; the boundary block is shortened to fit and
+    any further blocks are dropped. Returns the adjusted recovered-event list.
+    """
+    logged_h = {}
+    for e in logged_events:
+        d = e.get('date_local')
+        if d:
+            logged_h[d] = logged_h.get(d, 0.0) + _counted_hours(e)
+
+    by_day = {}
+    for e in inf_events:
+        by_day.setdefault(e['date_local'], []).append(e)
+
+    kept, trims = [], []
+    for day, blocks in by_day.items():
+        allowance = max(0.0, GM_HOURS_PER_DAY - logged_h.get(day, 0.0))
+        used = 0.0
+        for b in sorted(blocks, key=lambda x: _CONF_RANK.get(x.get('confidence'), 1), reverse=True):
+            dur = b.get('dur_hours') or 0.0
+            if used >= allowance:
+                trims.append(f"{day} dropped {dur}h ({b['subject'][:40]})")
+                continue
+            if used + dur <= allowance + 1e-9:
+                kept.append(b); used += dur
+            else:
+                trim_to = round(allowance - used, 2)
+                if trim_to >= 0.25:  # keep a meaningful remainder (>=15 min)
+                    sl = datetime.fromisoformat(b['start_local'])
+                    el = sl + timedelta(hours=trim_to)
+                    b['end_local'] = el.isoformat()
+                    b['end'] = (el + timedelta(hours=UTC_OFFSET_H)).strftime('%Y-%m-%dT%H:%M:%SZ')
+                    b['dur_hours'] = trim_to
+                    b['subject'] = b['subject'] + ' [trimmed to 12h cap]'
+                    kept.append(b); used = allowance
+                    trims.append(f"{day} trimmed to {trim_to}h ({b['subject'][:40]})")
+                else:
+                    trims.append(f"{day} dropped {dur}h ({b['subject'][:40]})")
+    if trims:
+        print("  12h/day cap applied:")
+        for t in trims:
+            print("   -", t)
+    else:
+        print("  12h/day cap: no trims needed (all days within 12h).")
+    return kept
+
+
 def summarize(events, start_date):
     """Hours per category in [start_date, TODAY], plus logged/recovered split."""
     cat_hours = {k: 0.0 for k in cz.CATEGORY_META}
@@ -195,6 +255,12 @@ def stage_build():
     # Only keep recovered blocks on working days (gap backfill never applies to days off)
     inf_events = [e for e in (inferred_to_event(b) for b in inferred)
                   if date.fromisoformat(e['date_local']).weekday() not in cz.DAYS_OFF]
+
+    # ── Cap: no day exceeds 12h total (→ no 5-day week exceeds 60h). ──────────
+    # Logged calendar time is real and never reduced; recovered time is trimmed
+    # (lowest-confidence first) to fit whatever headroom remains under 12h/day.
+    inf_events = cap_recovered_to_12h(events, inf_events)
+
     events += inf_events
     events.sort(key=lambda x: x.get('start') or '')
 

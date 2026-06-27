@@ -1831,19 +1831,6 @@
     },
     {
       "date": "2026-06-16",
-      "time": "10:30-11:00",
-      "subject": "Recovered: late-morning email triage and F&B/marketing follow-ups",
-      "category": "solo_admin",
-      "confidence": "med",
-      "hours": 0.5,
-      "evidence": [
-        "10:27 Sent email RE: Panel interviews ADoP&C",
-        "10:32 Slack #atxp-fb IRD amenity plating",
-        "10:40 Slack #atxp-digital-marketing email database growth"
-      ]
-    },
-    {
-      "date": "2026-06-16",
       "time": "14:45-15:15",
       "subject": "Recovered: afternoon STR comp-set analysis and ExCom prep",
       "category": "weekly_ops",
@@ -1858,15 +1845,16 @@
       ]
     },
     {
-      "date": "2026-06-17",
-      "time": "09:00-09:30",
-      "subject": "Recovered: morning Revinate guest-recovery drafts and rate strategy",
-      "category": "guest_relations",
+      "date": "2026-06-16",
+      "time": "10:30-11:00",
+      "subject": "Recovered: late-morning email triage and F&B/marketing follow-ups",
+      "category": "solo_admin",
       "confidence": "med",
       "hours": 0.5,
       "evidence": [
-        "09:03 Slack DM self: Revinate guest-recovery drafts (NPS detractors)",
-        "09:19 Slack #atxp-revenue rate strategy"
+        "10:27 Sent email RE: Panel interviews ADoP&C",
+        "10:32 Slack #atxp-fb IRD amenity plating",
+        "10:40 Slack #atxp-digital-marketing email database growth"
       ]
     },
     {
@@ -1883,6 +1871,18 @@
         "12:31 Slack #atxp-leaders PDR owner meeting + EC",
         "12:45 Slack #atxp-kappo-mgmt Petit Kappo promo / 30 covers",
         "12:52 Slack #atxp-leaders"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "time": "09:00-09:30",
+      "subject": "Recovered: morning Revinate guest-recovery drafts and rate strategy",
+      "category": "guest_relations",
+      "confidence": "med",
+      "hours": 0.5,
+      "evidence": [
+        "09:03 Slack DM self: Revinate guest-recovery drafts (NPS detractors)",
+        "09:19 Slack #atxp-revenue rate strategy"
       ]
     },
     {
@@ -2057,17 +2057,6 @@
     },
     {
       "date": "2026-06-25",
-      "time": "17:30-18:00",
-      "subject": "Recovered: OXYLIGHT/Verbena spa marketing + press outreach correspondence",
-      "category": "solo_email",
-      "confidence": "med",
-      "hours": 0.5,
-      "evidence": [
-        "17:42 sent email 'Re: OXYLIGHT Marketing plan' (banner retargeting, Verbena IG)"
-      ]
-    },
-    {
-      "date": "2026-06-25",
       "time": "19:00-20:00",
       "subject": "Recovered: Evening AI data-validation demos (Toast/Snowflake/AIVA) + Dallas 2500 Cedar Springs concept",
       "category": "ai_innovation",
@@ -2082,16 +2071,14 @@
       ]
     },
     {
-      "date": "2026-06-12",
-      "time": "08:15-08:30",
-      "subject": "Recovered: AM showroom prep + housekeeping coordination",
-      "category": "solo_admin",
+      "date": "2026-06-25",
+      "time": "17:30-18:00",
+      "subject": "Recovered: OXYLIGHT/Verbena spa marketing + press outreach correspondence",
+      "category": "solo_email",
       "confidence": "med",
-      "hours": 0.25,
+      "hours": 0.5,
       "evidence": [
-        "08:16 Slack DM Paula Diaz 'Handle your operation first' (dry cleaning / showroom prep)",
-        "08:19 Slack DM Paula Diaz 'Yes by fop'",
-        "08:21 Slack #atxp-hskp re FFOP basketball player last-minute check-in / showroom 1101/618"
+        "17:42 sent email 'Re: OXYLIGHT Marketing plan' (banner retargeting, Verbena IG)"
       ]
     },
     {
@@ -2106,6 +2093,19 @@
         "19:05 Slack #atxp-fb-leaders-foh sharing The Line Hotel deck",
         "19:43 Slack DM Gabriel re sending SPA reno schedule for next-year topline",
         "19:45 Slack group DM re 2027 ATXP budget / one-hotel impact"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:15-08:30",
+      "subject": "Recovered: AM showroom prep + housekeeping coordination",
+      "category": "solo_admin",
+      "confidence": "med",
+      "hours": 0.25,
+      "evidence": [
+        "08:16 Slack DM Paula Diaz 'Handle your operation first' (dry cleaning / showroom prep)",
+        "08:19 Slack DM Paula Diaz 'Yes by fop'",
+        "08:21 Slack #atxp-hskp re FFOP basketball player last-minute check-in / showroom 1101/618"
       ]
     },
     {
