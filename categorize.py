@@ -98,6 +98,9 @@ MANUAL_OVERRIDES = {
     # AI / Innovation
     "perplexity!":                               {"block_type": "meeting",  "category": "ai_innovation"},
 
+    # Guest & Owner Relations — daily guest-feedback review (Revinate + Glitch tracking)
+    "glitch and revinate":                       {"block_type": "meeting",  "category": "guest_relations"},
+
     # Monthly Financial — Forecast review (calendar shows 5min, actual = 1h)
     "forecast 4 deadline":                       {"block_type": "meeting",  "category": "monthly_fin",  "dur_hours_override": 1.0},
 

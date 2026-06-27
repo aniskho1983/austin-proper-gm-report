@@ -8,12 +8,12 @@
       "days": 7,
       "weeks": 1.0,
       "total_events": 97,
-      "total_meeting_h": 49.1,
-      "total_solo_h": 17.2,
+      "total_meeting_h": 51.1,
+      "total_solo_h": 15.2,
       "total_h": 66.3,
       "recovered_h": 17.8,
-      "meeting_h_per_wk": 49.1,
-      "solo_h_per_wk": 17.2,
+      "meeting_h_per_wk": 51.1,
+      "solo_h_per_wk": 15.2,
       "pct_of_60h": 110.6,
       "by_category": {
         "daily_ops": {
@@ -57,9 +57,9 @@
           "hrs_per_wk": 2.0
         },
         "guest_relations": {
-          "hours": 11.42,
-          "count": 13,
-          "hrs_per_wk": 11.42
+          "hours": 13.42,
+          "count": 21,
+          "hrs_per_wk": 13.42
         },
         "hr_talent": {
           "hours": 2.0,
@@ -97,9 +97,9 @@
           "hrs_per_wk": 0.0
         },
         "solo_work_other": {
-          "hours": 7.5,
-          "count": 15,
-          "hrs_per_wk": 7.5
+          "hours": 5.5,
+          "count": 7,
+          "hrs_per_wk": 5.5
         },
         "uncategorized": {
           "hours": 0.5,
@@ -114,12 +114,12 @@
       "days": 14,
       "weeks": 2.0,
       "total_events": 177,
-      "total_meeting_h": 96.1,
-      "total_solo_h": 23.5,
+      "total_meeting_h": 99.6,
+      "total_solo_h": 20.0,
       "total_h": 119.6,
       "recovered_h": 22.2,
-      "meeting_h_per_wk": 48.0,
-      "solo_h_per_wk": 11.8,
+      "meeting_h_per_wk": 49.8,
+      "solo_h_per_wk": 10.0,
       "pct_of_60h": 99.7,
       "by_category": {
         "daily_ops": {
@@ -163,9 +163,9 @@
           "hrs_per_wk": 1.5
         },
         "guest_relations": {
-          "hours": 16.92,
-          "count": 19,
-          "hrs_per_wk": 8.46
+          "hours": 20.42,
+          "count": 33,
+          "hrs_per_wk": 10.21
         },
         "hr_talent": {
           "hours": 2.5,
@@ -203,9 +203,9 @@
           "hrs_per_wk": 0.0
         },
         "solo_work_other": {
-          "hours": 10.0,
-          "count": 22,
-          "hrs_per_wk": 5.0
+          "hours": 6.5,
+          "count": 8,
+          "hrs_per_wk": 3.25
         },
         "uncategorized": {
           "hours": 2.0,
@@ -374,8 +374,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -410,8 +410,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -437,8 +437,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -563,8 +563,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -689,8 +689,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -842,8 +842,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -959,8 +959,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -1067,8 +1067,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -1094,8 +1094,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -1139,8 +1139,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -1274,8 +1274,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -1400,8 +1400,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -1535,8 +1535,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
@@ -1688,8 +1688,8 @@
       "09:45-10:00",
       "0.25h",
       "GLITCH AND REVINATE REVIEW",
-      "solo_work_other",
-      "solo_work",
+      "guest_relations",
+      "meeting",
       "logged"
     ],
     [
