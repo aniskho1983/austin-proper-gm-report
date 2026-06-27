@@ -1,32 +1,88 @@
 {
-  "2026-06-07": [],
-  "2026-06-09": [],
-  "2026-06-10": [],
-  "2026-06-11": [],
-  "2026-06-14": [
+  "2026-06-12": [
     {
-      "start": "08:00",
-      "end": "08:30",
-      "subject": "Kevin Andruss - 7951151118-1 - Exec FOP",
-      "category": "uncategorized"
+      "start": "09:00",
+      "end": "10:00",
+      "subject": "FFOP site - Xenel Industries  - Jeddah Proper ",
+      "category": "project_dev"
     },
     {
-      "start": "09:30",
-      "end": "09:45",
-      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
       "category": "daily_ops"
     },
     {
-      "start": "09:45",
-      "end": "10:00",
-      "subject": "GLITCH AND REVINATE REVIEW",
-      "category": "solo_work_other"
+      "start": "10:45",
+      "end": "11:30",
+      "subject": "Patrick and Anis catch up",
+      "category": "direct_reports"
+    },
+    {
+      "start": "11:00",
+      "end": "12:00",
+      "subject": "Site Visit - Samsung E&C America",
+      "category": "guest_relations"
+    },
+    {
+      "start": "11:30",
+      "end": "12:00",
+      "subject": "ATXP Daily DBR Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "12:00",
+      "end": "13:00",
+      "subject": "Natascha and Anis catch up",
+      "category": "direct_reports"
+    },
+    {
+      "start": "13:00",
+      "end": "13:30",
+      "subject": "Proper ",
+      "category": "uncategorized"
+    },
+    {
+      "start": "13:30",
+      "end": "14:00",
+      "subject": "AUP: Capex Weekly",
+      "category": "monthly_fin"
+    },
+    {
+      "start": "14:00",
+      "end": "15:45",
+      "subject": "CAPEX Review",
+      "category": "monthly_fin"
+    },
+    {
+      "start": "15:00",
+      "end": "16:00",
+      "subject": "F&B meeting -weekly ",
+      "category": "guest_relations"
     },
     {
       "start": "16:30",
       "end": "17:00",
       "subject": "Daily Proper PM Shift",
       "category": "daily_ops"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "GM REPORT",
+      "category": "solo_admin"
+    },
+    {
+      "start": "17:00",
+      "end": "17:30",
+      "subject": "Proper OS \u2014 Budget Season Intro",
+      "category": "monthly_fin"
+    },
+    {
+      "start": "18:00",
+      "end": "19:00",
+      "subject": "Bryan and Anis catch ups",
+      "category": "direct_reports"
     }
   ],
   "2026-06-15": [
@@ -64,7 +120,7 @@
       "start": "11:30",
       "end": "13:00",
       "subject": "FW: 2500 Cedar Springs | Hotel/Condo MEP - Bi-Weekly",
-      "category": "uncategorized"
+      "category": "project_dev"
     },
     {
       "start": "12:00",
@@ -76,7 +132,7 @@
       "start": "12:00",
       "end": "12:15",
       "subject": "Weekly Generator Run",
-      "category": "uncategorized"
+      "category": "vendor_ops"
     },
     {
       "start": "13:30",
@@ -94,13 +150,13 @@
       "start": "15:00",
       "end": "15:30",
       "subject": "Proper OS - Weekly Standup",
-      "category": "uncategorized"
+      "category": "weekly_ops"
     },
     {
       "start": "16:00",
       "end": "17:00",
       "subject": "Training Call | Revenue Command Center + Group Pricing Tool",
-      "category": "uncategorized"
+      "category": "weekly_ops"
     },
     {
       "start": "16:30",
@@ -150,7 +206,7 @@
       "start": "12:00",
       "end": "13:15",
       "subject": "Leadership Meeting",
-      "category": "uncategorized"
+      "category": "weekly_ops"
     },
     {
       "start": "13:00",
@@ -162,7 +218,7 @@
       "start": "16:00",
       "end": "17:00",
       "subject": "Craftable Issues - Support Meeting",
-      "category": "uncategorized"
+      "category": "vendor_ops"
     },
     {
       "start": "16:30",
@@ -194,13 +250,13 @@
       "start": "10:00",
       "end": "11:00",
       "subject": "ACR Air Quality Testing (Kitchens) - 06.17.2026",
-      "category": "uncategorized"
+      "category": "vendor_ops"
     },
     {
       "start": "10:00",
       "end": "10:45",
       "subject": "Austin Proper + BluIP - AIVA 3.0 Weekly Call",
-      "category": "uncategorized"
+      "category": "ai_innovation"
     },
     {
       "start": "10:30",
@@ -254,7 +310,7 @@
       "start": "17:00",
       "end": "18:00",
       "subject": "Proper OS - Operations Standup",
-      "category": "uncategorized"
+      "category": "weekly_ops"
     }
   ],
   "2026-06-18": [
@@ -316,7 +372,7 @@
       "start": "13:00",
       "end": "13:30",
       "subject": "Meet with Keny Ayala - Candidate for Assistant Director of People & Culture",
-      "category": "uncategorized"
+      "category": "hr_talent"
     },
     {
       "start": "14:00",
@@ -343,7 +399,7 @@
       "category": "direct_reports"
     }
   ],
-  "2026-06-21": [
+  "2026-06-19": [
     {
       "start": "09:30",
       "end": "09:45",
@@ -357,10 +413,46 @@
       "category": "solo_work_other"
     },
     {
+      "start": "10:15",
+      "end": "11:00",
+      "subject": "Proper Service Meeting",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "11:00",
+      "end": "12:00",
+      "subject": "2500 Cedar Springs | Hotel/Condo Food Service - Bi-Weekly",
+      "category": "project_dev"
+    },
+    {
+      "start": "12:00",
+      "end": "13:00",
+      "subject": "Natascha and Anis catch up",
+      "category": "direct_reports"
+    },
+    {
+      "start": "15:00",
+      "end": "16:00",
+      "subject": "Bryan and Anis catch ups",
+      "category": "direct_reports"
+    },
+    {
+      "start": "15:00",
+      "end": "16:00",
+      "subject": "F&B meeting -weekly ",
+      "category": "guest_relations"
+    },
+    {
       "start": "16:30",
       "end": "17:00",
       "subject": "Daily Proper PM Shift",
       "category": "daily_ops"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "GM REPORT",
+      "category": "solo_admin"
     }
   ],
   "2026-06-22": [
@@ -410,13 +502,13 @@
       "start": "13:00",
       "end": "14:00",
       "subject": "Red Bluff F&B Concept Discussion",
-      "category": "uncategorized"
+      "category": "project_dev"
     },
     {
       "start": "14:00",
       "end": "14:25",
       "subject": "Virtual Meeting with DA Garza",
-      "category": "uncategorized"
+      "category": "guest_relations"
     },
     {
       "start": "14:30",
@@ -478,13 +570,13 @@
       "start": "12:00",
       "end": "13:15",
       "subject": "Leadership Meeting",
-      "category": "uncategorized"
+      "category": "weekly_ops"
     },
     {
       "start": "13:30",
       "end": "14:00",
       "subject": "Forbes Travel Guide/Austin Proper Catch-Up",
-      "category": "uncategorized"
+      "category": "sales_mktg"
     },
     {
       "start": "14:00",
@@ -496,7 +588,7 @@
       "start": "16:00",
       "end": "17:00",
       "subject": "Proper OS - Operations Standup",
-      "category": "uncategorized"
+      "category": "weekly_ops"
     },
     {
       "start": "16:30",
@@ -546,7 +638,7 @@
       "start": "13:00",
       "end": "13:45",
       "subject": "\ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f Wellness Day, Session 1 \ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f",
-      "category": "uncategorized"
+      "category": "hr_talent"
     },
     {
       "start": "13:00",
@@ -558,13 +650,13 @@
       "start": "14:00",
       "end": "14:45",
       "subject": "\ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f Wellness Day, Session 2 \ud83e\uddd8\ud83c\udffd\u200d\u2640\ufe0f",
-      "category": "uncategorized"
+      "category": "hr_talent"
     },
     {
       "start": "14:45",
       "end": "15:10",
       "subject": "[EXTERNAL] Discussion Regarding Residential Service Opportunities",
-      "category": "uncategorized"
+      "category": "project_dev"
     },
     {
       "start": "16:00",
@@ -638,13 +730,13 @@
       "start": "15:00",
       "end": "15:45",
       "subject": "Proper Hotels + BluIP - AIVA 3.0 Discussion",
-      "category": "uncategorized"
+      "category": "ai_innovation"
     },
     {
       "start": "16:00",
       "end": "16:45",
       "subject": "Austin Proper + BluIP - AIVA 3.0 Weekly Call",
-      "category": "uncategorized"
+      "category": "ai_innovation"
     },
     {
       "start": "16:30",
@@ -656,7 +748,105 @@
       "start": "18:00",
       "end": "19:00",
       "subject": "Review Hotel California Proforma",
-      "category": "uncategorized"
+      "category": "project_dev"
+    }
+  ],
+  "2026-06-26": [
+    {
+      "start": "08:30",
+      "end": "09:30",
+      "subject": "Clean up Claude Code - / work on daily task checker for teams",
+      "category": "ai_innovation"
+    },
+    {
+      "start": "09:30",
+      "end": "10:00",
+      "subject": "Sophie for Karen Site: ABPM",
+      "category": "sales_mktg"
+    },
+    {
+      "start": "09:30",
+      "end": "09:45",
+      "subject": "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
+      "category": "daily_ops"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "subject": "GLITCH AND REVINATE REVIEW",
+      "category": "solo_work_other"
+    },
+    {
+      "start": "10:15",
+      "end": "11:00",
+      "subject": "Proper Service Meeting",
+      "category": "weekly_ops"
+    },
+    {
+      "start": "10:30",
+      "end": "10:45",
+      "subject": "ATXP Daily 90-Day Rate Review",
+      "category": "daily_ops"
+    },
+    {
+      "start": "11:00",
+      "end": "11:45",
+      "subject": "Tokhir Anis catch up - Ecolab",
+      "category": "direct_reports"
+    },
+    {
+      "start": "12:00",
+      "end": "12:45",
+      "subject": "Phil and Anis Caesar wrap catch up",
+      "category": "direct_reports"
+    },
+    {
+      "start": "13:30",
+      "end": "14:00",
+      "subject": "Kat - Wedding Site, Nicholson Dodson Wedding",
+      "category": "sales_mktg"
+    },
+    {
+      "start": "13:30",
+      "end": "14:00",
+      "subject": "AUP: Capex Weekly",
+      "category": "monthly_fin"
+    },
+    {
+      "start": "14:00",
+      "end": "15:00",
+      "subject": "Natascha and Anis catch up",
+      "category": "direct_reports"
+    },
+    {
+      "start": "14:30",
+      "end": "15:00",
+      "subject": "Kat - Site Visit, White Construction Holiday Party",
+      "category": "guest_relations"
+    },
+    {
+      "start": "15:00",
+      "end": "16:00",
+      "subject": "Bryan and Anis catch ups",
+      "category": "direct_reports"
+    },
+    {
+      "start": "16:00",
+      "end": "16:30",
+      "subject": "Austin Grand Prix/FTG/Alba Larsen Discovery Call",
+      "category": "sales_mktg"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "Daily Proper PM Shift",
+      "category": "daily_ops"
+    },
+    {
+      "start": "16:30",
+      "end": "17:00",
+      "subject": "GM REPORT",
+      "category": "solo_admin"
     }
   ]
 }

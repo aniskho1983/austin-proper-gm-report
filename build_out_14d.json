@@ -7,14 +7,14 @@
       "end_date": "2026-06-26",
       "days": 7,
       "weeks": 1.0,
-      "total_events": 94,
-      "total_meeting_h": 46.3,
-      "total_solo_h": 16.5,
-      "total_h": 62.8,
-      "recovered_h": 14.2,
-      "meeting_h_per_wk": 46.3,
-      "solo_h_per_wk": 16.5,
-      "pct_of_60h": 104.7,
+      "total_events": 97,
+      "total_meeting_h": 49.1,
+      "total_solo_h": 17.2,
+      "total_h": 66.3,
+      "recovered_h": 17.8,
+      "meeting_h_per_wk": 49.1,
+      "solo_h_per_wk": 17.2,
+      "pct_of_60h": 110.6,
       "by_category": {
         "daily_ops": {
           "hours": 8.25,
@@ -57,9 +57,9 @@
           "hrs_per_wk": 2.0
         },
         "guest_relations": {
-          "hours": 8.67,
-          "count": 10,
-          "hrs_per_wk": 8.67
+          "hours": 11.42,
+          "count": 13,
+          "hrs_per_wk": 11.42
         },
         "hr_talent": {
           "hours": 2.0,
@@ -82,9 +82,9 @@
           "hrs_per_wk": 0.5
         },
         "solo_admin": {
-          "hours": 8.5,
+          "hours": 9.25,
           "count": 9,
-          "hrs_per_wk": 8.5
+          "hrs_per_wk": 9.25
         },
         "guest_floor": {
           "hours": 0.0,
@@ -113,14 +113,14 @@
       "end_date": "2026-06-26",
       "days": 14,
       "weeks": 2.0,
-      "total_events": 174,
-      "total_meeting_h": 94.3,
-      "total_solo_h": 23.0,
-      "total_h": 117.3,
-      "recovered_h": 20.0,
-      "meeting_h_per_wk": 47.2,
-      "solo_h_per_wk": 11.5,
-      "pct_of_60h": 97.8,
+      "total_events": 177,
+      "total_meeting_h": 96.1,
+      "total_solo_h": 23.5,
+      "total_h": 119.6,
+      "recovered_h": 22.2,
+      "meeting_h_per_wk": 48.0,
+      "solo_h_per_wk": 11.8,
+      "pct_of_60h": 99.7,
       "by_category": {
         "daily_ops": {
           "hours": 16.5,
@@ -138,9 +138,9 @@
           "hrs_per_wk": 8.12
         },
         "project_dev": {
-          "hours": 8.67,
-          "count": 8,
-          "hrs_per_wk": 4.33
+          "hours": 9.42,
+          "count": 9,
+          "hrs_per_wk": 4.71
         },
         "ai_innovation": {
           "hours": 5.0,
@@ -163,9 +163,9 @@
           "hrs_per_wk": 1.5
         },
         "guest_relations": {
-          "hours": 15.92,
-          "count": 17,
-          "hrs_per_wk": 7.96
+          "hours": 16.92,
+          "count": 19,
+          "hrs_per_wk": 8.46
         },
         "hr_talent": {
           "hours": 2.5,
@@ -188,9 +188,9 @@
           "hrs_per_wk": 0.25
         },
         "solo_admin": {
-          "hours": 12.5,
+          "hours": 13.0,
           "count": 16,
-          "hrs_per_wk": 6.25
+          "hrs_per_wk": 6.5
         },
         "guest_floor": {
           "hours": 0.0,
@@ -216,6 +216,15 @@
     }
   },
   "events": [
+    [
+      "2026-06-12",
+      "08:15-08:30",
+      "0.25h",
+      "Recovered: AM showroom prep + housekeeping coordination",
+      "solo_admin",
+      "solo_work",
+      "inferred"
+    ],
     [
       "2026-06-12",
       "09:00-10:00",
@@ -343,6 +352,15 @@
       "logged"
     ],
     [
+      "2026-06-12",
+      "19:00-19:45",
+      "0.75h",
+      "Recovered: Evening Kappo Kappo proforma / SPA reno budget + Line deck",
+      "project_dev",
+      "solo_work",
+      "inferred"
+    ],
+    [
       "2026-06-13",
       "09:30-09:45",
       "0.25h",
@@ -380,15 +398,6 @@
     ],
     [
       "2026-06-14",
-      "08:45-09:15",
-      "0.5h",
-      "Recovered: Sunday F&B / World Cup viewing coordination",
-      "solo_admin",
-      "solo_work",
-      "inferred"
-    ],
-    [
-      "2026-06-14",
       "09:30-09:45",
       "0.25h",
       "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
@@ -404,15 +413,6 @@
       "solo_work_other",
       "solo_work",
       "logged"
-    ],
-    [
-      "2026-06-14",
-      "11:00-12:45",
-      "1.75h",
-      "Recovered: midday guest-recovery comps and survey push",
-      "guest_relations",
-      "solo_work",
-      "inferred"
     ],
     [
       "2026-06-14",
@@ -938,6 +938,15 @@
     ],
     [
       "2026-06-19",
+      "08:15-09:15",
+      "1.0h",
+      "Recovered: Holiday a.m. guest recovery + FOP suite correspondence",
+      "guest_relations",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-19",
       "09:30-09:45",
       "0.25h",
       "AM Ops Meeting - PDR / When Not Avail, Piscina / When not Avail 3rd floor offices",
@@ -983,6 +992,15 @@
     ],
     [
       "2026-06-19",
+      "13:00-14:15",
+      "1.25h",
+      "Recovered: Guest recovery routing + VIP upgrade/amenity flags",
+      "guest_relations",
+      "solo_work",
+      "inferred"
+    ],
+    [
+      "2026-06-19",
       "15:00-16:00",
       "1.0h",
       "Bryan and Anis catch ups",
@@ -1016,6 +1034,15 @@
       "solo_admin",
       "solo_work",
       "logged"
+    ],
+    [
+      "2026-06-19",
+      "18:15-18:45",
+      "0.5h",
+      "Recovered: Evening VIP anniversary amenity coordination",
+      "guest_relations",
+      "solo_work",
+      "inferred"
     ],
     [
       "2026-06-20",
@@ -1070,15 +1097,6 @@
       "solo_work_other",
       "solo_work",
       "logged"
-    ],
-    [
-      "2026-06-21",
-      "13:15-13:45",
-      "0.5h",
-      "Recovered: Father's Day team shout-outs across ops channels",
-      "solo_admin",
-      "solo_work",
-      "inferred"
     ],
     [
       "2026-06-21",
@@ -1781,37 +1799,18 @@
       "solo_admin",
       "solo_work",
       "logged"
+    ],
+    [
+      "2026-06-26",
+      "18:15-19:30",
+      "1.25h",
+      "Recovered: Evening proforma/Ecolab + guest settlement + hiring follow-ups",
+      "solo_admin",
+      "solo_work",
+      "inferred"
     ]
   ],
   "inferred_detail": [
-    {
-      "date": "2026-06-14",
-      "time": "08:45-09:15",
-      "subject": "Recovered: Sunday F&B / World Cup viewing coordination",
-      "category": "solo_admin",
-      "confidence": "high",
-      "hours": 0.5,
-      "evidence": [
-        "08:50 Slack #atxp-fb World Cup viewing amenity",
-        "08:52 Slack #atxp-fb F&B coordination",
-        "09:12 Slack #atxp-fb",
-        "09:13 Slack #atxp-fb World Cup game selection/turnout"
-      ]
-    },
-    {
-      "date": "2026-06-14",
-      "time": "11:00-12:45",
-      "subject": "Recovered: midday guest-recovery comps and survey push",
-      "category": "guest_relations",
-      "confidence": "high",
-      "hours": 1.75,
-      "evidence": [
-        "10:59 Slack #atxp-fd \"Comp the night\" guest recovery",
-        "11:00 Slack #atxp-fd survey push / 92 overall score",
-        "11:08 Slack #atxp-fb Super Bowl/World Series viewing ideas",
-        "12:38 Slack DM Natascha \"I texted too\""
-      ]
-    },
     {
       "date": "2026-06-16",
       "time": "08:15-09:15",
@@ -1900,18 +1899,6 @@
         "16:14 Slack #atxp-digital-marketing list growth/dedup questions",
         "16:18 Slack DM Ryan Galvin sales lead review (Nov past Ds)",
         "16:24 Sent email \"Great meeting you at Austin Proper\" (Tudor / guest)"
-      ]
-    },
-    {
-      "date": "2026-06-21",
-      "time": "13:15-13:45",
-      "subject": "Recovered: Father's Day team shout-outs across ops channels",
-      "category": "solo_admin",
-      "confidence": "low",
-      "hours": 0.5,
-      "evidence": [
-        "13:28 Slack #atxp-leaders 'Happy Father's Day to all the dads on here'",
-        "13:28 Slack #atxp-ops 'Happy Father's Day to all the dads of Austin Proper'"
       ]
     },
     {
@@ -2092,6 +2079,85 @@
         "19:49 Slack DM Claude delegate-check tasks",
         "19:57 Slack #gms Snowflake connector references",
         "19:58 Slack #gms prompts to validate Toast/AIVA glitch data"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:15-08:30",
+      "subject": "Recovered: AM showroom prep + housekeeping coordination",
+      "category": "solo_admin",
+      "confidence": "med",
+      "hours": 0.25,
+      "evidence": [
+        "08:16 Slack DM Paula Diaz 'Handle your operation first' (dry cleaning / showroom prep)",
+        "08:19 Slack DM Paula Diaz 'Yes by fop'",
+        "08:21 Slack #atxp-hskp re FFOP basketball player last-minute check-in / showroom 1101/618"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "time": "19:00-19:45",
+      "subject": "Recovered: Evening Kappo Kappo proforma / SPA reno budget + Line deck",
+      "category": "project_dev",
+      "confidence": "high",
+      "hours": 0.75,
+      "evidence": [
+        "19:03 Slack DM Gabriel Ratner re BDL Kappo Kappo proforma & dining room reforecast",
+        "19:05 Slack #atxp-fb-leaders-foh sharing The Line Hotel deck",
+        "19:43 Slack DM Gabriel re sending SPA reno schedule for next-year topline",
+        "19:45 Slack group DM re 2027 ATXP budget / one-hotel impact"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "time": "08:15-09:15",
+      "subject": "Recovered: Holiday a.m. guest recovery + FOP suite correspondence",
+      "category": "guest_relations",
+      "confidence": "high",
+      "hours": 1.0,
+      "evidence": [
+        "08:19 sent email 'FOP June 28th Suite request' (Donovan rehost offer)",
+        "08:37 Slack #atxp-fd directing 30% credit + recovery email for detractor Christopher Brite",
+        "09:05 Slack #atxp-fd 'let's try to recover from this detractor'"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "time": "13:00-14:15",
+      "subject": "Recovered: Guest recovery routing + VIP upgrade/amenity flags",
+      "category": "guest_relations",
+      "confidence": "high",
+      "hours": 1.25,
+      "evidence": [
+        "13:05 Slack NPS3 guest recovery (Christopher Brite) routed-to-GM briefing",
+        "14:00 Slack #atxp-gr 'whatever ca do upgrade wise even to suites let's do it' (Kelly W)",
+        "14:08 Slack #atxp-gr amenity / 'perfect catch' on 903 anniversary"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "time": "18:15-18:45",
+      "subject": "Recovered: Evening VIP anniversary amenity coordination",
+      "category": "guest_relations",
+      "confidence": "med",
+      "hours": 0.5,
+      "evidence": [
+        "18:25 Slack DM Danielle Sustendal 'They have a PdR booked for their anniversary too'",
+        "18:33 Slack DM Danielle 'Amazing yes let's do that' (amenity swap to bubbles/baklava/fruit)"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "time": "18:15-19:30",
+      "subject": "Recovered: Evening proforma/Ecolab + guest settlement + hiring follow-ups",
+      "category": "solo_admin",
+      "confidence": "high",
+      "hours": 1.25,
+      "evidence": [
+        "18:24 sent email 'Guest Settlement form' to ISYLAW (time-sensitive guest refund)",
+        "19:01 Slack #corp-finance Ecolab bundle savings comparison next steps",
+        "19:10 Slack DM Mark Zikov re moving Hotel California proforma thread to Slack",
+        "19:22 Slack group DM (Anna/Alex) re AD of F&B candidate / Will role decision"
       ]
     }
   ]

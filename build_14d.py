@@ -27,7 +27,7 @@ cz.MIN_GAP_MINUTES = 45  # ignore sub-45-min slivers
 RAW_14D   = 'calendar_raw_14d.json'
 GAPS_OUT  = 'calendar_gaps_14d.json'
 TIMELINE  = 'calendar_timeline_14d.json'
-INFERRED  = ['inferred_E1.json', 'inferred_E2.json']
+INFERRED  = ['inferred_E1.json', 'inferred_E2.json', 'inferred_E3.json']
 BUILD_OUT = 'build_out_14d.json'
 
 TODAY      = date(2026, 6, 26)
@@ -192,7 +192,9 @@ def stage_build():
             inferred += json.load(open(f))
         except FileNotFoundError:
             print(f"  (note: {f} not found — skipping)")
-    inf_events = [inferred_to_event(b) for b in inferred]
+    # Only keep recovered blocks on working days (gap backfill never applies to days off)
+    inf_events = [e for e in (inferred_to_event(b) for b in inferred)
+                  if date.fromisoformat(e['date_local']).weekday() not in cz.DAYS_OFF]
     events += inf_events
     events.sort(key=lambda x: x.get('start') or '')
 

@@ -1,59 +1,19 @@
 [
   {
-    "date": "2026-06-07",
+    "date": "2026-06-12",
     "start": "08:00",
-    "end": "20:00",
-    "duration_min": 720,
-    "type": "empty_day",
-    "context": "No calendar blocks found for this day"
-  },
-  {
-    "date": "2026-06-09",
-    "start": "08:00",
-    "end": "20:00",
-    "duration_min": 720,
-    "type": "empty_day",
-    "context": "No calendar blocks found for this day"
-  },
-  {
-    "date": "2026-06-10",
-    "start": "08:00",
-    "end": "20:00",
-    "duration_min": 720,
-    "type": "empty_day",
-    "context": "No calendar blocks found for this day"
-  },
-  {
-    "date": "2026-06-11",
-    "start": "08:00",
-    "end": "20:00",
-    "duration_min": 720,
-    "type": "empty_day",
-    "context": "No calendar blocks found for this day"
-  },
-  {
-    "date": "2026-06-14",
-    "start": "08:30",
-    "end": "09:30",
+    "end": "09:00",
     "duration_min": 60,
     "type": "gap",
-    "context": "After: Kevin Andruss - 7951151118-1 - Exec FOP | Before: AM Ops Meeting - PDR / When Not Avail, P"
+    "context": "Before: FFOP site - Xenel Industries  - Jeddah Proper "
   },
   {
-    "date": "2026-06-14",
-    "start": "10:00",
-    "end": "16:30",
-    "duration_min": 390,
-    "type": "gap",
-    "context": "After: GLITCH AND REVINATE REVIEW | Before: Daily Proper PM Shift"
-  },
-  {
-    "date": "2026-06-14",
-    "start": "17:00",
+    "date": "2026-06-12",
+    "start": "19:00",
     "end": "20:00",
-    "duration_min": 180,
+    "duration_min": 60,
     "type": "gap",
-    "context": "After: Daily Proper PM Shift"
+    "context": "After: Bryan and Anis catch ups"
   },
   {
     "date": "2026-06-15",
@@ -152,7 +112,7 @@
     "context": "After: Richard Wales and Anis catch up"
   },
   {
-    "date": "2026-06-21",
+    "date": "2026-06-19",
     "start": "08:00",
     "end": "09:30",
     "duration_min": 90,
@@ -160,20 +120,20 @@
     "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
   },
   {
-    "date": "2026-06-21",
-    "start": "10:00",
-    "end": "16:30",
-    "duration_min": 390,
+    "date": "2026-06-19",
+    "start": "13:00",
+    "end": "15:00",
+    "duration_min": 120,
     "type": "gap",
-    "context": "After: GLITCH AND REVINATE REVIEW | Before: Daily Proper PM Shift"
+    "context": "After: Natascha and Anis catch up | Before: Bryan and Anis catch ups"
   },
   {
-    "date": "2026-06-21",
+    "date": "2026-06-19",
     "start": "17:00",
     "end": "20:00",
     "duration_min": 180,
     "type": "gap",
-    "context": "After: Daily Proper PM Shift"
+    "context": "After: GM REPORT"
   },
   {
     "date": "2026-06-22",
@@ -278,5 +238,13 @@
     "duration_min": 60,
     "type": "gap",
     "context": "After: Review Hotel California Proforma"
+  },
+  {
+    "date": "2026-06-26",
+    "start": "17:00",
+    "end": "20:00",
+    "duration_min": 180,
+    "type": "gap",
+    "context": "After: GM REPORT"
   }
 ]

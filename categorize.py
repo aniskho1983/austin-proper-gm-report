@@ -47,7 +47,7 @@ WORK_END_H   = 20  # 8:00 PM (hotel GM, not 9-5)
 MIN_GAP_MINUTES = 45  # gaps smaller than this are ignored
 
 # Scheduled days off — no gap detection on these days (0=Mon … 4=Fri, 5=Sat, 6=Sun)
-DAYS_OFF = {4, 5}  # Friday, Saturday
+DAYS_OFF = {5, 6}  # Saturday, Sunday
 
 # GM work-day assumption: 12h/day (7:45 AM – 8:00 PM), 5 working days = 60h/week.
 # property_floor is capped so total tracked hours never exceed this.
