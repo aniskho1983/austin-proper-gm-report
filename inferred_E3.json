@@ -1,0 +1,81 @@
+[
+  {
+    "date": "2026-06-12",
+    "start_local": "2026-06-12T08:15:00",
+    "end_local": "2026-06-12T08:30:00",
+    "subject": "Recovered: AM showroom prep + housekeeping coordination",
+    "category": "solo_admin",
+    "confidence": "med",
+    "evidence": [
+      "08:16 Slack DM Paula Diaz 'Handle your operation first' (dry cleaning / showroom prep)",
+      "08:19 Slack DM Paula Diaz 'Yes by fop'",
+      "08:21 Slack #atxp-hskp re FFOP basketball player last-minute check-in / showroom 1101/618"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "start_local": "2026-06-12T19:00:00",
+    "end_local": "2026-06-12T19:45:00",
+    "subject": "Recovered: Evening Kappo Kappo proforma / SPA reno budget + Line deck",
+    "category": "project_dev",
+    "confidence": "high",
+    "evidence": [
+      "19:03 Slack DM Gabriel Ratner re BDL Kappo Kappo proforma & dining room reforecast",
+      "19:05 Slack #atxp-fb-leaders-foh sharing The Line Hotel deck",
+      "19:43 Slack DM Gabriel re sending SPA reno schedule for next-year topline",
+      "19:45 Slack group DM re 2027 ATXP budget / one-hotel impact"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "start_local": "2026-06-19T08:15:00",
+    "end_local": "2026-06-19T09:15:00",
+    "subject": "Recovered: Holiday a.m. guest recovery + FOP suite correspondence",
+    "category": "guest_relations",
+    "confidence": "high",
+    "evidence": [
+      "08:19 sent email 'FOP June 28th Suite request' (Donovan rehost offer)",
+      "08:37 Slack #atxp-fd directing 30% credit + recovery email for detractor Christopher Brite",
+      "09:05 Slack #atxp-fd 'let's try to recover from this detractor'"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "start_local": "2026-06-19T13:00:00",
+    "end_local": "2026-06-19T14:15:00",
+    "subject": "Recovered: Guest recovery routing + VIP upgrade/amenity flags",
+    "category": "guest_relations",
+    "confidence": "high",
+    "evidence": [
+      "13:05 Slack NPS3 guest recovery (Christopher Brite) routed-to-GM briefing",
+      "14:00 Slack #atxp-gr 'whatever ca do upgrade wise even to suites let's do it' (Kelly W)",
+      "14:08 Slack #atxp-gr amenity / 'perfect catch' on 903 anniversary"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "start_local": "2026-06-19T18:15:00",
+    "end_local": "2026-06-19T18:45:00",
+    "subject": "Recovered: Evening VIP anniversary amenity coordination",
+    "category": "guest_relations",
+    "confidence": "med",
+    "evidence": [
+      "18:25 Slack DM Danielle Sustendal 'They have a PdR booked for their anniversary too'",
+      "18:33 Slack DM Danielle 'Amazing yes let's do that' (amenity swap to bubbles/baklava/fruit)"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "start_local": "2026-06-26T18:15:00",
+    "end_local": "2026-06-26T19:30:00",
+    "subject": "Recovered: Evening proforma/Ecolab + guest settlement + hiring follow-ups",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": [
+      "18:24 sent email 'Guest Settlement form' to ISYLAW (time-sensitive guest refund)",
+      "19:01 Slack #corp-finance Ecolab bundle savings comparison next steps",
+      "19:10 Slack DM Mark Zikov re moving Hotel California proforma thread to Slack",
+      "19:22 Slack group DM (Anna/Alex) re AD of F&B candidate / Will role decision"
+    ]
+  }
+]

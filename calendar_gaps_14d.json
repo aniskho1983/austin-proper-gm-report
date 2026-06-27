@@ -1,0 +1,250 @@
+[
+  {
+    "date": "2026-06-12",
+    "start": "08:00",
+    "end": "09:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "Before: FFOP site - Xenel Industries  - Jeddah Proper "
+  },
+  {
+    "date": "2026-06-12",
+    "start": "19:00",
+    "end": "20:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "After: Bryan and Anis catch ups"
+  },
+  {
+    "date": "2026-06-15",
+    "start": "08:00",
+    "end": "09:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
+  },
+  {
+    "date": "2026-06-15",
+    "start": "12:15",
+    "end": "13:30",
+    "duration_min": 75,
+    "type": "gap",
+    "context": "After: Weekly Generator Run | Before: Lalaine x Anis "
+  },
+  {
+    "date": "2026-06-15",
+    "start": "17:00",
+    "end": "20:00",
+    "duration_min": 180,
+    "type": "gap",
+    "context": "After: Daily Proper PM Shift"
+  },
+  {
+    "date": "2026-06-16",
+    "start": "08:00",
+    "end": "09:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
+  },
+  {
+    "date": "2026-06-16",
+    "start": "10:00",
+    "end": "11:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "After: GLITCH AND REVINATE REVIEW | Before: Kat - Site Visit, Gift of Water Gala"
+  },
+  {
+    "date": "2026-06-16",
+    "start": "14:00",
+    "end": "16:00",
+    "duration_min": 120,
+    "type": "gap",
+    "context": "After: AUP Weekly Notion Tracking | Before: Craftable Issues - Support Meeting"
+  },
+  {
+    "date": "2026-06-16",
+    "start": "18:30",
+    "end": "20:00",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "After: Ryan and Anis 1 on 1"
+  },
+  {
+    "date": "2026-06-17",
+    "start": "08:00",
+    "end": "09:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
+  },
+  {
+    "date": "2026-06-17",
+    "start": "12:00",
+    "end": "13:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "After: Kappo Kappo Meeting | Before: Karen Site: Madison Industries"
+  },
+  {
+    "date": "2026-06-17",
+    "start": "18:00",
+    "end": "20:00",
+    "duration_min": 120,
+    "type": "gap",
+    "context": "After: Proper OS - Operations Standup"
+  },
+  {
+    "date": "2026-06-18",
+    "start": "15:00",
+    "end": "16:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "After: Kappo Kappo weekly catch up | Before: Daily Proper PM Shift"
+  },
+  {
+    "date": "2026-06-18",
+    "start": "19:00",
+    "end": "20:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "After: Richard Wales and Anis catch up"
+  },
+  {
+    "date": "2026-06-19",
+    "start": "08:00",
+    "end": "09:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
+  },
+  {
+    "date": "2026-06-19",
+    "start": "13:00",
+    "end": "15:00",
+    "duration_min": 120,
+    "type": "gap",
+    "context": "After: Natascha and Anis catch up | Before: Bryan and Anis catch ups"
+  },
+  {
+    "date": "2026-06-19",
+    "start": "17:00",
+    "end": "20:00",
+    "duration_min": 180,
+    "type": "gap",
+    "context": "After: GM REPORT"
+  },
+  {
+    "date": "2026-06-22",
+    "start": "08:00",
+    "end": "09:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "Before: Sophie Site Visit - Cambridge Forums"
+  },
+  {
+    "date": "2026-06-22",
+    "start": "15:00",
+    "end": "16:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "After: SEND EXCOM AGENDA | Before: Daily Proper PM Shift"
+  },
+  {
+    "date": "2026-06-22",
+    "start": "18:30",
+    "end": "20:00",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "After: ANIS LOBBY DUTY"
+  },
+  {
+    "date": "2026-06-23",
+    "start": "08:00",
+    "end": "09:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "Before: Coffee with Andrew Gindy - FOP from BDL"
+  },
+  {
+    "date": "2026-06-23",
+    "start": "15:00",
+    "end": "16:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "After: Tea With Anis + 2nd Floor Culinary Team  | Before: Proper OS - Operations Standup"
+  },
+  {
+    "date": "2026-06-23",
+    "start": "17:30",
+    "end": "20:00",
+    "duration_min": 150,
+    "type": "gap",
+    "context": "After: Vanessa Eckert interview"
+  },
+  {
+    "date": "2026-06-24",
+    "start": "08:00",
+    "end": "09:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "Before: AM Ops Meeting - PDR / When Not Avail, Piscina / W"
+  },
+  {
+    "date": "2026-06-24",
+    "start": "15:10",
+    "end": "16:00",
+    "duration_min": 50,
+    "type": "gap",
+    "context": "After: [EXTERNAL] Discussion Regarding Resident | Before: Austin Revenue Optimization Meeting"
+  },
+  {
+    "date": "2026-06-24",
+    "start": "18:00",
+    "end": "20:00",
+    "duration_min": 120,
+    "type": "gap",
+    "context": "After: Download Hermes"
+  },
+  {
+    "date": "2026-06-25",
+    "start": "08:00",
+    "end": "09:30",
+    "duration_min": 90,
+    "type": "gap",
+    "context": "After: PROPER RUN CLUB | Before: AM Ops Meeting - PDR / When Not Avail, P"
+  },
+  {
+    "date": "2026-06-25",
+    "start": "13:00",
+    "end": "14:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "After: Jasmine and Anis 1 on 1 | Before: Kappo Kappo weekly catch up"
+  },
+  {
+    "date": "2026-06-25",
+    "start": "17:00",
+    "end": "18:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "After: Daily Proper PM Shift | Before: Review Hotel California Proforma"
+  },
+  {
+    "date": "2026-06-25",
+    "start": "19:00",
+    "end": "20:00",
+    "duration_min": 60,
+    "type": "gap",
+    "context": "After: Review Hotel California Proforma"
+  },
+  {
+    "date": "2026-06-26",
+    "start": "17:00",
+    "end": "20:00",
+    "duration_min": 180,
+    "type": "gap",
+    "context": "After: GM REPORT"
+  }
+]

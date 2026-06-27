@@ -1,0 +1,120 @@
+[
+  {
+    "date": "2026-06-14",
+    "start_local": "2026-06-14T08:45:00",
+    "end_local": "2026-06-14T09:15:00",
+    "subject": "Recovered: Sunday F&B / World Cup viewing coordination",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": [
+      "08:50 Slack #atxp-fb World Cup viewing amenity",
+      "08:52 Slack #atxp-fb F&B coordination",
+      "09:12 Slack #atxp-fb",
+      "09:13 Slack #atxp-fb World Cup game selection/turnout"
+    ]
+  },
+  {
+    "date": "2026-06-14",
+    "start_local": "2026-06-14T11:00:00",
+    "end_local": "2026-06-14T12:45:00",
+    "subject": "Recovered: midday guest-recovery comps and survey push",
+    "category": "guest_relations",
+    "confidence": "high",
+    "evidence": [
+      "10:59 Slack #atxp-fd \"Comp the night\" guest recovery",
+      "11:00 Slack #atxp-fd survey push / 92 overall score",
+      "11:08 Slack #atxp-fb Super Bowl/World Series viewing ideas",
+      "12:38 Slack DM Natascha \"I texted too\""
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "start_local": "2026-06-16T08:15:00",
+    "end_local": "2026-06-16T09:15:00",
+    "subject": "Recovered: morning GM-search, ExCom agenda and ops coordination",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": [
+      "08:09 Slack #atxp-runclub",
+      "08:22 Slack #atxp-gm-search candidate assessment",
+      "08:26 Slack #atxp-digital-marketing SMS database",
+      "08:28 Slack #atxp-eng-leaders chiller",
+      "08:47 Slack group DM (Gabriel/Leah) leadership",
+      "08:56 Slack #atxp-leaders ExCom agenda request",
+      "09:09 Slack #atxp-fd UK arrivals / amenities",
+      "09:19 Slack #atxp-leaders agenda"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "start_local": "2026-06-16T10:30:00",
+    "end_local": "2026-06-16T11:00:00",
+    "subject": "Recovered: late-morning email triage and F&B/marketing follow-ups",
+    "category": "solo_admin",
+    "confidence": "med",
+    "evidence": [
+      "10:27 Sent email RE: Panel interviews ADoP&C",
+      "10:32 Slack #atxp-fb IRD amenity plating",
+      "10:40 Slack #atxp-digital-marketing email database growth"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "start_local": "2026-06-16T14:45:00",
+    "end_local": "2026-06-16T15:15:00",
+    "subject": "Recovered: afternoon STR comp-set analysis and ExCom prep",
+    "category": "weekly_ops",
+    "confidence": "high",
+    "evidence": [
+      "14:39 Slack #atxp-leaders ExCom/holiday coverage",
+      "14:46 Slack #atxp-revenue STR comp-set analysis (4S/Driskill)",
+      "14:49 Slack #atxp-ops team kudos",
+      "14:51 Slack group DM channel consolidation (Madden/Tracie)",
+      "14:57 Slack #atxp-revenue rate/comp set"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "start_local": "2026-06-17T09:00:00",
+    "end_local": "2026-06-17T09:30:00",
+    "subject": "Recovered: morning Revinate guest-recovery drafts and rate strategy",
+    "category": "guest_relations",
+    "confidence": "med",
+    "evidence": [
+      "09:03 Slack DM self: Revinate guest-recovery drafts (NPS detractors)",
+      "09:19 Slack #atxp-revenue rate strategy"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "start_local": "2026-06-17T12:30:00",
+    "end_local": "2026-06-17T13:00:00",
+    "subject": "Recovered: midday EC/PDR, GM-search refs and Kappo promo coordination",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": [
+      "12:24 Slack #atxp-sales Apollo/Lee Solomon",
+      "12:25 Slack #atxp-outlets-hosts PDR for EC meeting",
+      "12:26 Slack #atxp-gm-search candidate references",
+      "12:31 Slack #atxp-leaders PDR owner meeting + EC",
+      "12:45 Slack #atxp-kappo-mgmt Petit Kappo promo / 30 covers",
+      "12:52 Slack #atxp-leaders"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "start_local": "2026-06-18T16:00:00",
+    "end_local": "2026-06-18T16:30:00",
+    "subject": "Recovered: afternoon GM-search sourcing, revenue and marketing follow-ups",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": [
+      "16:07 Slack #atxp-revenue weekend pickup \"go big\"",
+      "16:08 Slack #atxp-gm-search sourcing ex-Pendry candidate",
+      "16:09 Slack #atxp-revenue weekend pace",
+      "16:14 Slack #atxp-digital-marketing list growth/dedup questions",
+      "16:18 Slack DM Ryan Galvin sales lead review (Nov past Ds)",
+      "16:24 Sent email \"Great meeting you at Austin Proper\" (Tudor / guest)"
+    ]
+  }
+]

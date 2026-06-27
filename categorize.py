@@ -34,6 +34,7 @@ Categories (maps to dashboard):
 import json
 import re
 from datetime import datetime, timedelta, timezone, date
+from slack_notify import send_briefing as send_slack_briefing
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
@@ -46,7 +47,7 @@ WORK_END_H   = 20  # 8:00 PM (hotel GM, not 9-5)
 MIN_GAP_MINUTES = 45  # gaps smaller than this are ignored
 
 # Scheduled days off — no gap detection on these days (0=Mon … 4=Fri, 5=Sat, 6=Sun)
-DAYS_OFF = {4, 5}  # Friday, Saturday
+DAYS_OFF = {5, 6}  # Saturday, Sunday
 
 # GM work-day assumption: 12h/day (7:45 AM – 8:00 PM), 5 working days = 60h/week.
 # property_floor is capped so total tracked hours never exceed this.
@@ -96,6 +97,9 @@ MANUAL_OVERRIDES = {
 
     # AI / Innovation
     "perplexity!":                               {"block_type": "meeting",  "category": "ai_innovation"},
+
+    # Guest & Owner Relations — daily guest-feedback review (Revinate + Glitch tracking)
+    "glitch and revinate":                       {"block_type": "meeting",  "category": "guest_relations"},
 
     # Monthly Financial — Forecast review (calendar shows 5min, actual = 1h)
     "forecast 4 deadline":                       {"block_type": "meeting",  "category": "monthly_fin",  "dur_hours_override": 1.0},
@@ -293,6 +297,29 @@ def classify_category(e, block_type):
     # Meaningful performance reviews = HR
     if 'meaningful performance' in subj:
         return 'hr_talent'
+
+    # ── June 2026 additions: new recurring blocks & subjects ─────────────────
+    # (order matters — most specific project/financial keywords first)
+    if any(k in subj for k in ['budget season', 'proforma', 'hotel california']):
+        return 'monthly_fin' if 'budget season' in subj else 'project_dev'
+    if any(k in subj for k in ['2500 cedar', 'cedar springs', 'red bluff', 'jeddah',
+                               'minneapolis', 'residential service']):
+        return 'project_dev'
+    if any(k in subj for k in ['aiva', 'bluip']):
+        return 'ai_innovation'
+    if any(k in subj for k in ['proper os', 'leadership meeting', 'revenue command',
+                               'group pricing']):
+        return 'weekly_ops'
+    if any(k in subj for k in ['craftable', 'generator run', 'air quality', 'acr air']):
+        return 'vendor_ops'
+    if any(k in subj for k in ['candidate', 'wellness day', 'director of people',
+                               'people & cu']):
+        return 'hr_talent'
+    if any(k in subj for k in ['forbes travel', 'ftg', 'grand prix', 'discovery call',
+                               'wedding', 'gala']):
+        return 'sales_mktg'
+    if any(k in subj for k in ['exec fop', 'da garza']) or 'fop' in subj:
+        return 'guest_relations'
 
     # Catch-all for named catch-ups
     if any(k in subj for k in ['catch up', 'touch base', 'connect']):
@@ -759,6 +786,14 @@ def run(input_file='calendar_raw.json',
     print(f"   {report_file}       — full human-readable audit")
     print(f"   {gaps_file}         — working-hour gaps to review")
     print(f"   {summary_file}      — hours by category for 7d/30d/YTD dashboard")
+
+    # Send to Slack (in addition to email)
+    print("\n📤 Sending briefing to Slack...")
+    slack_ok = send_slack_briefing(summary_file, gaps_file, categorized_file)
+    if slack_ok:
+        print("✓  Slack notification sent successfully")
+    else:
+        print("⚠  Slack notification skipped (configure SLACK_WEBHOOK_URL or SLACK_BOT_TOKEN)")
 
 
 if __name__ == '__main__':

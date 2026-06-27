@@ -1,0 +1,128 @@
+[
+  {
+    "date": "2026-06-21",
+    "start_local": "2026-06-21T13:15:00",
+    "end_local": "2026-06-21T13:45:00",
+    "subject": "Recovered: Father's Day team shout-outs across ops channels",
+    "category": "solo_admin",
+    "confidence": "low",
+    "evidence": ["13:28 Slack #atxp-leaders 'Happy Father's Day to all the dads on here'", "13:28 Slack #atxp-ops 'Happy Father's Day to all the dads of Austin Proper'"]
+  },
+  {
+    "date": "2026-06-22",
+    "start_local": "2026-06-22T08:30:00",
+    "end_local": "2026-06-22T09:30:00",
+    "subject": "Recovered: Morning email triage + ops/revenue coordination (filters, group report, RM)",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": ["08:39 sent email 'Re: Thomas Knowles - Asst F&B Director'", "08:39 sent email 'FW: Thomas Knowles'", "08:43 Slack #atxp-lp-eng filter cleaning checks", "08:44 Slack #atxp-revenue '1 hotels brand up to 40% off'", "08:54 Slack DM Group In-House Report (manual pull, auto-run failed)", "09:04 Slack #atxp-revenue Proper Pulse rooms-left use case", "09:25 Slack DM Andrew Miele Jeddah crew"]
+  },
+  {
+    "date": "2026-06-22",
+    "start_local": "2026-06-22T15:00:00",
+    "end_local": "2026-06-22T16:15:00",
+    "subject": "Recovered: FOP/owner correspondence + reservations (Dorothee tour, Gindy, Room Request)",
+    "category": "guest_relations",
+    "confidence": "high",
+    "evidence": ["15:07 sent email 'Re: Intro - Dorothee Meilichzon / Anis tour'", "16:12 sent email 'Re: Room Request' (MCW rate)", "16:16 sent email 'Re: Austin' (Mr. Gindy meeting AM)"]
+  },
+  {
+    "date": "2026-06-22",
+    "start_local": "2026-06-22T18:30:00",
+    "end_local": "2026-06-22T19:45:00",
+    "subject": "Recovered: Evening site-visit setup + surveillance/chiller capex correspondence",
+    "category": "project_dev",
+    "confidence": "high",
+    "evidence": ["18:31 sent email 'Site with Dorothee Melizichon - Designer of Minneapolis By Proper'", "19:26 sent email 'Accepted: AUP: AV Upgrades'", "19:46 sent email 'Re: Surveillance Expansion: Two Budget Options'"]
+  },
+  {
+    "date": "2026-06-23",
+    "start_local": "2026-06-23T08:00:00",
+    "end_local": "2026-06-23T09:00:00",
+    "subject": "Recovered: Morning ops/revenue/DBR coordination + FOP coffee (Gindy)",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": ["08:32 Slack #atxp-revenue World Cup travelers / booking.com visibility", "08:45 Slack #atxp-pk-leaders coffee with FFOP Andrew Gindy", "08:47 Slack #atxp-dbr daily transaction reporting standard", "08:51 sent email 'Re: Coffee with Andrew Gindy - FOP from BDL'", "08:51 Slack #atxp-leaders prospective 4S buyers meeting"]
+  },
+  {
+    "date": "2026-06-23",
+    "start_local": "2026-06-23T15:00:00",
+    "end_local": "2026-06-23T15:30:00",
+    "subject": "Recovered: Owner/FOP follow-ups (Brian DeLowe Austin, site visits)",
+    "category": "guest_relations",
+    "confidence": "med",
+    "evidence": ["15:13 sent email 'Re: Austin' (Brian DeLowe, more forthcoming given relationship)", "15:14 sent email 'Accepted: Kat - Site Visit, White Construction Holiday Party'"]
+  },
+  {
+    "date": "2026-06-23",
+    "start_local": "2026-06-23T18:00:00",
+    "end_local": "2026-06-23T19:00:00",
+    "subject": "Recovered: FOP site-visit coordination + OOO calendar processing",
+    "category": "guest_relations",
+    "confidence": "med",
+    "evidence": ["18:04 sent email 'FOP site visit: Austin visit 6/29' (DEV rate)", "18:54 sent email 'Accepted: Bryan Pino - Out of Office'"]
+  },
+  {
+    "date": "2026-06-24",
+    "start_local": "2026-06-24T08:15:00",
+    "end_local": "2026-06-24T09:30:00",
+    "subject": "Recovered: GM exec briefing review + Kappo/AV/budget email triage",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": ["08:15 Slack #atxp-revenue July/August pace watch", "08:32 sent email 'Re: Kappo incident - 6.20.26'", "08:39 sent email 'Re: Great meeting you at Austin Proper'", "08:49 Slack DM GM Executive Briefing (Proper OS / Claude)", "09:14 sent email 'Re: F&B & AI, Expanding My Role'", "09:17 Slack DM Kat AV utilization assumptions"]
+  },
+  {
+    "date": "2026-06-24",
+    "start_local": "2026-06-24T15:15:00",
+    "end_local": "2026-06-24T16:00:00",
+    "subject": "Recovered: AIVA/BluIP webhook validations + community/eng follow-ups",
+    "category": "ai_innovation",
+    "confidence": "high",
+    "evidence": ["15:21 sent email 'Re: New submission from Report' (Shoal Creek)", "15:33 sent email 'Re: Webhook Validations' (AIVA export tab daily)", "15:59 sent email 'FW: Austin Proper + BluIP - AIVA 3.0 Meeting Recap'"]
+  },
+  {
+    "date": "2026-06-24",
+    "start_local": "2026-06-24T18:00:00",
+    "end_local": "2026-06-24T20:00:00",
+    "subject": "Recovered: Evening GM-call agenda admin, FFOP comp res, residential + Mind Matrix",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": ["18:40 Slack DM Leah GM Call Agenda location", "18:48 Slack DM Mind Matrix Briefing (23 items added)", "19:06 Slack #atxp-res COMP res Richard Wales (FFOP)", "19:31 sent email '[EXTERNAL] Residential Service Opportunities'", "19:51 Slack #atxp-dbr BT rates / need periods"]
+  },
+  {
+    "date": "2026-06-25",
+    "start_local": "2026-06-25T08:00:00",
+    "end_local": "2026-06-25T09:15:00",
+    "subject": "Recovered: AM briefing review + Forbes prep, security (Mendoza), AIVA 2.5 vs 3.0 coordination",
+    "category": "solo_admin",
+    "confidence": "high",
+    "evidence": ["08:02 sent email/Slack #atxp-gr no synth scents", "08:17 Slack #atxp-security Ms. Mendoza updates", "08:27 Slack GroupDM Forbes YOY variance study for tomorrow", "08:29 Slack GroupDM AIVA 2.5 vs 3.0 audit", "09:02 Slack GroupDM prioritize Forbes"]
+  },
+  {
+    "date": "2026-06-25",
+    "start_local": "2026-06-25T13:00:00",
+    "end_local": "2026-06-25T14:00:00",
+    "subject": "Recovered: Guest/wellness correspondence + webhook scheduling + wedding site",
+    "category": "guest_relations",
+    "confidence": "high",
+    "evidence": ["13:04 sent email 'Re: The Proper - Fitness Bike' (Mr. Hood community run)", "13:24 sent email 'Re: Webhook Validations' (3-4pm works)", "13:36 sent email 'Accepted: Kat - Wedding Site, Nicholson Dodson Wedding'"]
+  },
+  {
+    "date": "2026-06-25",
+    "start_local": "2026-06-25T17:30:00",
+    "end_local": "2026-06-25T18:00:00",
+    "subject": "Recovered: OXYLIGHT/Verbena spa marketing + press outreach correspondence",
+    "category": "solo_email",
+    "confidence": "med",
+    "evidence": ["17:42 sent email 'Re: OXYLIGHT Marketing plan' (banner retargeting, Verbena IG)"]
+  },
+  {
+    "date": "2026-06-25",
+    "start_local": "2026-06-25T19:00:00",
+    "end_local": "2026-06-25T20:00:00",
+    "subject": "Recovered: Evening AI data-validation demos (Toast/Snowflake/AIVA) + Dallas 2500 Cedar Springs concept",
+    "category": "ai_innovation",
+    "confidence": "high",
+    "evidence": ["19:33 Slack #atxp-av-upgrad AV doc update", "19:35 Slack #dallas-2500-cedar-springs-proper Eastern Mediterranean concept", "19:49 Slack DM Claude delegate-check tasks", "19:57 Slack #gms Snowflake connector references", "19:58 Slack #gms prompts to validate Toast/AIVA glitch data"]
+  }
+]
